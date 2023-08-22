@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker-compose -p rossio-dados -f docker-compose-skosmos-resolucaold.yml up -d
+docker-compose -p rossio-dados -f docker-compose-skosmos.yml up -d
