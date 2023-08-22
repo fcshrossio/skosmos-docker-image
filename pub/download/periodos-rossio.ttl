@@ -1,0 +1,572 @@
+@prefix : <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://vocabs.rossio.fcsh.unl.pt/periodos/> a owl:Ontology, skos:ConceptScheme;
+  dct:creator <http://vocabs.rossio.fcsh.unl.pt/agentes/c_3d0f0c8c>;
+  dct:description """O vocabulário de Períodos ROSSIO reúne nomes de períodos temporais, incluindo eras geológicas e períodos históricos, culturais e artísticos, para organização do conhecimento e recuperação de informação na plataforma ROSSIO.
+
+ A construção do vocabulário de Períodos baseia-se noutros tesauros e obras de referência tais como o PeriodO e o “Art and Architecture Thesaurus” do Getty Institute.
+
+ O vocabulário de Períodos faz parte dos vocabulários ROSSIO, onde se integram vocabulários para tópicos nas ciências sociais, artes e humanidades (Tesauro ROSSIO), para nomes de pessoas e organizações (Agentes ROSSIO) e para topónimos (Lugares ROSSIO)."""@pt,
+    """The ROSSIO Periods vocabulary comprises names of temporal periods, including geological eras and historical, cultural and art periods, for knowledge organisation and information retrieval in the ROSSIO platform.
+
+ The construction of the Periods vocabulary is based on other thesauri and reference works such as PeriodO and the Getty Institute's “Art and Architecture Thesaurus”.
+
+ ROSSIO Periods is part of the ROSSIO vocabularies, which includes vocabularies of topics in social sciences, arts and humanities (ROSSIO Thesaurus), people and organisations (ROSSIO Agents) and toponyms (ROSSIO Places)."""@en;
+  dct:language <http://lexvo.org/id/iso639-3/eng>, <http://lexvo.org/id/iso639-3/por>;
+  dct:publisher <http://vocabs.rossio.fcsh.unl.pt/agentes/c_3d0f0c8c>;
+  dct:relation <http://vocabs.rossio.fcsh.unl.pt/agentes/>, <http://vocabs.rossio.fcsh.unl.pt/lugares/>,
+    <http://vocabs.rossio.fcsh.unl.pt/tesauro/>;
+  dct:rights <https://creativecommons.org/licenses/by/4.0/>;
+  dct:subject <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_cd7f229d>;
+  rdfs:label "Períodos ROSSIO"@pt, "ROSSIO Periods"@en;
+  skos:hasTopConcept :c_056bb689, :c_1142061b, :c_179702a4, :c_1ac5f75f, :c_508c5ec0,
+    :c_83250b6e, :c_8c07fb70, :c_97bb5362, :c_b7504f62, :c_e4000d52, :c_e780fa26, :c_e9b1d00c;
+  skos:prefLabel "Períodos ROSSIO"@pt, "ROSSIO Periods"@en .
+
+bf:Temporal a owl:Class;
+  rdfs:label "Period"@en, "Período"@pt;
+  rdfs:subClassOf owl:Thing .
+
+:c_7378b82b a bf:Temporal, skos:Concept;
+  skos:broader :c_9cb9665b;
+  skos:closeMatch <http://vocab.getty.edu/aat/300391280>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Holocene"@en, "Holoceno"@pt .
+
+:c_54ccc7e5 a bf:Temporal, skos:Concept;
+  skos:broader :c_9cb9665b;
+  skos:closeMatch <http://vocab.getty.edu/aat/300391279>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Pleistocene"@en, "Pleistoceno"@pt .
+
+isothes:ThesaurusArray a owl:Class;
+  rdfs:label "Array of sibling concepts"@en, "Conjunto de conceitos coordenados"@pt;
+  rdfs:subClassOf skos:Collection .
+
+:c_1142061b a bf:Temporal, skos:Concept;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_08de459a, :c_b24238e5, :c_ea7c1dd5;
+  skos:prefLabel "Proto-história"@pt, "Protohistory"@en;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_08de459a a bf:Temporal, skos:Concept;
+  skos:altLabel "Idade do Cobre"@pt;
+  skos:broader :c_1142061b;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscs4mwd>, <http://vocab.getty.edu/aat/300019273>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Calcolítico"@pt, "Chalcolithic"@en .
+
+:c_b24238e5 a bf:Temporal, skos:Concept;
+  skos:broader :c_1142061b;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscs3csg>, <http://vocab.getty.edu/aat/300019275>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Bronze Age"@en, "Idade do Bronze"@pt .
+
+:c_ea7c1dd5 a bf:Temporal, skos:Concept;
+  skos:broader :c_1142061b;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscswhdc>, <http://vocab.getty.edu/aat/300019279>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Idade do Ferro"@pt, "Iron Age"@en .
+
+:c_e4000d52 a bf:Temporal, skos:Concept;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_04630d45, :c_0de0f270, :c_0e0db269, :c_af194cbd;
+  skos:prefLabel "Antiguidade"@pt, "Antiquity"@en;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_04630d45 a bf:Temporal, skos:Concept;
+  skos:broader :c_e4000d52;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Antiguidade Oriental"@pt, "Oriental Antiquity"@en .
+
+:c_0de0f270 a bf:Temporal, skos:Concept;
+  skos:broader :c_e4000d52;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_01c8c7eb, :c_093cef1b, :c_4170c9d2, :c_87e84f9f;
+  skos:prefLabel "Antiguidade Clássica"@pt, "Classic Antiquity"@en .
+
+:c_0e0db269 a bf:Temporal, skos:Concept;
+  skos:altLabel "Early Middle Ages"@en;
+  skos:broader :c_e4000d52;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscsm3wm>, <http://vocab.getty.edu/aat/300020666>;
+  skos:hiddenLabel "AntiguidadeTardia"@pt;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Antiguidade Tardia"@pt, "Late Antiquity"@en .
+
+:c_af194cbd a bf:Temporal, skos:Concept;
+  skos:broader :c_e4000d52;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Antiguidade Pré-clássica"@pt, "Pre-Classical Antiquity"@en .
+
+:c_179702a4 a bf:Temporal, skos:Concept;
+  skos:altLabel "Época pré-colombiana"@pt;
+  skos:closeMatch <http://vocab.getty.edu/aat/300016619>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Era pré-colombiana"@pt, "Pre-Columbian era"@en;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_83250b6e a bf:Temporal, skos:Concept;
+  skos:altLabel "Época medieval"@pt;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscsx567>, <http://vocab.getty.edu/aat/300020756>;
+  skos:hiddenLabel "Idade Medieval"@pt;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_0d7ff0f7, :c_2c796bb6, :c_78ac6c44, :c_8a06ef6f;
+  skos:prefLabel "Idade Média"@pt, "Middle Ages"@en;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_2c796bb6 a bf:Temporal, skos:Concept;
+  skos:broader :c_83250b6e;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscs5fzw>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_f134d99c, :c_fbece00f;
+  skos:prefLabel "Alta Idade Média"@pt, "High Middle Ages"@en .
+
+:c_8a06ef6f a bf:Temporal, skos:Concept;
+  skos:broader :c_83250b6e;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscs3p46>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_7f5dd650;
+  skos:prefLabel "Baixa Idade Média"@pt, "Late Middle Ages"@en .
+
+:c_4e1d30be a bf:Temporal, skos:Concept;
+  skos:broader :c_b7504f62;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Fontism"@en, "Fontismo"@pt .
+
+:c_b7504f62 a bf:Temporal, skos:Concept;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscsfs6r>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_4e1d30be, :c_60e94027, :c_c1b75791, :c_d964d72f, :c_e31fc104, :c_f03f626f;
+  skos:prefLabel "Contemporary Age"@en, "Idade Contemporânea"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_60e94027 a bf:Temporal, skos:Concept;
+  skos:altLabel "Época vitoriana"@pt;
+  skos:broader :c_b7504f62;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Era vitoriana"@pt, "Victorian era"@en .
+
+:c_d964d72f a bf:Temporal, skos:Concept;
+  skos:altLabel "Era da informação"@pt;
+  skos:broader :c_b7504f62;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Digital age"@en, "Era digital"@pt .
+
+:c_e780fa26 a bf:Temporal, skos:Concept;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscsdtt5>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_428f88db, :c_436485ef, :c_b2e0fd47, :c_c2e7f5cb, :c_ce1528e1, :c_d1383e43;
+  skos:prefLabel "Idade Moderna"@pt, "Modern Age"@en;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_ce1528e1 a bf:Temporal, skos:Concept;
+  skos:broader :c_e780fa26;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Elizabethan era"@en, "Período isabelino"@pt .
+
+:c_d1383e43 a bf:Temporal, skos:Concept;
+  skos:broader :c_e780fa26;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Pombalism"@en, "Pombalismo"@pt .
+
+:c_fbece00f a bf:Temporal, skos:Concept;
+  skos:broader :c_2c796bb6;
+  skos:closeMatch <http://vocab.getty.edu/aat/300020764>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Carolingian renaissance"@en, "Renascimento carolíngio"@pt .
+
+:c_e31fc104 a bf:Temporal, skos:Concept;
+  skos:broader :c_b7504f62;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Sidonism"@en, "Sidonismo"@pt .
+
+:c_056bb689 a bf:Temporal, skos:Concept;
+  skos:closeMatch <http://vocab.getty.edu/aat/300019257>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_c352034d;
+  skos:prefLabel "Prehistory"@en, "Pré-história"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_c352034d a bf:Temporal, skos:Concept;
+  skos:broader :c_056bb689;
+  skos:closeMatch <http://vocab.getty.edu/aat/300106724>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_0c7f9151, :c_3467d08d, :c_91ed485a, :c_b20b92df;
+  skos:prefLabel "Idade da Pedra"@pt, "Stone Age"@en .
+
+:c_b2e0fd47 a bf:Temporal, skos:Concept;
+  skos:broader :c_e780fa26;
+  skos:closeMatch <http://vocab.getty.edu/aat/300021140>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Renaissance"@en, "Renascimento"@pt .
+
+:c_9cb9665b a bf:Temporal, skos:Concept;
+  skos:broader :c_1ac5f75f;
+  skos:closeMatch <http://vocab.getty.edu/aat/300391278>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_54ccc7e5, :c_7378b82b;
+  skos:prefLabel "Quaternary"@en, "Quaternário"@pt .
+
+:c_c1b75791 a bf:Temporal, skos:Concept;
+  skos:broader :c_b7504f62;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Salazarism"@en, "Salazarismo"@pt .
+
+:c_f03f626f a bf:Temporal, skos:Concept;
+  skos:broader :c_b7504f62;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Marcelism"@en, "Marcelismo"@pt .
+
+:c_428f88db a bf:Temporal, skos:Concept;
+  skos:broader :c_e780fa26;
+  skos:closeMatch <http://vocab.getty.edu/aat/300021477>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Neoclassicism"@en, "Neoclassicismo"@pt .
+
+:c_436485ef a bf:Temporal, skos:Concept;
+  skos:broader :c_e780fa26;
+  skos:closeMatch <http://vocab.getty.edu/aat/300021147>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Baroque"@en, "Barroco"@pt .
+
+:c_7f5dd650 a bf:Temporal, skos:Concept;
+  skos:broader :c_8a06ef6f;
+  skos:closeMatch <http://vocab.getty.edu/aat/300020775>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Gothic"@en, "Gótico"@pt .
+
+:c_c2e7f5cb a bf:Temporal, skos:Concept;
+  skos:broader :c_e780fa26;
+  skos:closeMatch <http://vocab.getty.edu/aat/300021144>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Maneirismo"@pt, "Mannerism"@en .
+
+:c_f134d99c a bf:Temporal, skos:Concept;
+  skos:broader :c_2c796bb6;
+  skos:closeMatch <http://vocab.getty.edu/aat/300020768>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Romanesque"@en, "Românico"@pt .
+
+:c_1ac5f75f a bf:Temporal, skos:Concept;
+  skos:altLabel "Era Cenozoica"@pt;
+  skos:closeMatch <http://vocab.getty.edu/aat/300391256>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_0127f274, :c_3a018908, :c_9cb9665b;
+  skos:prefLabel "Cenozoic"@en, "Cenozoico"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_01c8c7eb a bf:Temporal, skos:Concept;
+  skos:broader :c_0de0f270;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Classical period"@en, "Período clássico"@pt .
+
+:c_093cef1b a bf:Temporal, skos:Concept;
+  skos:broader :c_0de0f270;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Archaic period"@en, "Período arcaico"@pt .
+
+:c_4170c9d2 a bf:Temporal, skos:Concept;
+  skos:altLabel "Período helenístico"@pt;
+  skos:broader :c_0de0f270;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Helenismo"@pt, "Hellenistic period"@en .
+
+:c_87e84f9f a bf:Temporal, skos:Concept;
+  skos:altLabel "Período romano"@pt;
+  skos:broader :c_0de0f270;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscswt6w>, <http://vocab.getty.edu/aat/300020533>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_4f0c35c7;
+  skos:prefLabel "Roman period"@en, "Época romana"@pt .
+
+:c_0c7f9151 a bf:Temporal, skos:Concept;
+  skos:broader :c_c352034d;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscsjj9h>, <http://vocab.getty.edu/aat/300019267>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Neolithic"@en, "Neolítico"@pt .
+
+:c_3467d08d a bf:Temporal, skos:Concept;
+  skos:altLabel "Palaeolithic"@en;
+  skos:broader :c_c352034d;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscscdv4>, <http://vocab.getty.edu/aat/300019258>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_5aed938e, :c_ab12cfb6, :c_c235e868;
+  skos:prefLabel "Paleolithic"@en, "Paleolítico"@pt .
+
+:c_91ed485a a bf:Temporal, skos:Concept;
+  skos:broader :c_c352034d;
+  skos:closeMatch <http://vocab.getty.edu/aat/300106730>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Epipaleolithic"@en, "Epipaleolítico"@pt .
+
+:c_b20b92df a bf:Temporal, skos:Concept;
+  skos:broader :c_c352034d;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscssxhp>, <http://vocab.getty.edu/aat/300019264>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Mesolithic"@en, "Mesolítico"@pt .
+
+:c_5aed938e a bf:Temporal, skos:Concept;
+  skos:altLabel "Upper Palaeolithic"@en;
+  skos:broader :c_3467d08d;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscs4r2b>, <http://vocab.getty.edu/aat/300019262>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Paleolítico Superior"@pt, "Upper Paleolithic"@en .
+
+:c_ab12cfb6 a bf:Temporal, skos:Concept;
+  skos:altLabel "Middle Palaeolithic"@en;
+  skos:broader :c_3467d08d;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscs92bm>, <http://vocab.getty.edu/aat/300019261>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Middle Paleolithic"@en, "Paleolítico Médio"@pt .
+
+:c_c235e868 a bf:Temporal, skos:Concept;
+  skos:altLabel "Lower Palaeolithic"@en;
+  skos:broader :c_3467d08d;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscskmff>, <http://vocab.getty.edu/aat/300019260>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Lower Paleolithic"@en, "Paleolítico Inferior"@pt .
+
+:c_0127f274 a bf:Temporal, skos:Concept;
+  skos:altLabel "Neogéneo"@pt;
+  skos:broader :c_1ac5f75f;
+  skos:closeMatch <http://vocab.getty.edu/aat/300391471>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Neogene"@en, "Neogénico"@pt .
+
+:c_3a018908 a bf:Temporal, skos:Concept;
+  skos:altLabel "Paleogéneo"@pt;
+  skos:broader :c_1ac5f75f;
+  skos:closeMatch <http://vocab.getty.edu/aat/300391472>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Paleogene"@en, "Paleogénico"@pt .
+
+:c_8c07fb70 a bf:Temporal, skos:Concept;
+  skos:altLabel "First millenium AD"@en, "Primeiro milénio d.C."@pt;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404550>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_2395f163, :c_439b0a63, :c_71e02136, :c_bb4686eb, :c_bb6466bd, :c_cb6293b3,
+    :c_e11d9fa5, :c_ebcaf4f5, :c_edf9ee0c, :c_f0cb2425;
+  skos:prefLabel "1st millenium"@en, "1º milénio"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_97bb5362 a bf:Temporal, skos:Concept;
+  skos:altLabel "Second millenium"@en, "Segundo milénio"@pt;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404551>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_2a515ef8, :c_6f4faaa6, :c_9351bcc7, :c_a2f1593e, :c_a393cac1, :c_abab01dd,
+    :c_b414168a, :c_b69282cc, :c_c0ec623f, :c_f486e75a;
+  skos:prefLabel "2nd millenium"@en, "2º milénio"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_e9b1d00c a bf:Temporal, skos:Concept;
+  skos:altLabel "First millenium BC"@en, "Primeiro milénio a.C."@pt;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404554>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "1st millenium BC"@en, "1º milénio a.C."@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_b414168a a bf:Temporal, skos:Concept;
+  skos:altLabel "Eleventh century"@en, "Séc. XI"@pt, "Século 11"@pt, "Século XI"@pt,
+    "Século onze"@pt;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404503>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "11th century"@en, "Séc. 11"@pt .
+
+:c_a2f1593e a bf:Temporal, skos:Concept;
+  skos:altLabel "Séc. XII"@pt, "Século 12"@pt, "Século XII"@pt, "Século doze"@pt, "Twelfth century"@en;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404504>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "12th century"@en, "Séc. 12"@pt .
+
+:c_f486e75a a bf:Temporal, skos:Concept;
+  skos:altLabel "Séc. XIII"@pt, "Século 13"@pt, "Século XIII"@pt, "Século treze"@pt,
+    "Thirteenth century"@en;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404505>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "13th century"@en, "Séc. 13"@pt .
+
+:c_a393cac1 a bf:Temporal, skos:Concept;
+  skos:altLabel "Fourteenth century"@en, "Séc. XIV"@pt, "Século 14"@pt, "Século XIV"@pt,
+    "Século catorze"@pt;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404506>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "14th century"@en, "Séc. 14"@pt .
+
+:c_abab01dd a bf:Temporal, skos:Concept;
+  skos:altLabel "Fifteenth century"@en, "Séc. XV"@pt, "Século 15"@pt, "Século XV"@pt,
+    "Século quinze"@pt;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404465>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "15th century"@en, "Séc. 15"@pt .
+
+:c_9351bcc7 a bf:Temporal, skos:Concept;
+  skos:altLabel "Sixteenth century"@en, "Séc. XVI"@pt, "Século 16"@pt, "Século XVI"@pt,
+    "Século dezasseis"@pt;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404510>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "16th century"@en, "Séc. 16"@pt .
+
+:c_c0ec623f a bf:Temporal, skos:Concept;
+  skos:altLabel "Seventeenth century"@en, "Séc. XVII"@pt, "Século 17"@pt, "Século XVII"@pt,
+    "Século dezassete"@pt;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404511>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "17th century"@en, "Séc. 17"@pt .
+
+:c_b69282cc a bf:Temporal, skos:Concept;
+  skos:altLabel "Eighteenth century"@en, "Séc. XVIII"@pt, "Século 18"@pt, "Século XVIII"@pt,
+    "Século dezoito"@pt;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404512>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "18th century"@en, "Séc. 18"@pt .
+
+:c_6f4faaa6 a bf:Temporal, skos:Concept;
+  skos:altLabel "Nineteenth century"@en, "Séc. XIX"@pt, "Século 19"@pt, "Século XIX"@pt,
+    "Século dezanove"@pt;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404513>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "19th century"@en, "Séc. 19"@pt .
+
+:c_2a515ef8 a bf:Temporal, skos:Concept;
+  skos:altLabel "Séc. XX"@pt, "Século 20"@pt, "Século XX"@pt, "Século vinte"@pt, "Twentieth century"@en;
+  skos:broader :c_97bb5362;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404514>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "20th century"@en, "Séc. 20"@pt .
+
+:c_4f0c35c7 a bf:Temporal, skos:Concept;
+  skos:broader :c_87e84f9f;
+  skos:closeMatch <http://vocab.getty.edu/aat/300020541>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_40d578d6, :c_c18c016f;
+  skos:prefLabel "Período imperial romano"@pt, "Roman imperial period"@en .
+
+:c_40d578d6 a bf:Temporal, skos:Concept;
+  skos:broader :c_4f0c35c7;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscszv3q>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Alto Império Romano"@pt, "Early Roman Empire"@en .
+
+:c_c18c016f a bf:Temporal, skos:Concept;
+  skos:broader :c_4f0c35c7;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscs6tqw>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Baixo Império Romano"@pt, "Late Roman Empire"@en .
+
+:c_0d7ff0f7 a bf:Temporal, skos:Concept;
+  skos:broader :c_83250b6e;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscs4hm8>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Medieval Christian Period"@en, "Período Medieval Cristão"@pt .
+
+:c_78ac6c44 a bf:Temporal, skos:Concept;
+  skos:broader :c_83250b6e;
+  skos:closeMatch <http://n2t.net/ark:/99152/p0cwscspg8k>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "Medieval Islamic Period"@en, "Período Medieval Islâmico"@pt .
+
+:c_e11d9fa5 a bf:Temporal, skos:Concept;
+  skos:altLabel "First century"@en, "Séc. I"@pt, "Século I"@pt;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404493>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "1st century"@en, "Séc. 1"@pt .
+
+:c_edf9ee0c a bf:Temporal, skos:Concept;
+  skos:altLabel "Second century"@en, "Séc. II"@pt, "Século II"@pt;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404494>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "2nd century"@en, "Séc. 2"@pt .
+
+:c_bb4686eb a bf:Temporal, skos:Concept;
+  skos:altLabel "Séc. III"@pt, "Século III"@pt, "Third century"@en;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404493>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "3rd century"@en, "Séc. 3"@pt .
+
+:c_2395f163 a bf:Temporal, skos:Concept;
+  skos:altLabel "Fourth century"@en, "Séc. IV"@pt;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404496>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "4th century"@en, "Séc. 4"@pt .
+
+:c_cb6293b3 a bf:Temporal, skos:Concept;
+  skos:altLabel "Fifth century"@en, "Séc. V"@pt;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404497>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "5th century"@en, "Séc. 5"@pt .
+
+:c_bb6466bd a bf:Temporal, skos:Concept;
+  skos:altLabel "Sixth century"@en, "Séc. VI"@pt;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404498>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "6th century"@en, "Séc. 6"@pt .
+
+:c_71e02136 a bf:Temporal, skos:Concept;
+  skos:altLabel "Seventh century"@en, "Séc. VII"@pt;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404499>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "7th century"@en, "Séc. 7"@pt .
+
+:c_ebcaf4f5 a bf:Temporal, skos:Concept;
+  skos:altLabel "Eight century"@en, "Séc. VIII"@pt;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404500>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "8th century"@en, "Séc. 8"@pt .
+
+:c_439b0a63 a bf:Temporal, skos:Concept;
+  skos:altLabel "Ninth century"@en, "Séc. IX"@pt;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404501>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "9th century"@en, "Séc. 9"@pt .
+
+:c_f0cb2425 a bf:Temporal, skos:Concept;
+  skos:altLabel "Séc. X"@pt, "Tenth century"@en;
+  skos:broader :c_8c07fb70;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404502>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "10th century"@en, "Séc. 10"@pt .
+
+:c_508c5ec0 a bf:Temporal, skos:Concept;
+  skos:altLabel "Terceiro milénio"@pt, "Third millennium"@en;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404552>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:narrower :c_895cb366;
+  skos:prefLabel "3rd millennium"@en, "3º milénio"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:c_895cb366 a bf:Temporal, skos:Concept;
+  skos:altLabel "Séc. XXI"@pt, "Século 21"@pt, "Twenty-first century"@en;
+  skos:broader :c_508c5ec0;
+  skos:exactMatch <http://vocab.getty.edu/aat/300404515>;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  skos:prefLabel "21st century"@en, "Séc. 21"@pt .

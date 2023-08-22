@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo docker exec -it 0249504dc9d3 /bin/bash
+sudo docker exec -it skosmos /bin/bash

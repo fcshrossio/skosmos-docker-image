@@ -1,0 +1,338 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wv: <http://vocab.org/waiver/terms/norms> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosmos: <http://purl.org/net/skosmos#> .
+@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
+@prefix mdrtype: <http://publications.europa.eu/resource/authority/dataset-type/> .
+@prefix : <#> .
+
+# Skosmos main configuration
+
+:config a skosmos:Configuration ;
+    # SPARQL endpoint
+    # a local Fuseki server is usually on localhost:3030
+    skosmos:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    # use the dev.finto.fi endpoint where the example vocabularies reside
+    # skosmos:sparqlEndpoint <http://api.dev.finto.fi/sparql> ;
+    # sparql-query extension, or "Generic" for plain SPARQL 1.1
+    # set to "JenaText" instead if you use Fuseki with jena-text index
+    skosmos:sparqlDialect "JenaText" ;
+    # whether to enable collation in sparql queries
+    skosmos:sparqlCollationEnabled false ;
+    # HTTP client configuration
+    skosmos:sparqlTimeout 20 ;
+    skosmos:httpTimeout 5 ;
+    # customize the service name
+    skosmos:serviceName "Vocabs ROSSIO"@pt, "Vocabs ROSSIO"@en ;
+    # customize the base element. Set this if the automatic base url detection doesn't work. For example setups behind a proxy.
+    # skosmos:baseHref "http://vocabs.rossio.fcsh.unl.pt/" ;
+    # interface languages available, and the corresponding system locales
+    skosmos:languages (
+        [ rdfs:label "pt" ; rdf:value "pt_PT.utf8" ]
+        [ rdfs:label "en" ; rdf:value "en_GB.utf8" ]
+    ) ;
+    # how many results (maximum) to load at a time on the search results page
+    skosmos:searchResultsSize 20 ;
+    # how many items (maximum) to retrieve in transitive property queries
+    skosmos:transitiveLimit 1000 ;
+    # whether or not to log caught exceptions
+    skosmos:logCaughtExceptions false ;
+    # set to TRUE to enable logging into browser console
+    skosmos:logBrowserConsole false ;
+    # set to a logfile path to enable logging into log file
+    # skosmos:logFileName "" ;
+    # a default location for Twig template rendering
+    skosmos:templateCache "/tmp/skosmos-template-cache" ;
+    # customize the css by adding your own stylesheet
+    skosmos:customCss "resource/css/rossio.css" ;
+    # default email address where to send the feedback
+    skosmos:feedbackAddress "brunoalmeida@fcsh.unl.pt" ;
+    # email address to set as the sender for feedback messages
+    skosmos:feedbackSender "noreply@vocabs.rossio.fcsh.unl.pt" ;
+    # email address to set as the envelope sender for feedback messages
+    skosmos:feedbackEnvelopeSender "" ;
+    # whether to display the ui language selection as a dropdown (useful for cases where there are more than 3 languages) 
+    skosmos:uiLanguageDropdown false ;
+    # whether to enable the spam honey pot or not, enabled by default
+    skosmos:uiHoneypotEnabled true ;
+    # default time a user must wait before submitting a form
+    skosmos:uiHoneypotTime 5 ;
+    # plugins to activate for the whole installation (including all vocabularies)
+    skosmos:globalPlugins () .
+
+
+# Skosmos vocabularies
+
+#:unesco a skosmos:Vocabulary, void:Dataset ;
+#    dc:title "UNESCO Thesaurus"@en ;
+#    skosmos:shortName "UNESCO";
+#    dc:subject :cat_general ;
+#    void:uriSpace "http://skos.um.es/unescothes/";
+#    skosmos:language "en", "es", "fr", "ru";
+#    skosmos:defaultLanguage "en";
+#    skosmos:showTopConcepts true ;
+#    skosmos:fullAlphabeticalIndex true ;
+#    skosmos:groupClass isothes:ConceptGroup ;
+#    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
+#    skosmos:sparqlGraph <http://skos.um.es/unescothes/> .
+ 
+#:stw a skosmos:Vocabulary, void:Dataset ;
+#    dc:title "STW Thesaurus for Economics"@en ;
+#    skosmos:shortName "STW";
+#    dc:subject :cat_general ;
+#    void:uriSpace "http://zbw.eu/stw/";
+#    skosmos:language "en", "de";
+#    skosmos:defaultLanguage "de";
+#    void:sparqlEndpoint <http://localhost:3030/skosmos/sparql> ;
+#    skosmos:sparqlGraph <http://zbw.eu/stw/> .
+
+:tesauro a skosmos:Vocabulary, void:Dataset ;
+    dc:title "ROSSIO Thesaurus"@en ;
+    dc:title "Tesauro ROSSIO"@pt ;
+    skosmos:shortName "Tesauro";
+    dc:subject :cat_rossio ;
+    void:uriSpace "http://vocabs.rossio.fcsh.unl.pt/tesauro/";
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/tesauro-rossio.rdf>;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/tesauro-rossio.ttl>;
+    skosmos:showTopConcepts true ;
+    skosmos:defaultSidebarView "hierarchy";
+    skosmos:language "pt", "en";
+    skosmos:defaultLanguage "pt";
+    #Class of resources to display as arrays (subdivisions) of sibling concepts. Typical values are skos:Collection or isothes:ThesaurusArray.
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+#    void:sparqlEndpoint <http://skosmos.dglab.gov.pt:3030/skosmos/sparql> ;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://vocabs.rossio.fcsh.unl.pt/tesauro/> .
+
+:agentes a skosmos:Vocabulary, void:Dataset ;
+    dc:title "ROSSIO Agents"@en ;
+    dc:title "Agentes ROSSIO"@pt ;
+    skosmos:shortName "Agentes";
+    skosmos:showTopConcepts false ;
+    dc:subject :cat_rossio ;
+    void:uriSpace "http://vocabs.rossio.fcsh.unl.pt/agentes/";
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/agentes-rossio.rdf>;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/agentes-rossio.ttl>;
+    skosmos:language "pt", "en";
+    skosmos:defaultLanguage "pt";
+#    skosmos:loadExternalResources true ;
+    #Class of resources to display as arrays (subdivisions) of sibling concepts. Typical values are skos:Collection or isothes:ThesaurusArray.
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://vocabs.rossio.fcsh.unl.pt/agentes/> .
+
+:lugares a skosmos:Vocabulary, void:Dataset ;
+    dc:title "ROSSIO Places"@en ;
+    dc:title "Lugares ROSSIO"@pt ;
+    skosmos:shortName "Lugares";
+    skosmos:showTopConcepts true ;
+    dc:subject :cat_rossio ;
+    void:uriSpace "http://vocabs.rossio.fcsh.unl.pt/lugares/";
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/lugares-rossio.rdf>;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/lugares-rossio.ttl>;
+    skosmos:language "pt", "en";
+    skosmos:defaultLanguage "pt";
+    skosmos:defaultSidebarView "hierarchy";
+    #Class of resources to display as arrays (subdivisions) of sibling concepts. Typical values are skos:Collection or isothes:ThesaurusArray.
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+#    skosmos:loadExternalResources false ;
+#    skosmos:propertyLabelOverride [skosmos:property <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
+#    skosmos:hasMultiLingualProperty <http://www.w3.org/2003/01/geo/wgs84_pos#lat>;
+#    skosmos:hasMultiLingualProperty <http://www.w3.org/2003/01/geo/wgs84_pos#long>;
+#    skosmos:hasMultiLingualProperty <http://vocab.getty.edu/ontology#placeType>;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://vocabs.rossio.fcsh.unl.pt/lugares/> .
+
+:periodos a skosmos:Vocabulary, void:Dataset ;
+    dc:title "ROSSIO Time Periods"@en ;
+    dc:title "Períodos ROSSIO"@pt ;
+    skosmos:shortName "Períodos";
+    skosmos:showTopConcepts true ;
+    skosmos:defaultSidebarView "hierarchy";
+    dc:subject :cat_rossio ;
+    void:uriSpace "http://vocabs.rossio.fcsh.unl.pt/periodos/";
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/periodos-rossio.rdf>;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/periodos-rossio.ttl>;
+    skosmos:language "pt", "en";
+    skosmos:defaultLanguage "pt";
+    #Class of resources to display as arrays (subdivisions) of sibling concepts. Typical values are skos:Collection or isothes:ThesaurusArray.
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://vocabs.rossio.fcsh.unl.pt/periodos/> .
+
+:coarResTypes a skosmos:Vocabulary, void:Dataset ;
+    dc:title "COAR Resource Types Vocabulary"@en ;
+    dc:title "Vocabulário COAR para Tipos de Recursos"@pt ;
+    skosmos:shortName "Resource Types";
+    skosmos:showTopConcepts true ;
+    dc:subject :cat_types ;
+    void:uriSpace "http://purl.org/coar/resource_type/";
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/coar-resource-types.rdf> ;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/coar-resource-types.ttl> ;
+    skosmos:language "pt", "en";
+    skosmos:defaultLanguage "pt";
+    #Class of resources to display as arrays (subdivisions) of sibling concepts. Typical values are skos:Collection or isothes:ThesaurusArray.
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://purl.org/coar/resource_type/> .
+
+:isoLangs a skosmos:Vocabulary, void:Dataset ;
+    dc:title "Lexvo - ISO 639-3 language codes"@en ;
+    dc:title "Lexvo - códigos de língua ISO 639-3"@pt ;
+    skosmos:shortName "Language codes";
+    skosmos:showTopConcepts false ;
+    dc:subject :cat_langs ;
+    void:uriSpace "http://lexvo.org/id/";
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/lexvo-iso639.rdf> ;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/lexvo-iso639.ttl> ;
+    skosmos:language "pt", "en";
+    skosmos:defaultLanguage "pt";
+    #Class of resources to display as arrays (subdivisions) of sibling concepts. Typical values are skos:Collection or isothes:ThesaurusArray.
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://lexvo.org/id/> .
+
+:udcS a skosmos:Vocabulary, void:Dataset ;
+    dc:title "Sumário da Classificação Decimal Universal"@pt ;
+    dc:title "Universal Decimal Classification Summary"@en ;
+    skosmos:shortName "UDC Summary" ;
+    skosmos:showTopConcepts true ;
+    skosmos:defaultSidebarView "hierarchy";
+    dc:subject :cat_general ;
+    void:uriSpace "http://udcdata.info/udc-schema" ;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/udc-summary.rdf> ;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/udc-summary.ttl> ;    
+    skosmos:language "pt", "en" ;
+    skosmos:defaultLanguage "pt" ;
+    #Class of resources to display as arrays (subdivisions) of sibling concepts. Typical values are skos:Collection or isothes:ThesaurusArray.
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://udcdata.info/udc-schema>
+.
+
+:morais_domains a skosmos:Vocabulary, void:Dataset ;
+    dc:title "Classificação de Domínios MorDigital"@pt;
+    dc:title "MorDigital Domain Classification"@en;
+    skosmos:shortName "CDMOR" ;
+    skosmos:showTopConcepts true ;
+    skosmos:defaultSidebarView "hierarchy";
+    dc:subject :cat_lex ;
+    void:uriSpace "http://vocabs.rossio.fcsh.unl.pt/morais_domains/" ;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/morais-domains.ttl>;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/morais-domains.rdf>;
+    skosmos:language "pt", "en" ;
+    skosmos:defaultLanguage "pt" ;
+    skosmos:propertyOrder :lexPropertyOrder ;
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://vocabs.rossio.fcsh.unl.pt/morais_domains/>
+.
+
+:cesem_musical_sources a skosmos:Vocabulary, void:Dataset ;
+    dc:title "Taxonomias para descrição de fontes musicais"@pt;
+    dc:title "Taxonomies for the description of musical sources"@en;
+    skosmos:shortName "Fontes musicais" ;
+    skosmos:showTopConcepts true ;
+    skosmos:defaultSidebarView "hierarchy";
+    dc:subject :cat_mus ;
+    void:uriSpace "http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/" ;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/cesem-musical-sources.ttl>;
+    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/cesem-musical-sources.rdf>;
+    skosmos:language "pt", "en" ;
+    skosmos:defaultLanguage "pt" ;
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>
+.
+
+:glossario_ciencia_aberta a skosmos:Vocabulary, void:Dataset ;
+    dc:title "Glossário da Ciência Aberta - NOVA FCSH"@pt;
+    dc:title "Open Science Glossary - NOVA FCSH"@en;
+    skosmos:shortName "Ciência Aberta" ;
+    skosmos:showTopConcepts true ;
+    dc:subject :cat_open_science ;
+    skosmos:defaultSidebarView "hierarchy";
+    void:uriSpace "http://vocabs.rossio.fcsh.unl.pt/glossario_ciencia_aberta/" ;
+#    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/cesem-musical-sources.ttl>;
+#    void:dataDump <http://vocabs.rossio.fcsh.unl.pt/pub/download/cesem-musical-sources.rdf>;
+    skosmos:language "pt", "en" ;
+    skosmos:defaultLanguage "pt" ;
+    skosmos:arrayClass <http://purl.org/iso25964/skos-thes#ThesaurusArray> ;
+    void:sparqlEndpoint <http://192.168.111.170:3030/skosmos/sparql> ;
+    skosmos:sparqlGraph <http://vocabs.rossio.fcsh.unl.pt/glossario_ciencia_aberta/>
+.
+
+:lexPropertyOrder a skosmos:PropertyOrder ;
+    rdf:value ( rdf:type skos:broader skos:narrower <http://vocabs.rossio.fcsh.unl.pt/morais_domains/usageLabel>
+		skos:definition skos:scopeNote skos:altLabel )
+.
+
+:categories a skos:ConceptScheme;
+    skos:prefLabel "Vocabulary categories"@en, 
+        "Categorias de vocabulários"@pt
+.
+
+:cat_general a skos:Concept ;
+    skos:topConceptOf :categories ;
+    skos:inScheme :categories ;
+    skos:prefLabel "Gerais"@pt,
+        "General"@en
+.
+
+:cat_rossio a skos:Concept ;
+    skos:topConceptOf :categories ;
+    skos:inScheme :categories ;
+    skos:prefLabel "Vocabulários ROSSIO"@pt,
+        "ROSSIO vocabularies"@en
+.
+
+:cat_lex a skos:Concept ;
+    skos:topConceptOf :categories ;
+    skos:inScheme :categories ;
+    skos:prefLabel "Lexicologia, Lexicografia e Terminologia"@pt,
+        "Lexicology, Lexicography and Terminology"@en
+.
+
+:cat_mus a skos:Concept ;
+    skos:topConceptOf :categories ;
+    skos:inScheme :categories ;
+    skos:prefLabel "Musicologia"@pt,
+        "Musicology"@en
+.
+
+:cat_types a skos:Concept ;
+    skos:topConceptOf :categories ;
+    skos:inScheme :categories ;
+    skos:prefLabel "Tipos de Recursos"@pt,
+        "Resource Types"@en
+.
+
+:cat_langs a skos:Concept ;
+    skos:topConceptOf :categories ;
+    skos:inScheme :categories ;
+    skos:prefLabel "Línguas"@pt,
+        "Languages"@en
+.
+
+:cat_open_science a skos:Concept ;
+    skos:topConceptOf :categories ;
+    skos:inScheme :categories ;
+    skos:prefLabel "Ciência Aberta"@pt,
+        "Open Science"@en
+.
+
+mdrtype:THESAURUS a skos:Concept ;
+    skos:prefLabel "Тезаурус"@bg, "Tezaurus"@cs, "Tesaurus"@da, "Thesaurus"@de, "Θησαυρός"@el, "Thesaurus"@en, "Tesaurus"@et, "Tesaurus"@fi, "Thésaurus"@fr, "Pojmovnik"@hr, "Tezaurusz"@hu, "Tesauro"@it, "Tēzaurs"@lv, "Tezauras"@lt, "Teżawru"@mt, "Thesaurus"@nl, "Tesaurus"@no, "Tezaurus"@pl, "Tesauro"@pt, "Tezaur"@ro, "Synonymický slovník"@sk, "Tezaver"@sl, "Tesauro"@es, "Tesaurus"@sv
+.
+
+mdrtype:ONTOLOGY a skos:Concept ;
+    skos:prefLabel "Онтология"@bg, "Ontologie"@cs, "Ontologi"@da, "Ontologie"@de, "Οντολογία"@el, "Ontology"@en, "Ontoloogia"@et, "Ontologia"@fi, "Ontologie"@fr, "Ontologija"@hr, "Ontológia"@hu, "Ontologia"@it, "Ontoloģija"@lv, "Ontologija"@lt, "Ontoloġija"@mt, "Ontologie"@nl, "Ontologi"@no, "Struktura pojęciowa"@pl, "Ontologia"@pt, "Ontologie"@ro, "Ontológia"@sk, "Ontologija"@sl, "Ontología"@es, "Ontologi"@sv
+.
+
