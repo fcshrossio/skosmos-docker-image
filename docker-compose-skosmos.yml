@@ -2,18 +2,18 @@ version: '3.7'
 services:
   skosmos:
     container_name: skosmos
-    image: rossio/skosmos-resolucaold:1.0
+    image: rossio/skosmos:1.2
 #    environment:
  #     FUSEKI_DATASET_1: skosmos
  #   build:
  #     context: ./fuseki/RossioFusekiImage
  #     dockerfile: Dockerfile
     ports:
-    - published: 80
-      target: 80
+    - 80:80
+    - 443:443
     stdin_open: true
     tty: true
     volumes:
-    - ./mount:/mount
+    - ./pub:/var/www/html/pub
 #    - /root/docker/fuseki/mounts/tdb:/fuseki
     entrypoint: /entrypoint.sh
