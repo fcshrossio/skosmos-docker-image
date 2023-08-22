@@ -1,0 +1,4812 @@
+@prefix : <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> a skos:ConceptScheme;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:description "Este recurso inclui as taxonomias utilizadas na descrição de fontes musicais em diversos projetos de investigação no âmbito do Centro de Estudos de Sociologia e Estética Musical da Universidade NOVA de Lisboa (CESEM)."@pt,
+    "This resource includes the taxonomies used in the description of musical sources in several research projects in the context of the Centro de Estudos de Sociologia e Estética Musical da Universidade NOVA de Lisboa (CESEM)."@en;
+  dct:language <http://lexvo.org/id/iso639-3/eng>, <http://lexvo.org/id/iso639-3/por>;
+  dct:modified "2023-01-12T14:23:57"^^xsd:dateTime;
+  dct:publisher <http://vocabs.rossio.fcsh.unl.pt/agentes/c_6c5278f6>;
+  dct:rights <https://creativecommons.org/licenses/by/4.0/>;
+  dct:subject <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_14ab7e0c>, <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_6054df88>;
+  rdfs:label "Taxonomias para descrição de fontes musicais"@pt, "Taxonomies for the description of musical sources"@en;
+  owl:versionInfo "0.1";
+  skos:hasTopConcept :0001, :0002, :0003, :0004, :0005, :0006, :0007, :0008, :0009;
+  skos:prefLabel "Taxonomias para descrição de fontes musicais"@pt, "Taxonomies for the description of musical sources"@en .
+
+:0001 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:narrower :0010, :0011, :0012, :0013;
+  skos:prefLabel "Tipologia"@pt, "Type"@en;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+
+:0002 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Livro"@pt;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:narrower :0014, :0015, :0016, :0017, :0018, :0019, :0020, :0021, :0022, :0023,
+    :0024, :0025, :0026, :0027, :0028, :0029, :0030, :0031, :0032, :0033, :0034, :0035,
+    :0036, :0037, :0038, :0039, :0040, :0041, :0042, :0043, :0044, :0045, :0046, :0047,
+    :0048, :0049, :0050, :0051, :0052, :0053, :0054, :0055, :0056, :0057;
+  skos:prefLabel "Source type"@en, "Tipo de livro"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+
+:0003 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Notação"@pt;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:narrower :0058, :0059, :0060, :0061, :0062, :0063, :0064, :0065, :0066, :0067,
+    :0068, :0069, :0070, :0071, :0072;
+  skos:prefLabel "Notation"@en, "Tipo de notação musical"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+
+:0004 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:narrower :0073, :0074;
+  skos:prefLabel "Material"@en, "Material"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+
+:0005 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:narrower :0075, :0076, :0077, :0078, :0079, :0080, :0081, :0082, :0083, :0084,
+    :0085, :0086;
+  skos:prefLabel "Century"@en, "Século"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+
+:0006 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:narrower :0087, :0088, :0089, :0090, :0091, :0092, :0093, :0094, :0095, :0096,
+    :0097, :0098, :0099;
+  skos:prefLabel "Liturgical occasion"@en, "Ocasião litúrgica"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+
+:0007 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:narrower :0100, :0101, :0102, :0103, :0104, :0105, :0106, :0107, :0108, :0109,
+    :0110, :0111, :0112, :0113, :0114, :0115, :0116, :0117, :0118, :0119, :0120, :0121,
+    :0122, :0123, :0124, :0125, :0126, :0127, :0128, :0129, :0130, :0131, :0132, :0133,
+    :0134, :0135, :0136, :0137, :0138, :0139, :0140, :0141, :0142, :0143, :0144, :0145,
+    :0146, :0147, :0148, :0149, :0150, :0151, :0152, :0153, :0154, :0155, :0156, :0157,
+    :0158, :0159, :0160, :0161;
+  skos:prefLabel "Genre"@en, "Género"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+
+:0008 a skos:Concept;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:narrower :0162, :0163, :0164, :0165, :0166, :0167, :0168, :0169, :0170, :0171,
+    :0172, :0173, :0174, :0175, :0176, :0177, :0178, :0179, :0180, :0181, :0182, :0183,
+    :0184, :0185, :0186, :0187, :0188, :0189, :0190, :0191, :0192, :0193, :0194, :0195,
+    :0196, :0197, :0198, :0199, :0200, :0201, :0202, :0203, :0204, :0205, :0206, :0207,
+    :0208, :0209, :0210, :0211, :0212, :0213, :0214, :0215, :0216, :0217, :0218, :0219,
+    :0220, :0221, :0222, :0223, :0224, :0225, :0226, :0227, :0228, :0229, :0230, :0231,
+    :0232, :0233, :0234, :0235, :0236, :0237, :0238, :0239, :0240, :0241, :0242, :0243,
+    :0244, :0245, :0246, :0247, :0248, :0249, :0250, :0251, :0252, :0253, :0254, :0255,
+    :0256, :0257, :0258, :0259, :0260, :0261, :0262, :0263, :0264, :0265, :0266, :0267,
+    :0268, :0269, :0270, :0271, :0272, :0273, :0274, :0275, :0276, :0277, :0278, :0279,
+    :0280, :0281, :0282, :0283, :0284, :0285, :0286, :0287, :0288, :0289, :0290, :0291,
+    :0292, :0293, :0294, :0295, :0296, :0297, :0298, :0299, :0300, :0301, :0302, :0303,
+    :0304, :0305, :0306, :0307, :0308, :0309, :0310, :0311, :0312, :0313, :0314, :0315,
+    :0316, :0317, :0318, :0319, :0320, :0321, :0322, :0323, :0324, :0325, :0326, :0327,
+    :0328, :0329, :0330, :0331, :0332, :0333, :0334, :0335, :0336, :0337, :0338, :0339,
+    :0340, :0341, :0342, :0343, :0344, :0345, :0346, :0347, :0348, :0349, :0350, :0351,
+    :0352, :0353, :0354, :0355, :0356, :0357, :0358, :0359, :0360, :0361, :0362, :0363,
+    :0364, :0365, :0366, :0367, :0368, :0369, :0370, :0371, :0372, :0373, :0374, :0375,
+    :0376, :0377, :0378, :0379, :0380, :0381, :0382, :0383, :0384, :0385, :0386, :0387,
+    :0388, :0389, :0390, :0391, :0392, :0393, :0394, :0395, :0396, :0397, :0398, :0399,
+    :0400, :0401, :0402, :0403, :0404, :0405, :0406, :0407, :0408, :0409, :0410, :0411,
+    :0412, :0413, :0414, :0415, :0416, :0417, :0418, :0419, :0420, :0421, :0422, :0423,
+    :0424, :0425, :0426, :0427, :0428, :0429, :0430, :0431, :0432, :0433, :0434, :0435,
+    :0436, :0437, :0438, :0439, :0440, :0441, :0442, :0443, :0444, :0445, :0446, :0447,
+    :0448, :0449, :0450, :0451, :0452, :0453, :0454, :0455, :0456, :0457, :0458, :0459,
+    :0460, :0461, :0462, :0463, :0464, :0465, :0466, :0467, :0468, :0469, :0470, :0471,
+    :0472, :0473, :0474, :0475, :0476, :0477, :0478, :0479, :0480, :0481, :0482, :0483,
+    :0484, :0485, :0486, :0487, :0488, :0489, :0490, :0491, :0492, :0493, :0494, :0495,
+    :0496, :0497, :0498, :0499, :0500, :0501, :0502, :0503, :0504, :0505, :0506, :0507,
+    :0508, :0509, :0510, :0511, :0512, :0513, :0514, :0515, :0516, :0517, :0518, :0519,
+    :0520, :0521, :0522, :0523, :0524, :0525, :0526, :0527, :0528, :0529, :0530, :0531,
+    :0532, :0533, :0534, :0535, :0536, :0537, :0538, :0539, :0540, :0541, :0542, :0543,
+    :0544, :0545, :0546, :0547, :0548, :0549, :0550, :0551, :0552, :0553, :0554, :0555,
+    :0556, :0557, :0558, :0559, :0560, :0561, :0562, :0563, :0564, :0565, :0566, :0567,
+    :0568, :0569, :0570, :0571, :0572;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:narrower :0573, :0574, :0575, :0576, :0577, :0578, :0579, :0580, :0581, :0582,
+    :0583, :0584, :0585, :0586, :0587, :0588, :0589, :0590, :0591, :0592, :0593, :0594,
+    :0595, :0596, :0597, :0598, :0599, :0600, :0601, :0602, :0603, :0604, :0605, :0606,
+    :0607, :0608, :0609, :0610, :0611, :0612, :0613, :0614, :0615, :0616, :0617, :0618,
+    :0619, :0620, :0621, :0622, :0623, :0624, :0625, :0626, :0627, :0628, :0629, :0630,
+    :0631, :0632, :0633, :0634, :0635, :0636, :0637, :0638, :0639, :0640, :0641, :0642,
+    :0643, :0644, :0645, :0646, :0647, :0648, :0649, :0650, :0651, :0652, :0653, :0654,
+    :0655, :0656, :0657, :0658, :0659, :0660, :0661, :0662, :0663, :0664, :0665, :0666,
+    :0667, :0668, :0669;
+  skos:prefLabel "Feasts"@en, "Festas"@pt;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+
+:0009 a skos:Concept;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:narrower :0670, :0671, :0672, :0673, :0674, :0675, :0676, :0677, :0678, :0679,
+    :0680, :0681, :0682, :0683;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:narrower :0684, :0685, :0686, :0687, :0688, :0689, :0690, :0691, :0692, :0693,
+    :0694, :0695, :0696, :0697, :0698, :0699, :0700, :0701, :0702, :0703, :0704, :0705,
+    :0706, :0707, :0708, :0709, :0710, :0711, :0712, :0713, :0714, :0715, :0716, :0717,
+    :0718, :0719, :0720, :0721, :0722, :0723, :0724, :0725, :0726, :0727, :0728, :0729,
+    :0730, :0731, :0732, :0733, :0734, :0735, :0736, :0737, :0738, :0739, :0740, :0741,
+    :0742, :0743, :0744, :0745, :0746, :0747, :0748, :0749, :0750, :0751, :0752, :0753,
+    :0754, :0755, :0756, :0757, :0758, :0759, :0760, :0761, :0762, :0763, :0764, :0765,
+    :0766, :0767, :0768, :0769, :0770, :0771, :0772, :0773, :0774, :0775, :0776, :0777,
+    :0778, :0779, :0780;
+  skos:prefLabel "Assunto"@pt, "Subject"@en;
+  skos:topConceptOf <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/> .
+
+:0010 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Impresso"@pt;
+  skos:broader :0001;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Impressa"@pt .
+
+:0011 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Manuscrito"@pt;
+  skos:broader :0001;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Manuscrita"@pt .
+
+:0012 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Manuscrito estampilhado"@pt;
+  skos:broader :0001;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Manuscrita estampilhada"@pt .
+
+:0013 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Misto"@pt;
+  skos:broader :0001;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mista"@pt .
+
+:0014 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Antifonário"@pt, "Antiphoner"@en .
+
+:0015 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Breviary"@en, "Breviário"@pt .
+
+:0016 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Capituleiro"@pt .
+
+:0017 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cerimonial"@pt .
+
+:0018 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Colectário"@pt .
+
+:0019 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Compósito"@pt .
+
+:0020 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Devocionário"@pt .
+
+:0021 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Diurnal"@pt .
+
+:0022 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Evangeliary"@en, "Evangeliário"@pt .
+
+:0023 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Gradual"@en, "Gradual"@pt .
+
+:0024 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hinário"@pt, "Hymnal"@en .
+
+:0025 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Kyrial"@pt;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Kirial"@pt, "Kyrial"@en .
+
+:0026 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Leccionário"@pt, "Lectionary"@en .
+
+:0027 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Livro de coro polifónico"@pt .
+
+:0028 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Livro de Horas"@pt .
+
+:0029 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Livro didáctico"@pt .
+
+:0030 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Livro de partes"@pt .
+
+:0031 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Manual"@pt .
+
+:0032 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Martirológio"@pt .
+
+:0033 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Matutinal"@pt;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Matutinário"@pt .
+
+:0034 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Miscellany"@en, "Miscelânea"@pt .
+
+:0035 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Missal"@en, "Missal"@pt .
+
+:0036 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Obra de teologia e/ou espiritualidade"@pt .
+
+:0037 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Parte(s) cava(s)"@pt .
+
+:0038 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Partes vocais e/ou instrumentais"@pt .
+
+:0039 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Partitura"@pt .
+
+:0040 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Partitura canto e piano"@pt;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Partitura para canto e piano"@pt .
+
+:0041 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Partitura coral e/ou instrumental"@pt .
+
+:0042 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Partitura de obras de câmara"@pt .
+
+:0043 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Passional"@pt;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Passionary"@en, "Passionário"@pt .
+
+:0044 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pontifical"@pt .
+
+:0045 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Processional"@pt;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Processional"@en, "Processionário"@pt .
+
+:0046 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Proser/Sequentiary"@en, "Prosário"@pt .
+
+:0047 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Publicação literária"@pt .
+
+:0048 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Publicação periódica"@pt .
+
+:0049 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Responsorial"@pt .
+
+:0050 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ritual"@en, "Ritual"@pt .
+
+:0051 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sacramentary"@en, "Sacramentário"@pt .
+
+:0052 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Psalter"@en, "Saltério"@pt .
+
+:0053 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Tonary"@en, "Tonário"@pt .
+
+:0054 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Troper"@en, "Tropário"@pt .
+
+:0055 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Edição musical (outra)"@pt .
+
+:0056 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Obras para voz/instrumento solo"@pt .
+
+:0057 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0002;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Varia"@pt .
+
+:0058 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Aquitana"@pt, "Aquitanian"@en .
+
+:0059 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Aquitana (variedade portuguesa)"@pt, "Aquitanian (Portuguese variety)"@en .
+
+:0060 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Beneventan"@en, "Beneventana"@pt .
+
+:0061 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Lotaríngia"@pt, "Lotharingian"@en .
+
+:0062 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mensural (branca)"@pt, "Mensural (white)"@en .
+
+:0063 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mensural (black)"@en, "Mensural (negra)"@pt .
+
+:0064 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Moderna"@pt .
+
+:0065 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hufnagelschrift"@en, "Notação de cabeça de prego (Hufnagel)"@pt .
+
+:0066 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Notação de cantochão moderna branca"@pt .
+
+:0067 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Notação de cantochão moderna negra"@pt .
+
+:0068 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Quadrada"@pt, "Square"@en .
+
+:0069 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:altLabel "Semi-mensural"@pt;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Semi-mensural"@en, "Semimensural"@pt .
+
+:0070 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "sem notação"@pt .
+
+:0071 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Tablatura"@pt .
+
+:0072 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0003;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Old Hispanic"@en, "Visigótica"@pt .
+
+:0073 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0004;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Papel"@pt, "Paper"@en .
+
+:0074 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0004;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Parchment"@en, "Pergaminho"@pt .
+
+:0075 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:41:49"^^xsd:dateTime;
+  skos:altLabel "Séc. 10"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "10th century"@en, "X"@pt .
+
+:0076 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:42:02"^^xsd:dateTime;
+  skos:altLabel "Séc. 11"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "11th century"@en, "XI"@pt .
+
+:0077 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:42:14"^^xsd:dateTime;
+  skos:altLabel "Séc. 12"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "12th century"@en, "XII"@pt .
+
+:0078 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:42:32"^^xsd:dateTime;
+  skos:altLabel "Séc. 13"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "13th century"@en, "XIII"@pt .
+
+:0079 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:42:44"^^xsd:dateTime;
+  skos:altLabel "Séc. 14"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "14th century"@en, "XIV"@pt .
+
+:0080 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:42:54"^^xsd:dateTime;
+  skos:altLabel "Séc. 15"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "15th century"@en, "XV"@pt .
+
+:0081 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:43:03"^^xsd:dateTime;
+  skos:altLabel "Séc. 16"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "16th century"@en, "XVI"@pt .
+
+:0082 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:43:14"^^xsd:dateTime;
+  skos:altLabel "Séc. 17"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "17th century"@en, "XVII"@pt .
+
+:0083 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:43:29"^^xsd:dateTime;
+  skos:altLabel "Séc. 18"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "18th century"@en, "XVIII"@pt .
+
+:0084 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:43:40"^^xsd:dateTime;
+  skos:altLabel "Séc. 19"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "19th century"@en, "XIX"@pt .
+
+:0085 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:43:50"^^xsd:dateTime;
+  skos:altLabel "Séc. 20"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "20th century"@en, "XX"@pt .
+
+:0086 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  dct:modified "2023-01-12T14:44:03"^^xsd:dateTime;
+  skos:altLabel "Séc. 21"@pt;
+  skos:broader :0005;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "21th century"@en, "XXI"@pt .
+
+:0087 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mass"@en, "Missa"@pt .
+
+:0088 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ofício"@pt .
+
+:0089 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Matinas"@pt, "Matins"@en .
+
+:0090 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Laudes"@pt, "Lauds"@en .
+
+:0091 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vespers"@en, "Vésperas"@pt .
+
+:0092 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Completas"@pt, "Compline"@en .
+
+:0093 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Day Hours"@en, "Horas menores"@pt .
+
+:0094 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Prima"@pt, "Prime"@en .
+
+:0095 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Terce"@en, "Tércia"@pt .
+
+:0096 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sext"@en, "Sexta"@pt .
+
+:0097 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Noa"@pt, "None"@en .
+
+:0098 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Procissões"@pt .
+
+:0099 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0006;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cantos suplementares"@pt, "Supplementary chants"@en .
+
+:0100 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Aberturas"@pt .
+
+:0101 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Antiphon"@en, "Antífonas"@pt .
+
+:0102 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Bailado"@pt .
+
+:0103 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Benedicamus Domino"@en, "Benedicamus Domino/Deo gratias"@pt .
+
+:0104 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canção"@pt, "Canção/ Canción/ Cantiga (Portuguese & Spanish songs)"@en .
+
+:0105 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cantatas"@pt .
+
+:0106 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canticle"@en, "Cânticos"@pt .
+
+:0107 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Chanson"@pt, "Chanson (French & Dutch)"@en .
+
+:0108 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comédia"@pt .
+
+:0109 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comédia portuguesa"@pt .
+
+:0110 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Componente dramática"@pt .
+
+:0111 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Drama"@pt .
+
+:0112 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Drama ocasional"@pt .
+
+:0113 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Elemento dramático"@pt .
+
+:0114 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Elogio"@pt .
+
+:0115 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Entremez"@pt .
+
+:0116 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Farsa portuguesa"@pt .
+
+:0117 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hinos"@pt, "Hymni"@en .
+
+:0118 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Impropérios"@pt .
+
+:0119 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ladainhas"@pt, "Litany"@en .
+
+:0120 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Lamentation"@en, "Lamentações"@pt .
+
+:0121 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Leituras"@pt .
+
+:0122 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Madrigal"@pt .
+
+:0123 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Matinas"@pt .
+
+:0124 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mass"@en, "Missas"@pt .
+
+:0125 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Missas (Próprio)"@pt .
+
+:0126 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Missas (Ordinário)"@pt .
+
+:0127 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Motet"@en, "Motetes"@pt .
+
+:0128 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música de palco"@pt .
+
+:0129 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Novenas"@pt .
+
+:0130 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Obra instrumental a solo"@pt .
+
+:0131 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Obra instrumental de câmara"@pt .
+
+:0132 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Obra ocasional"@pt .
+
+:0133 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Obra orquestral com solista"@pt .
+
+:0134 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Obra orquestral sem solista"@pt .
+
+:0135 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ofícios"@pt .
+
+:0136 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ópera"@pt .
+
+:0137 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ópera alemã"@pt .
+
+:0138 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ópera francesa"@pt .
+
+:0139 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ópera italiana"@pt .
+
+:0140 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Oratórias"@pt .
+
+:0141 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Paixões"@pt, "Passion (incl. isolated turbae, e.g. 'Non in die festo')"@en .
+
+:0142 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pastoral"@pt .
+
+:0143 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pater Noster"@en, "Pater noster"@pt .
+
+:0144 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "[Peça instrumental]"@pt .
+
+:0145 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Periódico"@pt .
+
+:0146 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Preces"@en, "Preces"@pt .
+
+:0147 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Procissões"@pt .
+
+:0148 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Requiem"@en, "Requiem"@pt .
+
+:0149 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Responsory"@en, "Responsórios"@pt .
+
+:0150 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Romance"@en, "Romance"@pt .
+
+:0151 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Psalm"@en, "Salmos"@pt .
+
+:0152 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Serenata"@pt .
+
+:0153 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sinfonia"@pt .
+
+:0154 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sonata"@pt .
+
+:0155 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Tantum ergo"@pt .
+
+:0156 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Te Deum"@en, "Te Deum"@pt .
+
+:0157 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Terceto"@pt .
+
+:0158 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Tragédia"@pt .
+
+:0159 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Tragédia portuguesa"@pt .
+
+:0160 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vésperas"@pt .
+
+:0161 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0007;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vilancete/ Villancico"@en, "Vilancetes/Vilancicos"@pt .
+
+:0162 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Abdonis, Sennis"@en, "Abdonis, Sennis"@pt .
+
+:0163 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Aegidii"@en, "Aegidii"@pt .
+
+:0164 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Aemigdii, Episcopi et Martyr"@en, "Aemigdii, Episcopi et Martyr"@pt .
+
+:0165 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Agapiti"@en, "Agapiti"@pt .
+
+:0166 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Agathae"@en, "Agathae"@pt .
+
+:0167 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Agnetis"@en, "Agnetis"@pt .
+
+:0168 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Agnetis,8"@en, "Agnetis,8"@pt .
+
+:0169 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Angeli Custodis"@en, "Angeli Custodis"@pt .
+
+:0170 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Annae"@en, "Annae"@pt .
+
+:0171 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Annuntiatio Mariae"@en, "Annuntiatio Mariae"@pt .
+
+:0172 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Antiphonae Majores"@en, "Antiphonae Majores"@pt .
+
+:0173 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Antonini"@en, "Antonini"@pt .
+
+:0174 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Apollinaris"@en, "Apollinaris"@pt .
+
+:0175 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Apolloniae"@en, "Apolloniae"@pt .
+
+:0176 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Appar. Michaelis"@en, "Appar. Michaelis"@pt .
+
+:0177 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ascensio Domini"@en, "Ascensio Domini"@pt .
+
+:0178 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ascensio Domini,8"@en, "Ascensio Domini,8"@pt .
+
+:0179 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Assumptio Mariae"@en, "Assumptio Mariae"@pt .
+
+:0180 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Assumptio Mariae,8"@en, "Assumptio Mariae,8"@pt .
+
+:0181 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Athanasii"@en, "Athanasii"@pt .
+
+:0182 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Augustini"@en, "Augustini"@pt .
+
+:0183 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Austremonii"@en, "Austremonii"@pt .
+
+:0184 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Bartholomaei"@en, "Bartholomaei"@pt .
+
+:0185 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Basilidis et sociorum"@en, "Basilidis et sociorum"@pt .
+
+:0186 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Benedicti"@en, "Benedicti"@pt .
+
+:0187 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Bernardi"@en, "Bernardi"@pt .
+
+:0188 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Bernardi,8"@en, "Bernardi,8"@pt .
+
+:0189 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Blasii"@en, "Blasii"@pt .
+
+:0190 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "BMV de Monte Carmelo"@pt .
+
+:0191 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Briccii"@en, "Briccii"@pt .
+
+:0192 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Caeciliae"@en, "Caeciliae"@pt .
+
+:0193 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Callisti"@en, "Callisti"@pt .
+
+:0194 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Camilli de Lellis Confessoris"@en, "Camilli de Lellis Confessoris"@pt .
+
+:0195 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Caprasii, Abb."@en, "Caprasii, Abb."@pt .
+
+:0196 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Catharinae"@en, "Catharinae"@pt .
+
+:0197 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cathedra Petri"@en, "Cathedra Petri"@pt .
+
+:0198 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Christophori"@en, "Christophori"@pt .
+
+:0199 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Chrysanthi, Dariae"@en, "Chrysanthi, Dariae"@pt .
+
+:0200 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Circumcisio Domini"@en, "Circumcisio Domini"@pt .
+
+:0201 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Clarae"@en, "Clarae"@pt .
+
+:0202 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Clementis"@en, "Clementis"@pt .
+
+:0203 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Columbae"@en, "Columbae"@pt .
+
+:0204 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. Apostolorum"@en, "Comm. Apostolorum"@pt .
+
+:0205 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. Apostolorum et Evangelistarum"@en, "Comm. Apostolorum et Evangelistarum"@pt .
+
+:0206 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. Apostolorum sive Martyrum TP"@en, "Comm. Apostolorum sive Martyrum TP"@pt .
+
+:0207 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. Apostolorum TP"@en, "Comm. Apostolorum TP"@pt .
+
+:0208 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. Apostolorum,8"@en, "Comm. Apostolorum,8"@pt .
+
+:0209 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. duorum Apostolorum"@en, "Comm. duorum Apostolorum"@pt .
+
+:0210 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. Evangelistarum"@en, "Comm. Evangelistarum"@pt .
+
+:0211 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. Evangelistarum TP"@en, "Comm. Evangelistarum TP"@pt .
+
+:0212 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. plurimorum Apostolorum in vigilia"@en, "Comm. plurimorum Apostolorum in vigilia"@pt .
+
+:0213 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. plurimorum Confessorum"@en, "Comm. plurimorum Confessorum"@pt .
+
+:0214 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. plurimorum Confessorum non Pontificum"@en, "Comm. plurimorum Confessorum non Pontificum"@pt .
+
+:0215 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. plurimorum Confessorum Pontificum"@en, "Comm. plurimorum Confessorum Pontificum"@pt .
+
+:0216 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. plurimorum Martyrum"@en, "Comm. plurimorum Martyrum"@pt .
+
+:0217 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. plurimorum Martyrum TP"@en, "Comm. plurimorum Martyrum TP"@pt .
+
+:0218 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. plurimorum Virginum"@en, "Comm. plurimorum Virginum"@pt .
+
+:0219 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Abbatis"@en, "Comm. unius Abbatis"@pt .
+
+:0220 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Apostoli"@en, "Comm. unius Apostoli"@pt .
+
+:0221 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Apostoli in vigilia"@en, "Comm. unius Apostoli in vigilia"@pt .
+
+:0222 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris"@en, "Comm. unius Confessoris"@pt .
+
+:0223 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris Abbatis"@en, "Comm. unius Confessoris Abbatis"@pt .
+
+:0224 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris et Doctoris"@en, "Comm. unius Confessoris et Doctoris"@pt .
+
+:0225 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris et Episcopi"@en, "Comm. unius Confessoris et Episcopi"@pt .
+
+:0226 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris non Episcopus"@en, "Comm. unius Confessoris non Episcopus"@pt .
+
+:0227 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris non Pontificis"@en, "Comm. unius Confessoris non Pontificis"@pt .
+
+:0228 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris non Pontificis TP"@en, "Comm. unius Confessoris non Pontificis TP"@pt .
+
+:0229 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris Pontificis"@en, "Comm. unius Confessoris Pontificis"@pt .
+
+:0230 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris Pontificis TP"@en, "Comm. unius Confessoris Pontificis TP"@pt .
+
+:0231 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Confessoris TP"@en, "Comm. unius Confessoris TP"@pt .
+
+:0232 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius electae"@en, "Comm. unius electae"@pt .
+
+:0233 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Martyris"@en, "Comm. unius Martyris"@pt .
+
+:0234 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Martyris non Pontificis"@en, "Comm. unius Martyris non Pontificis"@pt .
+
+:0235 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Martyris non Virginis"@en, "Comm. unius Martyris non Virginis"@pt .
+
+:0236 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Martyris Pontificis"@en, "Comm. unius Martyris Pontificis"@pt .
+
+:0237 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Martyris TP"@en, "Comm. unius Martyris TP"@pt .
+
+:0238 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Virginis"@en, "Comm. unius Virginis"@pt .
+
+:0239 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Virginis Martyris"@en, "Comm. unius Virginis Martyris"@pt .
+
+:0240 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Virginis non Martyris"@en, "Comm. unius Virginis non Martyris"@pt .
+
+:0241 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Comm. unius Virginis TP"@en, "Comm. unius Virginis TP"@pt .
+
+:0242 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Conceptio Mariae"@en, "Conceptio Mariae"@pt .
+
+:0243 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Conversio Augustini"@en, "Conversio Augustini"@pt .
+
+:0244 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Conversio Pauli"@en, "Conversio Pauli"@pt .
+
+:0245 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cornelii, Cypriani"@en, "Cornelii, Cypriani"@pt .
+
+:0246 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Corporis Christi"@en, "Corporis Christi"@pt .
+
+:0247 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Corporis Christi,8"@en, "Corporis Christi,8"@pt .
+
+:0248 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cosmae, Damiani"@en, "Cosmae, Damiani"@pt .
+
+:0249 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cyriaci et sociorum"@en, "Cyriaci et sociorum"@pt .
+
+:0250 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De Angelis"@en, "De Angelis"@pt .
+
+:0251 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De BMV"@en, "De BMV"@pt .
+
+:0252 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De BMV Adv."@en, "De BMV Adv."@pt .
+
+:0253 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De BMV Nat."@en, "De BMV Nat."@pt .
+
+:0254 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De BMV post Epiph."@en, "De BMV post Epiph."@pt .
+
+:0255 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De BMV TP"@en, "De BMV TP"@pt .
+
+:0256 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De Corona Spinea"@en, "De Corona Spinea"@pt .
+
+:0257 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De festis duplicibus"@en, "De festis duplicibus"@pt .
+
+:0258 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De festis duplicibus minoribus"@en, "De festis duplicibus minoribus"@pt .
+
+:0259 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De festis semiduplicibus"@en, "De festis semiduplicibus"@pt .
+
+:0260 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De festis simplicibus"@en, "De festis simplicibus"@pt .
+
+:0261 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De quinque vulneribus Christi"@en, "De quinque vulneribus Christi"@pt .
+
+:0262 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De Spiritu Sancto"@en, "De Spiritu Sancto"@pt .
+
+:0263 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "De Trinitate"@en, "De Trinitate"@pt .
+
+:0264 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Decoll. Jo. Bapt."@en, "Decoll. Jo. Bapt."@pt .
+
+:0265 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Die 2 p. Epiphaniam"@en, "Die 2 p. Epiphaniam"@pt .
+
+:0266 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Die 5 a. Nat. Domini"@en, "Die 5 a. Nat. Domini"@pt .
+
+:0267 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dionysii"@en, "Dionysii"@pt .
+
+:0268 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 1 Adventus"@en, "Dom. 1 Adventus"@pt .
+
+:0269 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 1 p. Epiphaniam"@en, "Dom. 1 p. Epiphaniam"@pt .
+
+:0270 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 1 p. Pent."@en, "Dom. 1 p. Pent."@pt .
+
+:0271 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 1 Quadragesimae"@en, "Dom. 1 Quadragesimae"@pt .
+
+:0272 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 10 p. Pent."@en, "Dom. 10 p. Pent."@pt .
+
+:0273 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 11 p. Pent."@en, "Dom. 11 p. Pent."@pt .
+
+:0274 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 12 p. Pent."@en, "Dom. 12 p. Pent."@pt .
+
+:0275 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 13 p. Pent."@en, "Dom. 13 p. Pent."@pt .
+
+:0276 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 14 p. Pent."@en, "Dom. 14 p. Pent."@pt .
+
+:0277 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 15 p. Pent."@en, "Dom. 15 p. Pent."@pt .
+
+:0278 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 16 p. Pent."@en, "Dom. 16 p. Pent."@pt .
+
+:0279 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 17 p. Pent."@en, "Dom. 17 p. Pent."@pt .
+
+:0280 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 18 p. Pent."@en, "Dom. 18 p. Pent."@pt .
+
+:0281 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 19 p. Pent."@en, "Dom. 19 p. Pent."@pt .
+
+:0282 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 2 Adventus"@en, "Dom. 2 Adventus"@pt .
+
+:0283 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 2 p. Epiph."@en, "Dom. 2 p. Epiph."@pt .
+
+:0284 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 2 p. Pascha"@en, "Dom. 2 p. Pascha"@pt .
+
+:0285 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 2 p. Pascha,8"@en, "Dom. 2 p. Pascha,8"@pt .
+
+:0286 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 2 p. Pent."@en, "Dom. 2 p. Pent."@pt .
+
+:0287 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 2 Quadragesimae"@en, "Dom. 2 Quadragesimae"@pt .
+
+:0288 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 20 p. Pent."@en, "Dom. 20 p. Pent."@pt .
+
+:0289 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 21 p. Pent."@en, "Dom. 21 p. Pent."@pt .
+
+:0290 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 22 p. Pent."@en, "Dom. 22 p. Pent."@pt .
+
+:0291 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 23 p. Pent."@en, "Dom. 23 p. Pent."@pt .
+
+:0292 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 24 p. Pent."@en, "Dom. 24 p. Pent."@pt .
+
+:0293 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 25 p. Pent."@en, "Dom. 25 p. Pent."@pt .
+
+:0294 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 26 p. Pent."@en, "Dom. 26 p. Pent."@pt .
+
+:0295 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 3 Adventus"@en, "Dom. 3 Adventus"@pt .
+
+:0296 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 3 p. Epiph."@en, "Dom. 3 p. Epiph."@pt .
+
+:0297 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 3 p. Pascha"@en, "Dom. 3 p. Pascha"@pt .
+
+:0298 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 3 p. Pascha,8"@en, "Dom. 3 p. Pascha,8"@pt .
+
+:0299 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 3 p. Pent."@en, "Dom. 3 p. Pent."@pt .
+
+:0300 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 3 Quadragesimae"@en, "Dom. 3 Quadragesimae"@pt .
+
+:0301 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 4 Adventus"@en, "Dom. 4 Adventus"@pt .
+
+:0302 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 4 p. Epiph."@en, "Dom. 4 p. Epiph."@pt .
+
+:0303 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 4 p. Pascha"@en, "Dom. 4 p. Pascha"@pt .
+
+:0304 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 4 p. Pascha,8"@en, "Dom. 4 p. Pascha,8"@pt .
+
+:0305 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 4 p. Pent."@en, "Dom. 4 p. Pent."@pt .
+
+:0306 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 4 Quadragesimae"@en, "Dom. 4 Quadragesimae"@pt .
+
+:0307 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 5 p. Epiph."@en, "Dom. 5 p. Epiph."@pt .
+
+:0308 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 5 p. Pascha"@en, "Dom. 5 p. Pascha"@pt .
+
+:0309 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 5 p. Pent."@en, "Dom. 5 p. Pent."@pt .
+
+:0310 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 6 p. Epiph."@en, "Dom. 6 p. Epiph."@pt .
+
+:0311 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 6 p. Pent."@en, "Dom. 6 p. Pent."@pt .
+
+:0312 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 7 p. Pent."@en, "Dom. 7 p. Pent."@pt .
+
+:0313 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 8 p. Pent."@en, "Dom. 8 p. Pent."@pt .
+
+:0314 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. 9 p. Pent."@en, "Dom. 9 p. Pent."@pt .
+
+:0315 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. Adventus"@en, "Dom. Adventus"@pt .
+
+:0316 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. de Passione"@en, "Dom. de Passione"@pt .
+
+:0317 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. in Palmis"@en, "Dom. in Palmis"@pt .
+
+:0318 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. p. Cor. Christi"@en, "Dom. p. Cor. Christi"@pt .
+
+:0319 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. p. Epiphaniam"@en, "Dom. p. Epiphaniam"@pt .
+
+:0320 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. p. Martini"@en, "Dom. p. Martini"@pt .
+
+:0321 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. p. Nat. Dom."@en, "Dom. p. Nat. Dom."@pt .
+
+:0322 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. Pentecostes"@en, "Dom. Pentecostes"@pt .
+
+:0323 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. per annum"@en, "Dom. per annum"@pt .
+
+:0324 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. post Ascensionem"@en, "Dom. post Ascensionem"@pt .
+
+:0325 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. Quadragesimae"@en, "Dom. Quadragesimae"@pt .
+
+:0326 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. Quinquagesimae"@en, "Dom. Quinquagesimae"@pt .
+
+:0327 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. Resurrect.,8"@en, "Dom. Resurrect.,8"@pt .
+
+:0328 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. Resurrectionis"@en, "Dom. Resurrectionis"@pt .
+
+:0329 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. Septuagesimae"@en, "Dom. Septuagesimae"@pt .
+
+:0330 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dom. Sexagesimae"@en, "Dom. Sexagesimae"@pt .
+
+:0331 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Dominici"@en, "Dominici"@pt .
+
+:0332 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Elisabeth Reginae Portugalliae, Viduae"@en, "Elisabeth Reginae Portugalliae, Viduae"@pt .
+
+:0333 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Epiphania"@en, "Epiphania"@pt .
+
+:0334 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Epiphania,8"@en, "Epiphania,8"@pt .
+
+:0335 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Euphemiae"@en, "Euphemiae"@pt .
+
+:0336 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Eusebii Romanae"@en, "Eusebii Romanae"@pt .
+
+:0337 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Eustachii"@en, "Eustachii"@pt .
+
+:0338 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Evurtii"@en, "Evurtii"@pt .
+
+:0339 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Exaltatio Crucis"@en, "Exaltatio Crucis"@pt .
+
+:0340 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Exspectationis BMV"@en, "Exspectationis BMV"@pt .
+
+:0341 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Exsultationis Mariae"@en, "Exsultationis Mariae"@pt .
+
+:0342 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fabiani, Sebastiani"@en, "Fabiani, Sebastiani"@pt .
+
+:0343 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Felicis"@en, "Felicis"@pt .
+
+:0344 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Felicis Nolani"@en, "Felicis Nolani"@pt .
+
+:0345 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Felicis, Adaucti"@en, "Felicis, Adaucti"@pt .
+
+:0346 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Cor. Christi"@en, "Fer. 2 Cor. Christi"@pt .
+
+:0347 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 de Passione"@en, "Fer. 2 de Passione"@pt .
+
+:0348 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Hebd. 1 Adv."@en, "Fer. 2 Hebd. 1 Adv."@pt .
+
+:0349 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Hebd. 1 Quad."@en, "Fer. 2 Hebd. 1 Quad."@pt .
+
+:0350 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Hebd. 2 Adv."@en, "Fer. 2 Hebd. 2 Adv."@pt .
+
+:0351 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Hebd. 2 p.Ep."@en, "Fer. 2 Hebd. 2 p.Ep."@pt .
+
+:0352 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Hebd. 2 Quad."@en, "Fer. 2 Hebd. 2 Quad."@pt .
+
+:0353 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Hebd. 3 Adv."@en, "Fer. 2 Hebd. 3 Adv."@pt .
+
+:0354 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Hebd. 3 Quad."@en, "Fer. 2 Hebd. 3 Quad."@pt .
+
+:0355 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Hebd. 4 Quad."@en, "Fer. 2 Hebd. 4 Quad."@pt .
+
+:0356 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 in Letaniis"@en, "Fer. 2 in Letaniis"@pt .
+
+:0357 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Maj. Hebd."@en, "Fer. 2 Maj. Hebd."@pt .
+
+:0358 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 p. Epiphaniam"@en, "Fer. 2 p. Epiphaniam"@pt .
+
+:0359 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 p. Oct.Pasch."@en, "Fer. 2 p. Oct.Pasch."@pt .
+
+:0360 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 p. Pascha"@en, "Fer. 2 p. Pascha"@pt .
+
+:0361 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Pent."@en, "Fer. 2 Pent."@pt .
+
+:0362 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 per annum"@en, "Fer. 2 per annum"@pt .
+
+:0363 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 post Ascensionem"@en, "Fer. 2 post Ascensionem"@pt .
+
+:0364 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 2 Quadragesimae"@en, "Fer. 2 Quadragesimae"@pt .
+
+:0365 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Cor. Christi"@en, "Fer. 3 Cor. Christi"@pt .
+
+:0366 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 de Passione"@en, "Fer. 3 de Passione"@pt .
+
+:0367 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Hebd. 1 Adv."@en, "Fer. 3 Hebd. 1 Adv."@pt .
+
+:0368 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Hebd. 1 Quad."@en, "Fer. 3 Hebd. 1 Quad."@pt .
+
+:0369 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Hebd. 2 Adv."@en, "Fer. 3 Hebd. 2 Adv."@pt .
+
+:0370 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Hebd. 2 p.Ep."@en, "Fer. 3 Hebd. 2 p.Ep."@pt .
+
+:0371 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Hebd. 2 Quad."@en, "Fer. 3 Hebd. 2 Quad."@pt .
+
+:0372 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Hebd. 3 Adv."@en, "Fer. 3 Hebd. 3 Adv."@pt .
+
+:0373 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Hebd. 3 Quad."@en, "Fer. 3 Hebd. 3 Quad."@pt .
+
+:0374 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Hebd. 4 Quad."@en, "Fer. 3 Hebd. 4 Quad."@pt .
+
+:0375 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 in Letaniis"@en, "Fer. 3 in Letaniis"@pt .
+
+:0376 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Maj. Hebd."@en, "Fer. 3 Maj. Hebd."@pt .
+
+:0377 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 p. Epiphaniam"@en, "Fer. 3 p. Epiphaniam"@pt .
+
+:0378 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 p. Oct.Pasch."@en, "Fer. 3 p. Oct.Pasch."@pt .
+
+:0379 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 p. Pascha"@en, "Fer. 3 p. Pascha"@pt .
+
+:0380 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Pent."@en, "Fer. 3 Pent."@pt .
+
+:0381 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 per annum"@en, "Fer. 3 per annum"@pt .
+
+:0382 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 post Ascensionem"@en, "Fer. 3 post Ascensionem"@pt .
+
+:0383 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Quadragesimae"@en, "Fer. 3 Quadragesimae"@pt .
+
+:0384 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 3 Quinquagesimae"@en, "Fer. 3 Quinquagesimae"@pt .
+
+:0385 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Cinerum"@en, "Fer. 4 Cinerum"@pt .
+
+:0386 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Cor. Christi"@en, "Fer. 4 Cor. Christi"@pt .
+
+:0387 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 de Passione"@en, "Fer. 4 de Passione"@pt .
+
+:0388 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Hebd. 1 Adv."@en, "Fer. 4 Hebd. 1 Adv."@pt .
+
+:0389 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Hebd. 1 Quad."@en, "Fer. 4 Hebd. 1 Quad."@pt .
+
+:0390 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Hebd. 2 Adv."@en, "Fer. 4 Hebd. 2 Adv."@pt .
+
+:0391 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Hebd. 2 p.Ep."@en, "Fer. 4 Hebd. 2 p.Ep."@pt .
+
+:0392 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Hebd. 2 Quad."@en, "Fer. 4 Hebd. 2 Quad."@pt .
+
+:0393 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Hebd. 3 Adv."@en, "Fer. 4 Hebd. 3 Adv."@pt .
+
+:0394 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Hebd. 3 Quad."@en, "Fer. 4 Hebd. 3 Quad."@pt .
+
+:0395 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Hebd. 4 Quad."@en, "Fer. 4 Hebd. 4 Quad."@pt .
+
+:0396 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 in Letaniis"@en, "Fer. 4 in Letaniis"@pt .
+
+:0397 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Maj. Hebd."@en, "Fer. 4 Maj. Hebd."@pt .
+
+:0398 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 p. Epiphaniam"@en, "Fer. 4 p. Epiphaniam"@pt .
+
+:0399 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 p. Oct.Pasch."@en, "Fer. 4 p. Oct.Pasch."@pt .
+
+:0400 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 p. Pascha"@en, "Fer. 4 p. Pascha"@pt .
+
+:0401 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Pent."@en, "Fer. 4 Pent."@pt .
+
+:0402 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 per annum"@en, "Fer. 4 per annum"@pt .
+
+:0403 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 post Ascensionem"@en, "Fer. 4 post Ascensionem"@pt .
+
+:0404 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Q.T. Adventus"@en, "Fer. 4 Q.T. Adventus"@pt .
+
+:0405 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Q.T. Pent."@en, "Fer. 4 Q.T. Pent."@pt .
+
+:0406 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Q.T. Sept."@en, "Fer. 4 Q.T. Sept."@pt .
+
+:0407 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 4 Quadragesimae"@en, "Fer. 4 Quadragesimae"@pt .
+
+:0408 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 de Passione"@en, "Fer. 5 de Passione"@pt .
+
+:0409 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Hebd. 1 Adv."@en, "Fer. 5 Hebd. 1 Adv."@pt .
+
+:0410 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Hebd. 1 Quad."@en, "Fer. 5 Hebd. 1 Quad."@pt .
+
+:0411 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Hebd. 2 Adv."@en, "Fer. 5 Hebd. 2 Adv."@pt .
+
+:0412 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Hebd. 2 p.Ep."@en, "Fer. 5 Hebd. 2 p.Ep."@pt .
+
+:0413 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Hebd. 2 Quad."@en, "Fer. 5 Hebd. 2 Quad."@pt .
+
+:0414 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Hebd. 3 Adv."@en, "Fer. 5 Hebd. 3 Adv."@pt .
+
+:0415 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Hebd. 3 Quad."@en, "Fer. 5 Hebd. 3 Quad."@pt .
+
+:0416 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Hebd. 4 Quad."@en, "Fer. 5 Hebd. 4 Quad."@pt .
+
+:0417 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 in Cena Dom."@en, "Fer. 5 in Cena Dom."@pt .
+
+:0418 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 p. Epiphaniam"@en, "Fer. 5 p. Epiphaniam"@pt .
+
+:0419 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 p. Oct.Pasch."@en, "Fer. 5 p. Oct.Pasch."@pt .
+
+:0420 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 p. Pascha"@en, "Fer. 5 p. Pascha"@pt .
+
+:0421 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Pent."@en, "Fer. 5 Pent."@pt .
+
+:0422 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 per annum"@en, "Fer. 5 per annum"@pt .
+
+:0423 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 post Cineres"@en, "Fer. 5 post Cineres"@pt .
+
+:0424 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 5 Quadragesimae"@en, "Fer. 5 Quadragesimae"@pt .
+
+:0425 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Cor. Christi"@en, "Fer. 6 Cor. Christi"@pt .
+
+:0426 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 de Passione"@en, "Fer. 6 de Passione"@pt .
+
+:0427 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Hebd. 1 Adv."@en, "Fer. 6 Hebd. 1 Adv."@pt .
+
+:0428 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Hebd. 1 Quad."@en, "Fer. 6 Hebd. 1 Quad."@pt .
+
+:0429 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Hebd. 2 Adv."@en, "Fer. 6 Hebd. 2 Adv."@pt .
+
+:0430 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Hebd. 2 p.Ep."@en, "Fer. 6 Hebd. 2 p.Ep."@pt .
+
+:0431 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Hebd. 2 Quad."@en, "Fer. 6 Hebd. 2 Quad."@pt .
+
+:0432 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Hebd. 3 Adv."@en, "Fer. 6 Hebd. 3 Adv."@pt .
+
+:0433 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Hebd. 3 Quad."@en, "Fer. 6 Hebd. 3 Quad."@pt .
+
+:0434 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Hebd. 4 Quad."@en, "Fer. 6 Hebd. 4 Quad."@pt .
+
+:0435 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 in Parasceve"@en, "Fer. 6 in Parasceve"@pt .
+
+:0436 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 p. Epiphaniam"@en, "Fer. 6 p. Epiphaniam"@pt .
+
+:0437 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 p. Oct. Asc."@en, "Fer. 6 p. Oct. Asc."@pt .
+
+:0438 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 p. Oct.Pasch."@en, "Fer. 6 p. Oct.Pasch."@pt .
+
+:0439 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 p. Pascha"@en, "Fer. 6 p. Pascha"@pt .
+
+:0440 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Pent."@en, "Fer. 6 Pent."@pt .
+
+:0441 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 per annum"@en, "Fer. 6 per annum"@pt .
+
+:0442 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 post Ascensionem"@en, "Fer. 6 post Ascensionem"@pt .
+
+:0443 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 post Cineres"@en, "Fer. 6 post Cineres"@pt .
+
+:0444 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Q.T. Adventus"@en, "Fer. 6 Q.T. Adventus"@pt .
+
+:0445 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Q.T. Pent."@en, "Fer. 6 Q.T. Pent."@pt .
+
+:0446 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Q.T. Sept."@en, "Fer. 6 Q.T. Sept."@pt .
+
+:0447 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fer. 6 Quadragesimae"@en, "Fer. 6 Quadragesimae"@pt .
+
+:0448 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fest. per annum"@en, "Fest. per annum"@pt .
+
+:0449 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Francisci"@en, "Francisci"@pt .
+
+:0450 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Francisci Carracciolo"@en, "Francisci Carracciolo"@pt .
+
+:0451 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fugae D. N. J. C. in Aegyptum"@en, "Fugae D. N. J. C. in Aegyptum"@pt .
+
+:0452 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Gabrielis, Archang."@en, "Gabrielis, Archang."@pt .
+
+:0453 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Genesii"@en, "Genesii"@pt .
+
+:0454 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Georgii"@en, "Georgii"@pt .
+
+:0455 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Geraldi Aureliaci"@en, "Geraldi Aureliaci"@pt .
+
+:0456 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Germani"@en, "Germani"@pt .
+
+:0457 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Gervasii, Protasii"@en, "Gervasii, Protasii"@pt .
+
+:0458 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Gordiani, Epimachi"@en, "Gordiani, Epimachi"@pt .
+
+:0459 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Gorgonii"@en, "Gorgonii"@pt .
+
+:0460 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Gregorii"@en, "Gregorii"@pt .
+
+:0461 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Gundisalvi de Amarantho"@en, "Gundisalvi de Amarantho"@pt .
+
+:0462 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. 1 Adventus"@en, "Hebd. 1 Adventus"@pt .
+
+:0463 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. 1 Quad."@en, "Hebd. 1 Quad."@pt .
+
+:0464 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. 2 Adventus"@en, "Hebd. 2 Adventus"@pt .
+
+:0465 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. 2 p. Pascha"@en, "Hebd. 2 p. Pascha"@pt .
+
+:0466 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. 2 Quad."@en, "Hebd. 2 Quad."@pt .
+
+:0467 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. 3 p. Pascha"@en, "Hebd. 3 p. Pascha"@pt .
+
+:0468 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. 4 Adventus"@en, "Hebd. 4 Adventus"@pt .
+
+:0469 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. de Passione"@en, "Hebd. de Passione"@pt .
+
+:0470 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. p. Pent."@en, "Hebd. p. Pent."@pt .
+
+:0471 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. Quinquagesimae"@en, "Hebd. Quinquagesimae"@pt .
+
+:0472 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. Septuagesimae"@en, "Hebd. Septuagesimae"@pt .
+
+:0473 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. Sexagesimae"@en, "Hebd. Sexagesimae"@pt .
+
+:0474 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hebd. TP"@en, "Hebd. TP"@pt .
+
+:0475 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hermetis"@en, "Hermetis"@pt .
+
+:0476 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hieronimi"@en, "Hieronimi"@pt .
+
+:0477 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hilarii"@en, "Hilarii"@pt .
+
+:0478 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Hippolyti"@en, "Hippolyti"@pt .
+
+:0479 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ignatii"@en, "Ignatii"@pt .
+
+:0480 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In Dedicatione Ecclesiae"@en, "In Dedicatione Ecclesiae"@pt .
+
+:0481 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In Letaniis"@en, "In Letaniis"@pt .
+
+:0482 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In tempore Adventus"@en, "In tempore Adventus"@pt .
+
+:0483 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In tempore belli contra Sarracenos"@en, "In tempore belli contra Sarracenos"@pt .
+
+:0484 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In tempore Epiphaniae"@en, "In tempore Epiphaniae"@pt .
+
+:0485 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In tempore Nat."@en, "In tempore Nat."@pt .
+
+:0486 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In tempore oritur inter Christianos"@en, "In tempore oritur inter Christianos"@pt .
+
+:0487 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In tempore Paschae"@en, "In tempore Paschae"@pt .
+
+:0488 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In tempore pestilentiae"@en, "In tempore pestilentiae"@pt .
+
+:0489 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In tempore Quad."@en, "In tempore Quad."@pt .
+
+:0490 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "In Triduum"@en, "In Triduum"@pt .
+
+:0491 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Inventio Crucis"@en, "Inventio Crucis"@pt .
+
+:0492 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Inventio Stephani"@en, "Inventio Stephani"@pt .
+
+:0493 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Jacobi"@en, "Jacobi"@pt .
+
+:0494 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Joachimi"@en, "Joachimi"@pt .
+
+:0495 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Joannis Baptistae"@en, "Joannis Baptistae"@pt .
+
+:0496 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Joannis Baptistae,8"@en, "Joannis Baptistae,8"@pt .
+
+:0497 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Joannis Chrysostomi"@en, "Joannis Chrysostomi"@pt .
+
+:0498 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Joannis Damasceni"@en, "Joannis Damasceni"@pt .
+
+:0499 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Joannis Evang."@en, "Joannis Evang."@pt .
+
+:0500 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Joannis Evang.,8"@en, "Joannis Evang.,8"@pt .
+
+:0501 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Joannis Port. Lat."@en, "Joannis Port. Lat."@pt .
+
+:0502 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Joannis, Pauli"@en, "Joannis, Pauli"@pt .
+
+:0503 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Josephi"@en, "Josephi"@pt .
+
+:0504 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Julianae de Falconeriis Virginis"@en, "Julianae de Falconeriis Virginis"@pt .
+
+:0505 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Juliani, Hermetis"@en, "Juliani, Hermetis"@pt .
+
+:0506 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Justi"@en, "Justi"@pt .
+
+:0507 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Laurentii"@en, "Laurentii"@pt .
+
+:0508 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Laurentii,8"@en, "Laurentii,8"@pt .
+
+:0509 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Leodegarii"@en, "Leodegarii"@pt .
+
+:0510 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Leonardi"@en, "Leonardi"@pt .
+
+:0511 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Lucae"@en, "Lucae"@pt .
+
+:0512 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Luciae"@en, "Luciae"@pt .
+
+:0513 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ludovici"@en, "Ludovici"@pt .
+
+:0514 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Lupi"@en, "Lupi"@pt .
+
+:0515 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mafaldae Portugalensis"@en, "Mafaldae Portugalensis"@pt .
+
+:0516 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Malachiae"@en, "Malachiae"@pt .
+
+:0517 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Marcelli"@en, "Marcelli"@pt .
+
+:0518 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Marcellini, Petri"@en, "Marcellini, Petri"@pt .
+
+:0519 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Marci"@en, "Marci"@pt .
+
+:0520 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Marci, Marcellini"@en, "Marci, Marcellini"@pt .
+
+:0521 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Marci, Pont."@en, "Marci, Pont."@pt .
+
+:0522 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Margaritae"@en, "Margaritae"@pt .
+
+:0523 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Margaritae Cortonensis"@en, "Margaritae Cortonensis"@pt .
+
+:0524 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mariae ad Nives"@en, "Mariae ad Nives"@pt .
+
+:0525 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mariae Magdalenae"@en, "Mariae Magdalenae"@pt .
+
+:0526 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Marinae"@en, "Marinae"@pt .
+
+:0527 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Marthae"@en, "Marthae"@pt .
+
+:0528 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Martini"@en, "Martini"@pt .
+
+:0529 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Martini,8"@en, "Martini,8"@pt .
+
+:0530 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Maternitatis Mariae"@en, "Maternitatis Mariae"@pt .
+
+:0531 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Matthaei"@en, "Matthaei"@pt .
+
+:0532 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Matthiae"@en, "Matthiae"@pt .
+
+:0533 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mauri"@en, "Mauri"@pt .
+
+:0534 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mauritii et sociorum"@en, "Mauritii et sociorum"@pt .
+
+:0535 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mennae"@en, "Mennae"@pt .
+
+:0536 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Michaelis"@en, "Michaelis"@pt .
+
+:0537 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nat. Innocentium"@en, "Nat. Innocentium"@pt .
+
+:0538 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nat. Innocentium,8"@en, "Nat. Innocentium,8"@pt .
+
+:0539 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nativitas Domini"@en, "Nativitas Domini"@pt .
+
+:0540 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nativitas Domini,8"@en, "Nativitas Domini,8"@pt .
+
+:0541 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nativitas Mariae"@en, "Nativitas Mariae"@pt .
+
+:0542 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nativitas Mariae,8"@en, "Nativitas Mariae,8"@pt .
+
+:0543 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nazarii, Celsi"@en, "Nazarii, Celsi"@pt .
+
+:0544 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nicolai"@en, "Nicolai"@pt .
+
+:0545 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nicomedis"@en, "Nicomedis"@pt .
+
+:0546 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nicomedis, Valeriani"@en, "Nicomedis, Valeriani"@pt .
+
+:0547 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Nominis Jesu"@en, "Nominis Jesu"@pt .
+
+:0548 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Octava Andreae"@en, "Octava Andreae"@pt .
+
+:0549 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Octava Nat. Domini"@en, "Octava Nat. Domini"@pt .
+
+:0550 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Octava Nat. Domini,8"@en, "Octava Nat. Domini,8"@pt .
+
+:0551 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Octava Paschae"@en, "Octava Paschae"@pt .
+
+:0552 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Octava Paschae,8"@en, "Octava Paschae,8"@pt .
+
+:0553 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Omnium Sanctorum"@en, "Omnium Sanctorum"@pt .
+
+:0554 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Omnium Sanctorum,8"@en, "Omnium Sanctorum,8"@pt .
+
+:0555 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pancratii et sociorum"@en, "Pancratii et sociorum"@pt .
+
+:0556 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Passionis Domini"@en, "Passionis Domini"@pt .
+
+:0557 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Patrocinii Sancti Josephi"@en, "Patrocinii Sancti Josephi"@pt .
+
+:0558 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Paulae"@en, "Paulae"@pt .
+
+:0559 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pauli"@en, "Pauli"@pt .
+
+:0560 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pauli,8"@en, "Pauli,8"@pt .
+
+:0561 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Petri"@en, "Petri"@pt .
+
+:0562 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Petri Gundisalvi*"@en, "Petri Gundisalvi*"@pt .
+
+:0563 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Petri, Mart."@en, "Petri, Mart."@pt .
+
+:0564 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Petri, Pauli"@en, "Petri, Pauli"@pt .
+
+:0565 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Petri, Pauli,8"@en, "Petri, Pauli,8"@pt .
+
+:0566 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Philippi"@en, "Philippi"@pt .
+
+:0567 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Philippi, Jacobi"@en, "Philippi, Jacobi"@pt .
+
+:0568 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Praxedis"@en, "Praxedis"@pt .
+
+:0569 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pretiosissimi Sanguinis"@en, "Pretiosissimi Sanguinis"@pt .
+
+:0570 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Primi, Feliciani"@en, "Primi, Feliciani"@pt .
+
+:0571 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Priscae"@en, "Priscae"@pt .
+
+:0572 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pro Defunctis"@en, "Pro Defunctis"@pt .
+
+:0573 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pro infirmis"@en, "Pro infirmis"@pt .
+
+:0574 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pro iter agentibus"@en, "Pro iter agentibus"@pt .
+
+:0575 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pro pace regni"@en, "Pro pace regni"@pt .
+
+:0576 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pro pluvia"@en, "Pro pluvia"@pt .
+
+:0577 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pro sponso et sponsa"@en, "Pro sponso et sponsa"@pt .
+
+:0578 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Processi, Martiniani"@en, "Processi, Martiniani"@pt .
+
+:0579 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Proti, Hiacinthi"@en, "Proti, Hiacinthi"@pt .
+
+:0580 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pudentianae, Pudentis"@en, "Pudentianae, Pudentis"@pt .
+
+:0581 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pulcheriae, Imperatricis"@en, "Pulcheriae, Imperatricis"@pt .
+
+:0582 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Purificatio Mariae"@en, "Purificatio Mariae"@pt .
+
+:0583 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Puritatis BMV"@en, "Puritatis BMV"@pt .
+
+:0584 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Q.T. Quadragesimae"@en, "Q.T. Quadragesimae"@pt .
+
+:0585 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Quattuor Coronatorum"@en, "Quattuor Coronatorum"@pt .
+
+:0586 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Raphaelis, Archang."@en, "Raphaelis, Archang."@pt .
+
+:0587 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Reliquiarum"@en, "Reliquiarum"@pt .
+
+:0588 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Remigii"@en, "Remigii"@pt .
+
+:0589 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Rufi"@en, "Rufi"@pt .
+
+:0590 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. Adventus"@en, "Sabb. Adventus"@pt .
+
+:0591 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. Cor. Christi"@en, "Sabb. Cor. Christi"@pt .
+
+:0592 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. de Passione"@en, "Sabb. de Passione"@pt .
+
+:0593 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. Hebd. 1 Quad."@en, "Sabb. Hebd. 1 Quad."@pt .
+
+:0594 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. Hebd. 2 p. Ep."@en, "Sabb. Hebd. 2 p. Ep."@pt .
+
+:0595 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. Hebd. 2 Quad."@en, "Sabb. Hebd. 2 Quad."@pt .
+
+:0596 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. Hebd. 3 Quad."@en, "Sabb. Hebd. 3 Quad."@pt .
+
+:0597 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. Hebd. 4 Quad."@en, "Sabb. Hebd. 4 Quad."@pt .
+
+:0598 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. p. Epiphaniam"@en, "Sabb. p. Epiphaniam"@pt .
+
+:0599 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. p. Oct. Pasch."@en, "Sabb. p. Oct. Pasch."@pt .
+
+:0600 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. post Ascensionem"@en, "Sabb. post Ascensionem"@pt .
+
+:0601 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. Quadragesimae"@en, "Sabb. Quadragesimae"@pt .
+
+:0602 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabb. Sexagesimae"@en, "Sabb. Sexagesimae"@pt .
+
+:0603 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato 3 p. Pascha"@en, "Sabbato 3 p. Pascha"@pt .
+
+:0604 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato Hebd. 1 Adv."@en, "Sabbato Hebd. 1 Adv."@pt .
+
+:0605 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato Hebd. 2 Adv."@en, "Sabbato Hebd. 2 Adv."@pt .
+
+:0606 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato in Albis"@en, "Sabbato in Albis"@pt .
+
+:0607 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato Pent."@en, "Sabbato Pent."@pt .
+
+:0608 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato per annum"@en, "Sabbato per annum"@pt .
+
+:0609 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato post Cineres"@en, "Sabbato post Cineres"@pt .
+
+:0610 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato Q.T. Adventus"@en, "Sabbato Q.T. Adventus"@pt .
+
+:0611 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato Q.T. Pent."@en, "Sabbato Q.T. Pent."@pt .
+
+:0612 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato Q.T. Sept."@en, "Sabbato Q.T. Sept."@pt .
+
+:0613 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabbato Sancto"@en, "Sabbato Sancto"@pt .
+
+:0614 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sabinae"@en, "Sabinae"@pt .
+
+:0615 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sacratissimi Cordis Jesu"@en, "Sacratissimi Cordis Jesu"@pt .
+
+:0616 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Samsonis"@en, "Samsonis"@pt .
+
+:0617 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sanctorum Quinque Martyrum Ordinis Minorum"@en, "Sanctorum Quinque Martyrum Ordinis Minorum"@pt .
+
+:0618 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Saturnini"@en, "Saturnini"@pt .
+
+:0619 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Scholasticae"@en, "Scholasticae"@pt .
+
+:0620 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Septem Dolorum BMV"@en, "Septem Dolorum BMV"@pt .
+
+:0621 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Septem Fratrum"@en, "Septem Fratrum"@pt .
+
+:0622 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sergii, Bacchi"@en, "Sergii, Bacchi"@pt .
+
+:0623 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Silvestri"@en, "Silvestri"@pt .
+
+:0624 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Simonis, Judae"@en, "Simonis, Judae"@pt .
+
+:0625 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Simplicii et sociorum"@en, "Simplicii et sociorum"@pt .
+
+:0626 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Sixti et sociorum"@en, "Sixti et sociorum"@pt .
+
+:0627 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Speusippi"@en, "Speusippi"@pt .
+
+:0628 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ss. Lanceae et Clavorum Domini"@en, "Ss. Lanceae et Clavorum Domini"@pt .
+
+:0629 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Stephani"@en, "Stephani"@pt .
+
+:0630 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Stephani, Pont."@en, "Stephani, Pont."@pt .
+
+:0631 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Stephani,8"@en, "Stephani,8"@pt .
+
+:0632 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Symphoriani"@en, "Symphoriani"@pt .
+
+:0633 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Syri"@en, "Syri"@pt .
+
+:0634 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Teresiae Avilensis"@en, "Teresiae Avilensis"@pt .
+
+:0635 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Theodori Tiro"@en, "Theodori Tiro"@pt .
+
+:0636 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Theotonii"@en, "Theotonii"@pt .
+
+:0637 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Thomae Apost."@en, "Thomae Apost."@pt .
+
+:0638 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Thomae Cant."@en, "Thomae Cant."@pt .
+
+:0639 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Tiburtii, Susannae"@en, "Tiburtii, Susannae"@pt .
+
+:0640 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Tiburtii, Valeriani"@en, "Tiburtii, Valeriani"@pt .
+
+:0641 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Timothei, Apollinaris"@en, "Timothei, Apollinaris"@pt .
+
+:0642 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Transfiguratio Dom."@en, "Transfiguratio Dom."@pt .
+
+:0643 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Transl. Benedicti"@en, "Transl. Benedicti"@pt .
+
+:0644 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Transl. Jacobi"@en, "Transl. Jacobi"@pt .
+
+:0645 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Transl. Martini"@en, "Transl. Martini"@pt .
+
+:0646 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Tres Mariae"@en, "Tres Mariae"@pt .
+
+:0647 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Triumphi Crucis"@en, "Triumphi Crucis"@pt .
+
+:0648 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Urbani"@en, "Urbani"@pt .
+
+:0649 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Valentini"@en, "Valentini"@pt .
+
+:0650 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Victoria Christianorum"@en, "Victoria Christianorum"@pt .
+
+:0651 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Victoris et sociorum"@en, "Victoris et sociorum"@pt .
+
+:0652 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vig. Assump. Mariae"@en, "Vig. Assump. Mariae"@pt .
+
+:0653 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vig. Joannis Bapt."@en, "Vig. Joannis Bapt."@pt .
+
+:0654 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vig. Om. Sanctorum"@en, "Vig. Om. Sanctorum"@pt .
+
+:0655 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vigilia Andreae"@en, "Vigilia Andreae"@pt .
+
+:0656 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vigilia Epiphaniae"@en, "Vigilia Epiphaniae"@pt .
+
+:0657 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vigilia Laurentii"@en, "Vigilia Laurentii"@pt .
+
+:0658 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vigilia Martini"@en, "Vigilia Martini"@pt .
+
+:0659 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vigilia Matthaei"@en, "Vigilia Matthaei"@pt .
+
+:0660 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vigilia Nat. Domini"@en, "Vigilia Nat. Domini"@pt .
+
+:0661 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vigilia Pentecostes"@en, "Vigilia Pentecostes"@pt .
+
+:0662 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vigilia Petri, Pauli"@en, "Vigilia Petri, Pauli"@pt .
+
+:0663 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vigilia Simonis, Judae"@en, "Vigilia Simonis, Judae"@pt .
+
+:0664 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vincentii"@en, "Vincentii"@pt .
+
+:0665 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vincentii, Sabinae, Christetae, martyrum"@en, "Vincentii, Sabinae, Christetae, martyrum"@pt .
+
+:0666 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vincula Petri"@en, "Vincula Petri"@pt .
+
+:0667 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Visitatio Mariae"@en, "Visitatio Mariae"@pt .
+
+:0668 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Vitalis, Valeriae"@en, "Vitalis, Valeriae"@pt .
+
+:0669 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0008;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "XI milium Virginum"@en, "XI milium Virginum"@pt .
+
+:0670 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Acústica musical"@pt .
+
+:0671 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Afinação e timbre"@pt .
+
+:0672 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Árias, excertos vocais de obras mais longas"@pt .
+
+:0673 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Aspectos relativos aos instrumentos musicais."@pt .
+
+:0674 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Baladas"@pt .
+
+:0675 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Bases matemáticas, físicas, fisiológicas, psicológicas"@pt .
+
+:0676 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canções"@pt .
+
+:0677 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canções \"da rádio\", canções de gosto popular"@pt .
+
+:0678 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canções de revista \"à portuguesa\""@pt .
+
+:0679 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canções e baladas com autor mas de tradição popular"@pt .
+
+:0680 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canções folclóricas"@pt .
+
+:0681 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canções para crianças"@pt .
+
+:0682 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canções políticas e de intervenção"@pt .
+
+:0683 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canções tradicionais"@pt .
+
+:0684 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canções, marchas e hinos para determinadas épocas, comemorações, festas"@pt .
+
+:0685 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cantatas e oratórias profanas"@pt .
+
+:0686 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cantatas sacras"@pt .
+
+:0687 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cânticos evangélicos"@pt .
+
+:0688 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cânticos não aplicáveis a outras notações"@pt .
+
+:0689 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cânticos natalícios"@pt .
+
+:0690 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cânticos, hinos, sequências"@pt .
+
+:0691 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canto gregoriano"@pt .
+
+:0692 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cantochão"@pt .
+
+:0693 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Cantos congregacionais"@pt .
+
+:0694 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Canzonetas"@pt .
+
+:0695 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Catálogos de obras musicais"@pt .
+
+:0696 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Composição e análise de obras musicais"@pt .
+
+:0697 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Concertos"@pt .
+
+:0698 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Contraponto"@pt .
+
+:0699 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Corne inglês"@pt .
+
+:0700 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Exercícios e prática vocal"@pt .
+
+:0701 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Fuga"@pt .
+
+:0702 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Grand opera"@pt .
+
+:0703 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Harmonia"@pt .
+
+:0704 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Igreja Católica Romana"@pt .
+
+:0705 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Índices e catálogos de obras musicais"@pt .
+
+:0706 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Inventários de fontes musicais"@pt .
+
+:0707 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Lieder"@pt .
+
+:0708 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Manuais escolares (ensino básico e secundário) e outros textos de ensino de música"@pt .
+
+:0709 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Marchas e hinos comunitários, de organizações ou congregações"@pt .
+
+:0710 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Marchas populares"@pt .
+
+:0711 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Melodia"@pt .
+
+:0712 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Mélodies"@pt .
+
+:0713 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Modinhas"@pt .
+
+:0714 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Motetos"@pt .
+
+:0715 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música coral para chantre e coro"@pt .
+
+:0716 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música coral sacra, cânticos, hinos"@pt .
+
+:0717 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música da Paixão"@pt .
+
+:0718 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música de câmara"@pt .
+
+:0719 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música dramática"@pt .
+
+:0720 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música e cânticos litúrgicos"@pt .
+
+:0721 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para alaúde e teorba"@pt .
+
+:0722 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para bandolim"@pt .
+
+:0723 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para clarinete"@pt .
+
+:0724 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para concertina ou acordeão"@pt .
+
+:0725 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para contrabaixo"@pt .
+
+:0726 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para cordas dedilhadas"@pt .
+
+:0727 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para corneta. Música para corneta-de-pistões"@pt .
+
+:0728 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para fagote"@pt .
+
+:0729 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para flauta"@pt .
+
+:0730 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para grandes grupos instrumentais"@pt .
+
+:0731 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para grupos instrumentais"@pt .
+
+:0732 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para guitarra portuguesa"@pt .
+
+:0733 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para instrumentos com produção eléctrica ou electrónica do som"@pt .
+
+:0734 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para instrumentos de cordas"@pt .
+
+:0735 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para instrumentos de cordas dedilhadas sem braço"@pt .
+
+:0736 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para instrumentos de cordas friccionadas"@pt .
+
+:0737 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para instrumentos de percussão e mecânicos"@pt .
+
+:0738 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para instrumentos de sopro"@pt .
+
+:0739 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para instrumentos de tecla"@pt .
+
+:0740 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para instrumentos de tecla com cordas beliscadas ou percutidas por tangente"@pt .
+
+:0741 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para instrumentos de tecla com cordas percutidas por martelo: piano"@pt .
+
+:0742 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para oboé"@pt .
+
+:0743 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para órgão ou para harmónio"@pt .
+
+:0744 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para outros instrumentos de sopro"@pt .
+
+:0745 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para sinos, carrilhões, vibrafones"@pt .
+
+:0746 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para sopros de madeira"@pt .
+
+:0747 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para sopros de metal"@pt .
+
+:0748 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para trombone"@pt .
+
+:0749 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para trompete"@pt .
+
+:0750 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para violeta/viola de arco"@pt .
+
+:0751 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para violino"@pt .
+
+:0752 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música para violoncelo"@pt .
+
+:0753 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música sacra"@pt .
+
+:0754 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música sacra instrumental"@pt .
+
+:0755 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música vocal"@pt .
+
+:0756 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música vocal a capella"@pt .
+
+:0757 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Música vocal de câmara"@pt .
+
+:0758 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Obras sobre formas e/ou géneros de composição musical"@pt .
+
+:0759 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Obras sobre períodos e fases da história da música: escolas, estilos e influências musicais"@pt .
+
+:0760 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Ópera burlesca, farsa"@pt .
+
+:0761 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Óperas"@pt .
+
+:0762 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Óperas cómicas"@pt .
+
+:0763 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Operetas"@pt .
+
+:0764 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Oratórias sacras"@pt .
+
+:0765 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Outras formas de música dramática: pantomimas, masques, bailados"@pt .
+
+:0766 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Partituras e partes"@pt .
+
+:0767 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Peças teatrais com canções (musicais, revistas)"@pt .
+
+:0768 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Periódicos"@pt .
+
+:0769 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Pregões"@pt .
+
+:0770 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Profissões e actividades ligadas à música"@pt .
+
+:0771 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Programa de concerto"@pt .
+
+:0772 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Questões gerais de composição e interpretação."@pt .
+
+:0773 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Romanzas"@pt .
+
+:0774 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Solfejos"@pt .
+
+:0775 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Técnica de canto"@pt .
+
+:0776 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Teoria da música: questões gerais"@pt .
+
+:0777 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Teoria e filosofia da música"@pt .
+
+:0778 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Teoria geral da música"@pt .
+
+:0779 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Teoria musical"@pt .
+
+:0780 a skos:Concept;
+  dct:created "2023-01-12"^^xsd:date;
+  skos:broader :0009;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/cesem_musical_sources/>;
+  skos:prefLabel "Teorias científicas da música"@pt .

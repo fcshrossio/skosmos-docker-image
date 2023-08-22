@@ -1,0 +1,3112 @@
+@prefix : <http://vocabs.rossio.fcsh.unl.pt/agentes/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix frad: <http://iflastandards.info/ns/fr/frad/> .
+@prefix gvp: <http://vocab.getty.edu/ontology#> .
+@prefix schema: <http://schema.org/> .
+
+<http://vocabs.rossio.fcsh.unl.pt/agentes/> a skos:ConceptScheme;
+  rdfs:label "Agentes ROSSIO"@pt, "ROSSIO Agents"@en;
+  dct:description """O vocabulário de Agentes ROSSIO reúne nomes de pessoas e de coletividades para organização do conhecimento e recuperação de informação na plataforma ROSSIO.
+
+ A construção do vocabulário de Agentes segue as convenções de bibliotecas, arquivos e outras unidades de informação para os cabeçalhos de nomes de pessoas e de coletividades. Como regra geral, os nomes de pessoas estão invertidos, com o apelido precedendo os restantes nomes. Opcionalmente, os nomes são seguidos de datas de nascimento e morte, ou datas de atividade (p. ex., “Rodrigues, Amália, 1920-1999”, “Nicolau de Saxónia, fl. 1477-1506”). Os nomes de coletividades apresentam-se na direção normal de escrita (p. ex. “Estúdio Mário Novais”), exceto nos casos de organismos públicos ou com autonomia organizacional, os quais também estão invertidos (p. ex., “Lisboa. Arquivo Municipal”, “Universidade NOVA de Lisboa. Centro de Humanidades”).
+
+ O vocabulário de Agentes faz parte dos vocabulários ROSSIO, onde se integram vocabulários de tópicos em ciências sociais, artes e humanidades (Tesauro ROSSIO), topónimos (Lugares ROSSIO) e períodos (Períodos ROSSIO)."""@pt,
+    """The ROSSIO Agents vocabulary comprises names of people and organisations for knowledge organisation and information retrieval in the ROSSIO platform.
+
+ The construction of the Agents vocabulary follows the conventions of libraries, archives and other information units for the headings of personal and organisational names. As a general rule, the order of personal names is reversed, with the surname preceding the other names. Optionally, the names are followed by dates of birth and death, or dates of activity (eg, “Rodrigues, Amália, 1920-1999”, “Spindeler, Nicolaus, active 1477-1506”). Organisational names are presented in the normal direction of writing (e.g., “Estúdio Mário Novais”), except in the cases of governmental bodies or institutions with autonomy, which are also inverted (e.g., “Lisboa. Arquivo Municipal”, “Universidade NOVA de Lisboa. Centro de Humanidades”).
+
+ The vocabulary of Agents is part of the ROSSIO vocabularies, which includes vocabularies of topics in social sciences, arts and humanities (ROSSIO Thesaurus), toponyms (ROSSIO Places) and periods (ROSSIO Periods)."""@en;
+  dct:creator :c_3d0f0c8c;
+  skos:prefLabel "Agentes ROSSIO"@pt, "ROSSIO Agents"@en;
+  dct:publisher :c_3d0f0c8c;
+  dct:relation <http://vocabs.rossio.fcsh.unl.pt/tesauro/>, <http://vocabs.rossio.fcsh.unl.pt/lugares/>,
+    <http://vocabs.rossio.fcsh.unl.pt/periodos/>;
+  dct:rights <https://creativecommons.org/licenses/by/4.0/>;
+  dct:subject <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_ac9730ab>, <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_94845f5c>;
+  dct:language <http://lexvo.org/id/iso639-3/eng>, <http://lexvo.org/id/iso639-3/por>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  dct:modified "2023-05-10T10:16:18"^^xsd:dateTime .
+
+:c_3d0f0c8c a skos:Concept, bf:Organization;
+  rdfs:label "Infraestrutura ROSSIO";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Infraestrutura ROSSIO"@en, "Infraestrutura ROSSIO"@pt;
+  skos:altLabel "ROSSIO"@pt, "ROSSIO Infrastructure"@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_664660fc>;
+  frad:P4027 "ROSSIO" .
+
+bf:Organization a owl:Class;
+  rdfs:subClassOf owl:Thing;
+  rdfs:label "Organisation"@en, "Organização"@pt .
+
+:c_1674913a a skos:Concept, bf:Organization;
+  rdfs:label "Teatro Nacional D. Maria II (TNDM II)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Teatro Nacional de Dona Maria II"@en, "Portugal. Teatro Nacional de Dona Maria II"@pt;
+  skos:altLabel "Dona Maria II National Theatre"@en, "TNDMII"@pt, "Teatro Nacional D. Maria II"@pt,
+    "Teatro Nacional Dona Maria II"@pt, "Portugal. Teatro Nacional D. Maria II"@pt, "Teatro D. Maria II"@pt,
+    "Teatro Dona Maria II"@pt, "TNDM II"@pt;
+  skos:exactMatch <http://viaf.org/viaf/123728929>, <http://www.wikidata.org/entity/Q116125>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_625766eb>;
+  frad:P4027 "TNDM II" .
+
+<http://viaf.org/viaf/123728929> skos:exactMatch :c_1674913a .
+
+<http://www.wikidata.org/entity/Q116125> skos:exactMatch :c_1674913a .
+
+gvp:agentType a rdf:Property;
+  rdfs:label "Agent type"@en, "Tipo de agente"@pt .
+
+frad:P4027 a rdf:Property;
+  rdfs:label "Acronym, initials or abbreviation"@en, "Acrónimo, sigla ou abreviatura"@pt .
+
+:c_2064d7eb a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Municipal de Lisboa (AML)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Lisboa. Arquivo Municipal"@en, "Lisboa. Arquivo Municipal"@pt;
+  skos:altLabel "AML"@pt, "Arquivo Municipal Lisboa – Câmara Municipal de Lisboa"@pt,
+    "Arquivo Municipal de Lisboa"@pt, "Lisboa. Câmara Municipal. Arquivo"@pt, "Municipal Archive of Lisbon"@en;
+  skos:exactMatch <http://viaf.org/viaf/146961985>, <http://www.wikidata.org/entity/Q18581316>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "AML" .
+
+<http://viaf.org/viaf/146961985> skos:exactMatch :c_2064d7eb .
+
+<http://www.wikidata.org/entity/Q18581316> skos:exactMatch :c_2064d7eb .
+
+:c_6c5278f6 a skos:Concept, bf:Organization;
+  rdfs:label "Centro de Estudos de Sociologia e Estética Musical (CESEM)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Centro de Estudos de Sociologia e Estética Musical"@en,
+    "Universidade NOVA de Lisboa. Centro de Estudos de Sociologia e Estética Musical"@pt;
+  skos:altLabel "CESEM"@pt, "Centro de Estudos de Sociologia e Estética Musical da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/125992241>, <http://www.wikidata.org/entity/Q111668146>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "CESEM" .
+
+<http://viaf.org/viaf/125992241> skos:exactMatch :c_6c5278f6 .
+
+<http://www.wikidata.org/entity/Q111668146> skos:exactMatch :c_6c5278f6 .
+
+:c_4af81bd9 a skos:Concept, bf:Organization;
+  rdfs:label "Direção-Geral do Livro, dos Arquivos e das Bibliotecas (DGLAB)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Direção-Geral do Livro, dos Arquivos e das Bibliotecas"@en,
+    "Portugal. Direção-Geral do Livro, dos Arquivos e das Bibliotecas"@pt;
+  skos:altLabel "DGLAB"@pt, "Directorate-General for Books, Archives and Libraries"@en,
+    "Direção Geral do Livro, dos Arquivos e das Bibliotecas"@pt;
+  skos:hiddenLabel "Direcção-Geral do Livro, dos Arquivos e das Bibliotecas"@pt;
+  skos:exactMatch <http://viaf.org/viaf/316030986>, <http://www.wikidata.org/entity/Q10302648>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c4fc960f>;
+  frad:P4027 "DGLAB" .
+
+<http://viaf.org/viaf/316030986> skos:exactMatch :c_4af81bd9 .
+
+<http://www.wikidata.org/entity/Q10302648> skos:exactMatch :c_4af81bd9 .
+
+:c_c52d3737 a skos:Concept, bf:Organization;
+  rdfs:label "Cinemateca Portuguesa (CPMC)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Cinemateca Portuguesa"@en, "Portugal. Cinemateca Portuguesa"@pt;
+  skos:altLabel "CPMC"@pt, "Cinemateca Portuguesa"@en, "Cinemateca Portuguesa"@pt, "Cinemateca Portuguesa – Museu do Cinema"@pt,
+    "Portuguese Film Archives"@en;
+  skos:exactMatch <http://viaf.org/viaf/253942048>, <http://www.wikidata.org/entity/Q1092464>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_57c9844d>;
+  frad:P4027 "CPMC" .
+
+<http://viaf.org/viaf/253942048> skos:exactMatch :c_c52d3737 .
+
+<http://www.wikidata.org/entity/Q1092464> skos:exactMatch :c_c52d3737 .
+
+:c_bb4c022d a skos:Concept, bf:Organization;
+  rdfs:label "Direção-Geral do Património Cultural (DGPC)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Direção-Geral do Património Cultural"@en, "Portugal. Direção-Geral do Património Cultural"@pt;
+  skos:altLabel "DGPC"@pt, "Directorate-General for Cultural Heritage"@en, "Direção Geral do Património Cultural"@pt;
+  skos:hiddenLabel "Direcção Geral do Património Cultural"@pt;
+  skos:exactMatch <http://viaf.org/viaf/135475830>, <http://www.wikidata.org/entity/Q29572173>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c4fc960f>;
+  frad:P4027 "DGPC" .
+
+<http://viaf.org/viaf/135475830> skos:exactMatch :c_bb4c022d .
+
+<http://www.wikidata.org/entity/Q29572173> skos:exactMatch :c_bb4c022d .
+
+:c_05e9bc06 a skos:Concept, bf:Organization;
+  rdfs:label "Fundação Calouste Gulbenkian (FCG)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Fundação Calouste Gulbenkian"@en, "Fundação Calouste Gulbenkian"@pt;
+  skos:altLabel "Calouste Gulbenkian Foundation"@en, "FCG"@pt;
+  skos:exactMatch <http://viaf.org/viaf/133186925>, <http://www.wikidata.org/entity/Q3052794>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_dd596cd5>;
+  frad:P4027 "FCG" .
+
+<http://viaf.org/viaf/133186925> skos:exactMatch :c_05e9bc06 .
+
+<http://www.wikidata.org/entity/Q3052794> skos:exactMatch :c_05e9bc06 .
+
+:c_c37b6dc5 a skos:Concept, bf:Organization;
+  rdfs:label "Repositório da Universidade NOVA de Lisboa (RUN)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Repositório"@en, "Universidade NOVA de Lisboa. Repositório"@pt;
+  skos:altLabel "RUN"@pt, "Repositório da Universidade NOVA de Lisboa"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_cad24b8f>;
+  frad:P4027 "RUN" .
+
+bf:Person a owl:Class;
+  rdfs:subClassOf owl:Thing;
+  rdfs:label "Person"@en, "Pessoa"@pt .
+
+:c_9d49ab59 a skos:Concept, bf:Organization;
+  rdfs:label "Centro de Estudos Ingleses de Tradução e Anglo-Portugueses (CETAPS)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Centro de Estudos Ingleses de Tradução e Anglo-Portugueses"@en,
+    "Universidade NOVA de Lisboa. Centro de Estudos Ingleses de Tradução e Anglo-Portugueses"@pt;
+  skos:altLabel "CETAPS"@pt, "Centro de Estudos Ingleses de Tradução e Anglo-Portugueses da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/309833153>, <http://www.wikidata.org/entity/Q111668147>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "CETAPS" .
+
+<http://viaf.org/viaf/309833153> skos:exactMatch :c_9d49ab59 .
+
+<http://www.wikidata.org/entity/Q111668147> skos:exactMatch :c_9d49ab59 .
+
+:c_9becc4f7 a skos:Concept, bf:Organization;
+  rdfs:label "Centro de Humanidades (CHAM)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Centro de Humanidades"@en, "Universidade NOVA de Lisboa. Centro de Humanidades"@pt;
+  skos:altLabel "CHAM"@pt, "Centro de Humanidades da Universidade NOVA de Lisboa"@pt;
+  skos:closeMatch <http://viaf.org/viaf/145758109>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "CHAM" .
+
+<http://viaf.org/viaf/145758109> skos:closeMatch :c_9becc4f7 .
+
+:c_0ef7b7e5 a skos:Concept, bf:Organization;
+  rdfs:label "Centro Interdisciplinar de Ciências Sociais (CICS.NOVA)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Centro Interdisciplinar de Ciências Sociais"@en,
+    "Universidade NOVA de Lisboa. Centro Interdisciplinar de Ciências Sociais"@pt;
+  skos:altLabel "CICS.NOVA"@pt, "Centro Interdisciplinar de Ciências Sociais da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/30152930893509671015>, <http://www.wikidata.org/entity/Q111668149>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "CICS.NOVA" .
+
+<http://viaf.org/viaf/30152930893509671015> skos:exactMatch :c_0ef7b7e5 .
+
+<http://www.wikidata.org/entity/Q111668149> skos:exactMatch :c_0ef7b7e5 .
+
+:c_5a605706 a skos:Concept, bf:Organization;
+  rdfs:label "Centro de Linguística (CLUNL)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Centro de Linguística"@en, "Universidade NOVA de Lisboa. Centro de Linguística"@pt;
+  skos:altLabel "CLUNL"@pt, "Centro de Linguística da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/145817326>, <http://www.wikidata.org/entity/Q111668150>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "CLUNL" .
+
+<http://viaf.org/viaf/145817326> skos:exactMatch :c_5a605706 .
+
+<http://www.wikidata.org/entity/Q111668150> skos:exactMatch :c_5a605706 .
+
+:c_fe8a7b7e a skos:Concept, bf:Organization;
+  rdfs:label "Centro em Rede de Investigação em Antropologia (CRIA)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Centro em Rede de Investigação em Antropologia"@en,
+    "Universidade NOVA de Lisboa. Centro em Rede de Investigação em Antropologia"@pt;
+  skos:altLabel "CRIA"@pt, "Centro em Rede de Investigação em Antropologia da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/170474609>, <http://www.wikidata.org/entity/Q111668151>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "CRIA" .
+
+<http://viaf.org/viaf/170474609> skos:exactMatch :c_fe8a7b7e .
+
+<http://www.wikidata.org/entity/Q111668151> skos:exactMatch :c_fe8a7b7e .
+
+:c_5fdab3ef a skos:Concept, bf:Organization;
+  rdfs:label "Instituto de Comunicação (ICNOVA)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Instituto de Comunicação"@en, "Universidade NOVA de Lisboa. Instituto de Comunicação"@pt;
+  skos:altLabel "ICNOVA"@pt, "Instituto de Comunicação da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://www.wikidata.org/entity/Q111668152>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "ICNOVA" .
+
+<http://www.wikidata.org/entity/Q111668152> skos:exactMatch :c_5fdab3ef .
+
+:c_b134c9a9 a skos:Concept, bf:Organization;
+  rdfs:label "Instituto de Estudos de Literatura e Tradição (IELT)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Instituto de Estudos de Literatura e Tradição"@en,
+    "Universidade NOVA de Lisboa. Instituto de Estudos de Literatura e Tradição"@pt;
+  skos:altLabel "IELT"@pt, "Instituto de Estudos de Literatura e Tradição da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/138632104>, <http://www.wikidata.org/entity/Q111668153>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "IELT" .
+
+<http://viaf.org/viaf/138632104> skos:exactMatch :c_b134c9a9 .
+
+<http://www.wikidata.org/entity/Q111668153> skos:exactMatch :c_b134c9a9 .
+
+:c_f99bcabf a skos:Concept, bf:Organization;
+  rdfs:label "Instituto de Estudos Medievais (IEM)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Instituto de Estudos Medievais"@en, "Universidade NOVA de Lisboa. Instituto de Estudos Medievais"@pt;
+  skos:altLabel "IEM"@pt, "Instituto de Estudos Medievais da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/157486316>, <http://www.wikidata.org/entity/Q28134119>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "IEM" .
+
+<http://viaf.org/viaf/157486316> skos:exactMatch :c_f99bcabf .
+
+<http://www.wikidata.org/entity/Q28134119> skos:exactMatch :c_f99bcabf .
+
+:c_bf17533c a skos:Concept, bf:Organization;
+  rdfs:label "Instituto de Filosofia (IFILNOVA)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Instituto de Filosofia"@en, "Universidade NOVA de Lisboa. Instituto de Filosofia"@pt;
+  skos:altLabel "IFILNOVA"@pt, "Instituto de Filosofia da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/64155284911787062679>, <http://www.wikidata.org/entity/Q111668155>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "IFILNOVA" .
+
+<http://viaf.org/viaf/64155284911787062679> skos:exactMatch :c_bf17533c .
+
+<http://www.wikidata.org/entity/Q111668155> skos:exactMatch :c_bf17533c .
+
+:c_1dc3ba83 a skos:Concept, bf:Organization;
+  rdfs:label "Instituto de História da Arte (IHA)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Instituto de História da Arte"@en, "Universidade NOVA de Lisboa. Instituto de História da Arte"@pt;
+  skos:altLabel "IHA"@pt, "Instituto de História da Arte da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/125327092>, <http://www.wikidata.org/entity/Q111668156>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "IHA" .
+
+<http://viaf.org/viaf/125327092> skos:exactMatch :c_1dc3ba83 .
+
+<http://www.wikidata.org/entity/Q111668156> skos:exactMatch :c_1dc3ba83 .
+
+:c_83388296 a skos:Concept, bf:Organization;
+  rdfs:label "Instituto de História Contemporânea (IHC)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Instituto de História Contemporânea"@en,
+    "Universidade NOVA de Lisboa. Instituto de História Contemporânea"@pt;
+  skos:altLabel "IHC"@pt, "Instituto de História Contemporânea da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/138259588>, <http://www.wikidata.org/entity/Q111668157>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "IHC" .
+
+<http://viaf.org/viaf/138259588> skos:exactMatch :c_83388296 .
+
+<http://www.wikidata.org/entity/Q111668157> skos:exactMatch :c_83388296 .
+
+:c_47ca5fee a skos:Concept, bf:Organization;
+  rdfs:label "Instituto de Etnomusicologia (INET-MD)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Instituto de Etnomusicologia - Centro de Estudos em Música e Dança"@en,
+    "Universidade NOVA de Lisboa. Instituto de Etnomusicologia - Centro de Estudos em Música e Dança"@pt;
+  skos:altLabel "INET-MD"@pt, "Instituto de Etnomusicologia - Centro de Estudos em Música e Dança da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/sourceID/PTBNP%7C231080#skos:Concept>, <http://www.wikidata.org/entity/Q111668158>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "INET-MD" .
+
+<http://viaf.org/viaf/sourceID/PTBNP%7C231080#skos:Concept> skos:exactMatch :c_47ca5fee .
+
+<http://www.wikidata.org/entity/Q111668158> skos:exactMatch :c_47ca5fee .
+
+:c_7e43b764 a skos:Concept, bf:Organization;
+  rdfs:label "Instituto Português de Relações Internacionais (IPRI)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade NOVA de Lisboa. Instituto Português de Relações Internacionais"@en,
+    "Universidade NOVA de Lisboa. Instituto Português de Relações Internacionais"@pt;
+  skos:altLabel "IPRI"@pt, "Instituto Português de Relações Internacionais da Universidade NOVA de Lisboa"@pt;
+  skos:exactMatch <http://viaf.org/viaf/151649785>, <http://www.wikidata.org/entity/Q111668159>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "IPRI" .
+
+<http://viaf.org/viaf/151649785> skos:exactMatch :c_7e43b764 .
+
+<http://www.wikidata.org/entity/Q111668159> skos:exactMatch :c_7e43b764 .
+
+:c_17d9bdd5 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Albuquerque, Ana Mascarenhas de, ?-antes de 1746, O. Cist."@pt, "Albuquerque, Ana Mascarenhas de, ?-before 1746, O. Cist."@en;
+  skos:altLabel "Ana Mascarenhas de Albuquerque"@en, "Ana Mascarenhas de Albuquerque"@pt,
+    "D. Anna Mascarenhas de Albuquerque"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  dct:source <https://arouca.fcsh.unl.pt/content/ana-mascarenhas-de-albuquerque>;
+  schema:deathDate "antes de 1746" .
+
+schema:deathDate a rdf:Property;
+  rdfs:label "Data de morte"@pt, "Date of death"@en .
+
+:c_4cbc4dde a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Serveira, Ana Peregrina da, ?-antes de 1800, O. Cist."@pt, "Serveira, Ana Peregrina da, ?-before 1800, O. Cist."@en;
+  skos:altLabel "Ana Peregrina da Serveira"@en, "Ana Peregrina da Serveira"@pt, "Anna Peregrina da Serveira"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  dct:source <https://arouca.fcsh.unl.pt/content/ana-peregrina-da-serveira>;
+  schema:deathDate "antes de 1800" .
+
+:c_1288313d a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Pimentel, Bernarda, ?-antes de 1746, O. Cist."@pt, "Pimentel, Bernarda, ?-before 1746, O. Cist."@en;
+  skos:altLabel "Bernarda Pimentel"@en, "Bernarda Pimentel"@pt, "D. Bernarda Pimentel"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  dct:source <https://arouca.fcsh.unl.pt/content/bernarda-pimentel>;
+  schema:deathDate "antes de 1746" .
+
+:c_57e4c0f7 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Bernardo de Alcobaça, ?-1478, O. Cist."@en, "Bernardo de Alcobaça, ?-1478, O. Cist."@pt;
+  skos:altLabel "Bernardo de Alcobaça"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_acb043cc>;
+  dct:source <https://arouca.fcsh.unl.pt/content/bernardo-de-alcobaça>;
+  schema:deathDate "1478" .
+
+:c_232e0e45 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Menezes, Catarina de, ?-antes de 1618, O. Cist."@pt, "Menezes, Catarina de, ?-before 1618, O. Cist."@en;
+  skos:altLabel "Catarina de Menezes"@en, "Catarina de Menezes"@pt, "Dona Catherine de Menezes"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_2a463146>;
+  dct:source <https://arouca.fcsh.unl.pt/content/catarina-de-menezes>;
+  schema:deathDate "antes de 1618" .
+
+:c_e0b168a0 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Castelbranco, Felipe, ?-antes de 1746"@pt, "Castelbranco, Felipe, ?-before 1746"@en;
+  skos:altLabel "F. Felipe de Castelbranco"@pt, "Felipe Castelbranco"@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_8226ea8d>;
+  dct:source <https://arouca.fcsh.unl.pt/content/catarina-de-menezes>;
+  schema:deathDate "antes de 1746" .
+
+:c_1b7f6404 a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Catholic Church"@en, "Igreja Católica"@pt;
+  skos:altLabel "Church"@en, "Igreja"@pt;
+  skos:exactMatch <http://viaf.org/viaf/130782063>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_56541760>;
+  dct:modified "2022-10-19T14:07:24"^^xsd:dateTime .
+
+<http://viaf.org/viaf/130782063> skos:exactMatch :c_1b7f6404 .
+
+:c_260296e6 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Miranda, Jerónima de"@en, "Miranda, Jerónima de"@pt;
+  skos:altLabel "Hjeronima de Miranda"@pt, "Jeronima de Mirãda"@pt, "Jerónima de Miranda"@en,
+    "Jerónima de Miranda"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  dct:source <https://arouca.fcsh.unl.pt/content/jerónima-de-miranda> .
+
+:c_dd8cabae a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Gherlinc, Johan"@en, "Gherlinc, João"@pt;
+  skos:altLabel "Johan Gherlinc"@en, "João Gherlinc"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_e78fe1bf>;
+  dct:source <https://arouca.fcsh.unl.pt/content/jo%C3%A3o-gherlinc> .
+
+:c_ca9c41a9 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Ludolfo de Saxónia, ca 1295-1377, O. Cart."@pt, "Ludolph of Saxony, ca 1295-1377, O. Cart."@en;
+  skos:altLabel "Ludolfo de Saxónia"@pt;
+  skos:exactMatch <http://viaf.org/viaf/215162526>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_4fe3cb25>;
+  dct:source <https://arouca.fcsh.unl.pt/content/ludolfo-de-sax%C3%B3nia>;
+  schema:deathDate "1377";
+  schema:birthDate "ca 1295" .
+
+<http://viaf.org/viaf/215162526> skos:exactMatch :c_ca9c41a9 .
+
+schema:birthDate a rdf:Property;
+  rdfs:label "Data de nascimento"@pt, "Date of birth"@en .
+
+:c_7ff74819 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Faria, Maria de, ?-antes de 1667, O. Cist."@pt, "Faria, Maria de, ?-before 1667, O. Cist."@en;
+  skos:altLabel "D. M. de F."@pt, "Maria de Faria"@en, "Maria de Faria"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_2a463146>;
+  dct:source <https://arouca.fcsh.unl.pt/content/maria-de-faria>;
+  schema:deathDate "antes de 1667" .
+
+:c_198abd88 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Noronha, Maria de, ?-16 century"@en, "Noronha, Maria de, ?-séc. 16"@pt;
+  skos:altLabel "Maria de Noronha"@en, "Maria de Noronha"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b34139d4>;
+  dct:source <https://arouca.fcsh.unl.pt/content/maria-de-noronha>;
+  schema:deathDate "séc. 16" .
+
+:c_6efc8a34 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Miranda, Mécia Aurélia de, ?-antes de 1746"@pt, "Miranda, Mécia Aurélia de, ?-before 1746"@en;
+  skos:altLabel "Mécia Aurélia de Miranda"@en, "Mécia Aurélia de Miranda"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_2a463146>;
+  dct:source <https://arouca.fcsh.unl.pt/content/m%C3%A9cia-aur%C3%A9lia-de-miranda>;
+  schema:deathDate "antes de 1746" .
+
+:c_13a2462a a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Nicolau de Saxónia, fl. 1477-1506"@pt, "Spindeler, Nicolaus,‏ active 1477-1506‏"@en;
+  skos:altLabel "Nicolas Spindeler"@pt, "Nicolau de Saxónia"@pt, "Nicolaus Spindeler"@en,
+    "Spindeler, Nicolaus"@pt;
+  skos:exactMatch <http://viaf.org/viaf/31881008>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_e78fe1bf>;
+  dct:source <https://arouca.fcsh.unl.pt/content/nicolau-de-sax%C3%B3nia>;
+  bf:date "fl. 1477-1506" .
+
+<http://viaf.org/viaf/31881008> skos:exactMatch :c_13a2462a .
+
+bf:date a rdf:Property;
+  rdfs:label "Data"@pt, "Date"@en .
+
+:c_1725f194 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Vieira, Nicolau"@en, "Vieira, Nicolau"@pt;
+  skos:altLabel "Nicolau Vieira"@en, "Nicolau Vieira"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_acb043cc>;
+  dct:source <https://arouca.fcsh.unl.pt/content/nicolau-vieira> .
+
+:c_de57f74a a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Dores, Rodrigo das, ?-antes de 1800"@pt, "Dores, Rodrigo das, ?-before 1800"@en;
+  skos:altLabel "Rodrigo das Dores"@pt, "Rodrigo das before Dores, Rodrigo das"@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_acb043cc>;
+  dct:source <https://arouca.fcsh.unl.pt/content/rodrigo-das-dores>;
+  schema:deathDate "antes de 1800" .
+
+:c_68c8b84a a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Lobato, Roque Pinto, fl. 1650"@en, "Lobato, Roque Pinto, fl. 1650"@pt;
+  skos:altLabel "Roque Pinto Lobato"@pt, "Roque Pinto fl Lobato, Roque Pinto"@en;
+  skos:exactMatch <http://viaf.org/viaf/99294538>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_34a0b902>;
+  dct:source <https://arouca.fcsh.unl.pt/content/roque-pinto-lobato>;
+  bf:date "fl. 1650" .
+
+<http://viaf.org/viaf/99294538> skos:exactMatch :c_68c8b84a .
+
+:c_89b5a2e2 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Moura, Sebastiana de, ?-antes de 1666, O. Cist."@pt, "Moura, Sebastiana de, ?-before 1666, O. Cist."@en;
+  skos:altLabel "Sebastiana de Moura"@pt, "Sebastiana de Moyra"@pt, "Sebastiana de before O Cist Moura, Sebastiana de, ?-before 1666"@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  dct:source <https://arouca.fcsh.unl.pt/content/sebastiana-de-moura>;
+  schema:deathDate "antes de 1666" .
+
+:c_1212f307 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Fernandes, Valentim, fl. 1450-1519"@en, "Fernandes, Valentim, fl. 1450-1519"@pt;
+  skos:altLabel "Valentim Fernandes"@en, "Valentim Fernandes"@pt;
+  skos:exactMatch <http://viaf.org/viaf/3462159478072827990001>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_e78fe1bf>;
+  dct:source <https://arouca.fcsh.unl.pt/content/valentim-fernandes>;
+  bf:date "fl. 1450-1519" .
+
+<http://viaf.org/viaf/3462159478072827990001> skos:exactMatch :c_1212f307 .
+
+:c_64c458fe a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Aveiro (ADAVR)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Aveiro. Arquivo Distrital"@en, "Aveiro. Arquivo Distrital"@pt;
+  skos:altLabel "ADAVR"@pt, "Arquivo Distrital de Aveiro"@pt, "Aveiro District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/150709209>, <http://www.wikidata.org/entity/Q9630323>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADAVR" .
+
+<http://viaf.org/viaf/150709209> skos:exactMatch :c_64c458fe .
+
+<http://www.wikidata.org/entity/Q9630323> skos:exactMatch :c_64c458fe .
+
+:c_20311d92 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Santarém (ADSTR)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Santarém. Arquivo Distrital"@en, "Santarém. Arquivo Distrital"@pt;
+  skos:altLabel "ADSTR"@pt, "Arquivo Distrital de Santarém"@pt, "Santarém District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/122549221>, <http://www.wikidata.org/entity/Q56647977>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADSTR" .
+
+<http://viaf.org/viaf/122549221> skos:exactMatch :c_20311d92 .
+
+<http://www.wikidata.org/entity/Q56647977> skos:exactMatch :c_20311d92 .
+
+:c_438671c9 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Bragança (ADBGC)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Arquivo Distrital de Bragança"@en, "Bragança. Arquivo Distrital"@pt;
+  skos:altLabel "ADBGC"@pt, "Arquivo Distrital de Bragança"@pt, "Bragança District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/153010559>, <http://www.wikidata.org/entity/Q56654288>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADBGC" .
+
+<http://viaf.org/viaf/153010559> skos:exactMatch :c_438671c9 .
+
+<http://www.wikidata.org/entity/Q56654288> skos:exactMatch :c_438671c9 .
+
+:c_d69788b6 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Beja (ADBJA)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Beja. Arquivo Distrital"@en, "Beja. Arquivo Distrital"@pt;
+  skos:altLabel "ADBJA"@pt, "Arquivo Distrital de Beja"@pt, "Beja District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/306454093>, <http://www.wikidata.org/entity/Q56654244>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADBJA" .
+
+<http://viaf.org/viaf/306454093> skos:exactMatch :c_d69788b6 .
+
+<http://www.wikidata.org/entity/Q56654244> skos:exactMatch :c_d69788b6 .
+
+:c_819ef5cf a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Évora (ADEVR)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Évora. Arquivo Distrital"@en, "Évora. Arquivo Distrital"@pt;
+  skos:altLabel "ADEVR"@pt, "Arquivo Distrital de Évora"@pt, "Évora District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/245838745>, <http://www.wikidata.org/entity/Q56654250>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADEVR" .
+
+<http://viaf.org/viaf/245838745> skos:exactMatch :c_819ef5cf .
+
+<http://www.wikidata.org/entity/Q56654250> skos:exactMatch :c_819ef5cf .
+
+:c_6da5082f a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Setúbal (ADSTB)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Setúbal. Arquivo Distrital"@en, "Setúbal. Arquivo Distrital"@pt;
+  skos:altLabel "ADSTB"@pt, "Arquivo Distrital de Setúbal"@pt, "Setúbal District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/150666784>, <http://www.wikidata.org/entity/Q56653688>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADSTB" .
+
+<http://viaf.org/viaf/150666784> skos:exactMatch :c_6da5082f .
+
+<http://www.wikidata.org/entity/Q56653688> skos:exactMatch :c_6da5082f .
+
+:c_50a5323c a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Castelo Branco (ADCTB)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Castelo Branco. Arquivo Distrital"@en, "Castelo Branco. Arquivo Distrital"@pt;
+  skos:altLabel "ADCTB"@pt, "Arquivo Distrital de Castelo Branco"@pt, "Castelo Branco District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/44159032656201181574>, <http://www.wikidata.org/entity/Q56648244>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADCTB" .
+
+<http://viaf.org/viaf/44159032656201181574> skos:exactMatch :c_50a5323c .
+
+<http://www.wikidata.org/entity/Q56648244> skos:exactMatch :c_50a5323c .
+
+:c_95ebe093 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Vila Real (ADVRL)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Vila Real. Arquivo Distrital"@en, "Vila Real. Arquivo Distrital"@pt;
+  skos:altLabel "ADVRL"@pt, "Arquivo Distrital de Vila Real"@pt, "Vila Real District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/124017394>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADVRL" .
+
+<http://viaf.org/viaf/124017394> skos:exactMatch :c_95ebe093 .
+
+:c_5062b87f a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Guarda (ADGRD)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Guarda. Arquivo Distrital"@en, "Guarda. Arquivo Distrital"@pt;
+  skos:altLabel "ADGRD"@pt, "Arquivo Distrital da Guarda"@pt, "Guarda District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/35159032662401181640>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADGRD" .
+
+<http://viaf.org/viaf/35159032662401181640> skos:exactMatch :c_5062b87f .
+
+:c_7054d2d4 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Leiria (ADLRA)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Leiria. Arquivo Distrital"@en, "Leiria. Arquivo Distrital"@pt;
+  skos:altLabel "ADLRA"@pt, "Arquivo Distrital de Leiria"@pt, "Leiria District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/155339719>, <http://www.wikidata.org/entity/Q56648510>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADLRA" .
+
+<http://viaf.org/viaf/155339719> skos:exactMatch :c_7054d2d4 .
+
+<http://www.wikidata.org/entity/Q56648510> skos:exactMatch :c_7054d2d4 .
+
+:c_129780c4 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Faro (ADFAR)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Faro. Arquivo Distrital"@en, "Faro. Arquivo Distrital"@pt;
+  skos:altLabel "ADFAR"@pt, "Arquivo Distrital de Faro"@pt, "Faro District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/140119606>, <http://www.wikidata.org/entity/Q56654240>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADFAR" .
+
+<http://viaf.org/viaf/140119606> skos:exactMatch :c_129780c4 .
+
+<http://www.wikidata.org/entity/Q56654240> skos:exactMatch :c_129780c4 .
+
+:c_f95496ad a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Viana do Castelo (ADVCT)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Viana do Castelo. Arquivo Distrital"@en, "Viana do Castelo. Arquivo Distrital"@pt;
+  skos:altLabel "ADVCT"@pt, "Arquivo Distrital de Viana do Castelo"@pt, "Viana do Castelo District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/127236058>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADVCT" .
+
+<http://viaf.org/viaf/127236058> skos:exactMatch :c_f95496ad .
+
+:c_5672cf6f a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Viseu (ADVIS)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Viseu. Arquivo Distrital"@en, "Viseu. Arquivo Distrital"@pt;
+  skos:altLabel "ADVIS"@pt, "Arquivo Distrital de Viseu"@pt, "Viseu District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/149487322>, <http://www.wikidata.org/entity/Q56647848>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADVIS" .
+
+<http://viaf.org/viaf/149487322> skos:exactMatch :c_5672cf6f .
+
+<http://www.wikidata.org/entity/Q56647848> skos:exactMatch :c_5672cf6f .
+
+:c_53e2aa91 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital do Porto (ADPRT)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Porto. Arquivo Distrital"@en, "Porto. Arquivo Distrital"@pt;
+  skos:altLabel "ADPRT"@pt, "Arquivo Distrital do Porto"@pt, "Porto District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/126634502>, <http://www.wikidata.org/entity/Q56627914>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADPRT" .
+
+<http://viaf.org/viaf/126634502> skos:exactMatch :c_53e2aa91 .
+
+<http://www.wikidata.org/entity/Q56627914> skos:exactMatch :c_53e2aa91 .
+
+:c_f9e05c96 a skos:Concept, bf:Organization;
+  rdfs:label "Centro Português de Fotografia (CPF)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Centro Português de Fotografia"@en, "Portugal. Centro Português de Fotografia"@pt;
+  skos:altLabel "CPF"@pt, "Centro Português de Fotografia"@pt, "Portuguese Center of Photography"@en;
+  skos:exactMatch <http://viaf.org/viaf/141308146>, <http://www.wikidata.org/entity/Q18484034>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "CPF" .
+
+<http://viaf.org/viaf/141308146> skos:exactMatch :c_f9e05c96 .
+
+<http://www.wikidata.org/entity/Q18484034> skos:exactMatch :c_f9e05c96 .
+
+:c_76e2d079 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Distrital de Portalegre (ADPTG)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portalegre. Arquivo Distrital"@en, "Portalegre. Arquivo Distrital"@pt;
+  skos:altLabel "ADPTG"@pt, "Arquivo Distrital de Portalegre"@pt, "Portalegre District Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/51159032763001182183>, <http://www.wikidata.org/entity/Q56648152>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ADPTG" .
+
+<http://viaf.org/viaf/51159032763001182183> skos:exactMatch :c_76e2d079 .
+
+<http://www.wikidata.org/entity/Q56648152> skos:exactMatch :c_76e2d079 .
+
+:c_6fde27ba a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Histórico Ultramarino (AHU)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Arquivo Histórico Ultramarino"@en, "Portugal. Arquivo Histórico Ultramarino"@pt;
+  skos:altLabel "AHU"@pt, "Arquivo Histórico Ultramarino"@pt, "Overseas Historical Archive"@en;
+  skos:exactMatch <http://viaf.org/viaf/146305994>, <http://www.wikidata.org/entity/Q9630359>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "AHU" .
+
+<http://viaf.org/viaf/146305994> skos:exactMatch :c_6fde27ba .
+
+<http://www.wikidata.org/entity/Q9630359> skos:exactMatch :c_6fde27ba .
+
+:c_4229e047 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Nacional da Torre do Tombo (ANTT)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Arquivo Nacional da Torre do Tombo"@en, "Portugal. Arquivo Nacional da Torre do Tombo"@pt;
+  skos:altLabel "Arquivo Nacional da Torre do Tombo"@pt, "Torre do Tombo National Archive"@en,
+    "ANTT"@pt, "Torre do Tombo"@pt;
+  skos:exactMatch <http://viaf.org/viaf/150196534>, <http://www.wikidata.org/entity/Q1769248>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "ANTT" .
+
+<http://viaf.org/viaf/150196534> skos:exactMatch :c_4229e047 .
+
+<http://www.wikidata.org/entity/Q1769248> skos:exactMatch :c_4229e047 .
+
+:c_abe90675 a skos:Concept, bf:Organization;
+  rdfs:label "Laboratório de Humanidades Digitais (Lab_HD)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Digital Humanities Laboratory (NOVA FCSH)"@en, "Universidade NOVA de Lisboa. Laboratório de Humanidades Digitais"@pt;
+  skos:altLabel "Digital Humanities Lab"@en, "Lab_HD"@pt, "Laboratório de Humanidades Digitais da Universidade NOVA de Lisboa"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b96db28d>;
+  frad:P4027 "Lab_HD" .
+
+:c_89f7078e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Benoliel, Joshua, 1873-1932"@en, "Benoliel, Joshua, 1873-1932"@pt;
+  skos:altLabel "Joshua Benoliel"@en, "Joshua Benoliel"@pt;
+  skos:exactMatch <http://viaf.org/viaf/67583866>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c9deb016>;
+  schema:deathDate "1932";
+  schema:birthDate "1873" .
+
+<http://viaf.org/viaf/67583866> skos:exactMatch :c_89f7078e .
+
+:c_14e910b5 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Lima, Alberto Carlos, 1872-1949"@en, "Lima, Alberto Carlos, 1872-1949"@pt;
+  skos:altLabel "Alberto Carlos Lima"@en, "Alberto Carlos Lima"@pt;
+  skos:exactMatch <http://viaf.org/viaf/306457238>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_79de72e3>;
+  schema:deathDate "1949";
+  schema:birthDate "1872" .
+
+<http://viaf.org/viaf/306457238> skos:exactMatch :c_14e910b5 .
+
+:c_bce8ec93 a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Secretariado da Propaganda Nacional"@en, "Portugal. Secretariado da Propaganda Nacional"@pt;
+  skos:altLabel "SPN"@en, "SPN"@pt, "Secretariado da Propaganda Nacional"@en, "Secretariado da Propaganda Nacional"@pt;
+  skos:note "Succeeded by Secretariado Nacional de Informação (SNI)"@en, "Sucedido pelo Secretariado Nacional de Informação (SNI)"@pt;
+  skos:related :c_e952b06f;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c4fc960f> .
+
+:c_e952b06f a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Secretariado Nacional da Informação"@en, "Portugal. Secretariado Nacional da Informação"@pt;
+  skos:altLabel "SNI"@en, "SNI"@pt, "Secretariado Nacional da Informação"@en, "Secretariado Nacional da Informação"@pt;
+  skos:note "Preceded by Secretariado da Propaganda Nacional (SPN)"@en, "Precedido pelo Secretariado da Propaganda Nacional (SPN)"@pt;
+  skos:related :c_bce8ec93;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c4fc960f> .
+
+:c_3ca7d62e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Bastos, Palmira, 1875-1967"@en, "Bastos, Palmira, 1875-1967"@pt;
+  skos:altLabel "Palmira Bastos"@en, "Palmira Bastos"@pt;
+  skos:exactMatch <http://viaf.org/viaf/65441120>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_79de72e3>;
+  schema:deathDate "1967";
+  schema:birthDate "1875" .
+
+<http://viaf.org/viaf/65441120> skos:exactMatch :c_3ca7d62e .
+
+:c_1bc55db8 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Terra, Miguel Ventura, 1866-1919"@en, "Terra, Miguel Ventura, 1866-1919"@pt;
+  skos:altLabel "Miguel Ventura Terra"@en, "Miguel Ventura Terra"@pt;
+  skos:exactMatch <http://viaf.org/viaf/96601203>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1919";
+  schema:birthDate "1866" .
+
+<http://viaf.org/viaf/96601203> skos:exactMatch :c_1bc55db8, :c_c5a1ee2b .
+
+:c_f952951e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Rodrigues, Amália, 1920-1999"@en, "Rodrigues, Amália, 1920-1999"@pt;
+  skos:altLabel "Amália Rodrigues"@en, "Amália Rodrigues"@pt;
+  skos:exactMatch <http://viaf.org/viaf/59350349>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_293388d4>;
+  schema:deathDate "1999";
+  schema:birthDate "1920" .
+
+<http://viaf.org/viaf/59350349> skos:exactMatch :c_f952951e .
+
+:c_24c8b0db a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Pastor, Artur, 1922-1999"@en, "Pastor, Artur, 1922-1999"@pt;
+  skos:altLabel "Artur Pastor"@en, "Artur Pastor"@pt;
+  skos:exactMatch <http://viaf.org/viaf/98650048>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "1999";
+  schema:birthDate "1922" .
+
+<http://viaf.org/viaf/98650048> skos:exactMatch :c_24c8b0db .
+
+:c_9cf231b8 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Pavão, Luís, 1954-"@en, "Pavão, Luís, 1954-"@pt;
+  skos:altLabel "Luís Pavão"@en, "Luís Pavão"@pt;
+  skos:exactMatch <http://viaf.org/viaf/52823558>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1954" .
+
+<http://viaf.org/viaf/52823558> skos:exactMatch :c_9cf231b8 .
+
+:c_6bd94def a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Estúdio Mário Novais"@en, "Estúdio Mário Novais"@pt;
+  skos:related :c_84d3d52f;
+  skos:exactMatch <http://viaf.org/viaf/155346617>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_289a377e> .
+
+:c_84d3d52f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Novais, Mário, 1899-1967"@en, "Novais, Mário, 1899-1967"@pt;
+  skos:altLabel "Mário Novais"@en, "Mário Novais"@pt;
+  skos:note "Fotógrafo português, 1899-1967"@pt, "Portuguese photographer, 1899-1967"@en;
+  skos:related :c_6bd94def;
+  skos:exactMatch <http://viaf.org/viaf/99211829>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "1967";
+  schema:birthDate "1899" .
+
+<http://viaf.org/viaf/155346617> skos:exactMatch :c_6bd94def .
+
+:c_9c848577 a skos:Concept, bf:Organization;
+  rdfs:label "Instituto Diplomático (ID)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Ministério dos Negócios Estrangeiros. Instituto Diplomático"@en,
+    "Portugal. Ministério dos Negócios Estrangeiros. Instituto Diplomático"@pt;
+  skos:altLabel "Instituto Diplomático (Portugal)"@en, "Instituto Diplomático do Ministério dos Negócios Estrangeiros"@pt,
+    "ID"@pt, "ID"@en;
+  skos:exactMatch <http://viaf.org/viaf/148887040>, <http://www.wikidata.org/entity/Q18465623>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95561689>;
+  frad:P4027 "ID" .
+
+<http://viaf.org/viaf/148887040> skos:exactMatch :c_9c848577 .
+
+<http://www.wikidata.org/entity/Q18465623> skos:exactMatch :c_9c848577 .
+
+:c_c67b250d a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo.pt (APT)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Arquivo.pt"@en, "Arquivo.pt"@pt;
+  skos:exactMatch <http://www.wikidata.org/entity/Q4117880>;
+  skos:closeMatch <http://viaf.org/viaf/143644015>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  frad:P4027 "APT" .
+
+<http://www.wikidata.org/entity/Q4117880> skos:exactMatch :c_c67b250d .
+
+<http://viaf.org/viaf/143644015> skos:closeMatch :c_c67b250d .
+
+:c_097c3c37 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Álvares, Manuel, ca 1590-1670, O.S.B."@en, "Álvares, Manuel, ca 1590-1670, O.S.B."@pt;
+  skos:altLabel "Manuel Álvares"@en, "Manuel Álvares"@pt;
+  skos:note "Benedictine monk attributed with the design of the Church and Monastery of Tibães in the Portuguese hamlet of Seixido. Portuguese architect, active 17th century"@en,
+    "Monge beneditino ao qual é atribuída a criação da Igreja e Mosteiro de Tibães na aldeia portuguesa do Seixido. Arquiteto português, ativo século 17"@pt;
+  skos:exactMatch <http://viaf.org/viaf/95791590>, <http://vocab.getty.edu/ulan/500018018>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1670";
+  schema:birthDate "ca 1590" .
+
+<http://viaf.org/viaf/95791590> skos:exactMatch :c_097c3c37 .
+
+<http://vocab.getty.edu/ulan/500018018> skos:exactMatch :c_097c3c37 .
+
+:c_ed961432 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Taveira, Tomás, 1938-"@en, "Taveira, Tomás, 1938-"@pt;
+  skos:altLabel "Tomás Taveira"@en, "Tomás Taveira"@pt;
+  skos:note "Arquiteto português contemporâneo"@pt, "Portuguese architect, contemporary"@en;
+  skos:exactMatch <http://viaf.org/viaf/18048077>, <http://vocab.getty.edu/ulan/500028579>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1938" .
+
+<http://viaf.org/viaf/18048077> skos:exactMatch :c_ed961432 .
+
+<http://vocab.getty.edu/ulan/500028579> skos:exactMatch :c_ed961432 .
+
+:c_838c8cdb a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Melo, Duarte Cabral de, 1941-2013"@en, "Melo, Duarte Cabral de, 1941-2013"@pt;
+  skos:altLabel "Cabral de Mello, Duarte"@pt, "Duarte Cabral de Mello"@pt, "Duarte Cabral de Melo"@en,
+    "Duarte Cabral de Melo"@pt;
+  skos:note "Arquiteto português, 1941-2013."@pt, "Portuguese architect, 1941-2013."@en;
+  skos:exactMatch <http://viaf.org/viaf/99158020>, <http://vocab.getty.edu/ulan/500056663>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2013";
+  schema:birthDate "1941" .
+
+<http://viaf.org/viaf/99158020> skos:exactMatch :c_838c8cdb .
+
+<http://vocab.getty.edu/ulan/500056663> skos:exactMatch :c_838c8cdb .
+
+:c_3ca79f06 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Távora, Fernando, 1923-2005"@en, "Távora, Fernando, 1923-2005"@pt;
+  skos:altLabel "Fernando Távora"@en, "Fernando Távora"@pt, "Távora, Fernando Luís Cardoso de Meneses de Tavares e"@pt;
+  skos:note "Arquiteto português, professor, 1923-2005"@pt, "Portuguese architect, teacher, 1923-2005"@en;
+  skos:exactMatch <http://viaf.org/viaf/114178203>, <http://vocab.getty.edu/ulan/500057202>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2005";
+  schema:birthDate "1923" .
+
+<http://viaf.org/viaf/114178203> skos:exactMatch :c_3ca79f06 .
+
+<http://vocab.getty.edu/ulan/500057202> skos:exactMatch :c_3ca79f06 .
+
+:c_3e3b2bd2 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Fernandes, Mateus, o Velho, ca 1450-1515"@pt, "Fernandes, Mateus, the elder, ca 1450-1515"@en;
+  skos:altLabel "Mateus Fernandes the Elder"@en, "Mateus Fernandes, o Velho"@pt;
+  skos:note "Arquiteto português, falecido em 1515"@pt, "Portuguese architect, died 1515"@en;
+  skos:exactMatch <http://viaf.org/viaf/67928589>, <http://vocab.getty.edu/ulan/500060600>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1515";
+  schema:birthDate "ca 1450" .
+
+<http://viaf.org/viaf/67928589> skos:exactMatch :c_3e3b2bd2 .
+
+<http://vocab.getty.edu/ulan/500060600> skos:exactMatch :c_3e3b2bd2 .
+
+:c_86d4d846 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Rodrigues, António, ca 1525-1590"@en, "Rodrigues, António, ca 1525-1590"@pt;
+  skos:altLabel "António Rodrigues"@en, "António Rodrigues"@pt;
+  skos:note "Arquiteto português, falecido em 1590"@pt, "Portuguese architect, died 1590"@en;
+  skos:exactMatch <http://viaf.org/viaf/305410094>, <http://vocab.getty.edu/ulan/500061514>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1590";
+  schema:birthDate "ca 1525" .
+
+<http://viaf.org/viaf/305410094> skos:exactMatch :c_86d4d846 .
+
+<http://vocab.getty.edu/ulan/500061514> skos:exactMatch :c_86d4d846 .
+
+:c_4cc6bd91 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Silva, José da Costa e, 1747-1819"@en, "Silva, José da Costa e, 1747-1819"@pt;
+  skos:altLabel "Costa e Silva, José da"@pt, "José da Costa e Silva"@en, "José da Costa e Silva"@pt;
+  skos:note "Arquiteto português, 1747-1819"@pt, "Portuguese architect, 1747-1819"@en;
+  skos:exactMatch <http://viaf.org/viaf/32807568>, <http://vocab.getty.edu/ulan/500065336>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1819";
+  schema:birthDate "1747" .
+
+<http://viaf.org/viaf/32807568> skos:exactMatch :c_4cc6bd91 .
+
+<http://vocab.getty.edu/ulan/500065336> skos:exactMatch :c_4cc6bd91 .
+
+:c_7606a6bf a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Martins, Artur Pires, 1914-2000"@en, "Martins, Artur Pires, 1914-2000"@pt;
+  skos:altLabel "Artur Pires Martins"@en, "Artur Pires Martins"@pt, "Pires Martins, Artur"@pt;
+  skos:note "Arquiteto português, ativo no final do século 20"@pt, "Portuguese architect, active late 20th century"@en;
+  skos:exactMatch <http://viaf.org/viaf/96174526>, <http://vocab.getty.edu/ulan/500070697>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2000";
+  schema:birthDate "1914" .
+
+<http://viaf.org/viaf/96174526> skos:exactMatch :c_7606a6bf .
+
+<http://vocab.getty.edu/ulan/500070697> skos:exactMatch :c_7606a6bf .
+
+:c_c0dd116e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Graça, João Luís Carrilho da, 1952-"@en, "Graça, João Luís Carrilho da, 1952-"@pt;
+  skos:altLabel "Carrilho da Graça, João"@pt, "João Carrilho da Graça"@en, "João Carrilho da Graça"@pt;
+  skos:note "Arquiteto português, nascido em 1952"@pt, "Portuguese architect, born 1952"@en;
+  skos:exactMatch <http://viaf.org/viaf/57451565>, <http://vocab.getty.edu/ulan/500070699>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1952" .
+
+<http://viaf.org/viaf/57451565> skos:exactMatch :c_c0dd116e .
+
+<http://vocab.getty.edu/ulan/500070699> skos:exactMatch :c_c0dd116e .
+
+:c_32061fe3 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Norte, Manuel Joaquim, 1878-1962"@en, "Norte, Manuel Joaquim, 1878-1962"@pt;
+  skos:altLabel "Júnior, Manuel Joaquim Norte"@pt, "Manuel Joaquim Norte"@en, "Manuel Joaquim Norte"@pt,
+    "Norte Júnior, Manuel Joaquim"@pt;
+  skos:note "Arquiteto português, 1878-1962"@pt, "Portuguese architect, 1878-1962"@en;
+  skos:exactMatch <http://viaf.org/viaf/96174557>, <http://vocab.getty.edu/ulan/500070701>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1962";
+  schema:birthDate "1878" .
+
+<http://viaf.org/viaf/96174557> skos:exactMatch :c_32061fe3 .
+
+<http://vocab.getty.edu/ulan/500070701> skos:exactMatch :c_32061fe3 .
+
+:c_01958695 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Soutinho, Alcino, 1930-2013"@en, "Soutinho, Alcino, 1930-2013"@pt;
+  skos:altLabel "Alcino Soutinho"@en, "Alcino Soutinho"@pt;
+  skos:note "Arquiteto português, 1930-2013."@pt, "Portuguese architect, 1930-2013."@en;
+  skos:exactMatch <http://viaf.org/viaf/167316117>, <http://vocab.getty.edu/ulan/500071321>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2013";
+  schema:birthDate "1930" .
+
+<http://viaf.org/viaf/167316117> skos:exactMatch :c_01958695 .
+
+<http://vocab.getty.edu/ulan/500071321> skos:exactMatch :c_01958695 .
+
+:c_136e4e5e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Byrne, Gonçalo Sousa, 1941-"@en, "Byrne, Gonçalo Sousa, 1941-"@pt;
+  skos:altLabel "Gonçalo Sousa Byrne"@en, "Gonçalo Sousa Byrne"@pt;
+  skos:note "Arquiteto português, nascido em 1941"@pt, "Portuguese architect, born 1941"@en;
+  skos:exactMatch <http://viaf.org/viaf/99100049>, <http://vocab.getty.edu/ulan/500073121>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1941" .
+
+<http://viaf.org/viaf/99100049> skos:exactMatch :c_136e4e5e .
+
+<http://vocab.getty.edu/ulan/500073121> skos:exactMatch :c_136e4e5e .
+
+:c_d756a686 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Gigante, José, 1952-"@en, "Gigante, José, 1952-"@pt;
+  skos:altLabel "José Gigante"@en, "José Gigante"@pt;
+  skos:note "Arquiteto português, nascido em 1952"@pt, "Portuguese architect, born 1952"@en;
+  skos:exactMatch <http://viaf.org/viaf/113149196576074792671>, <http://vocab.getty.edu/ulan/500076000>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1952" .
+
+<http://viaf.org/viaf/113149196576074792671> skos:exactMatch :c_d756a686 .
+
+<http://vocab.getty.edu/ulan/500076000> skos:exactMatch :c_d756a686 .
+
+:c_dd1857ff a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Monteiro, José Luís, 1849-1942"@en, "Monteiro, José Luís, 1849-1942"@pt;
+  skos:altLabel "José Luís Monteiro"@en, "José Luís Monteiro"@pt;
+  skos:note "Arquiteto e professor português, 1849-1942"@pt, "Portuguese architect and teacher, 1849-1942"@en;
+  skos:exactMatch <http://viaf.org/viaf/79440908>, <http://vocab.getty.edu/ulan/500077092>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1942";
+  schema:birthDate "1849" .
+
+<http://viaf.org/viaf/79440908> skos:exactMatch :c_dd1857ff .
+
+<http://vocab.getty.edu/ulan/500077092> skos:exactMatch :c_dd1857ff .
+
+:c_14ea454b a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Silva, Luís Cristino da, 1896-1976"@en, "Silva, Luís Cristino da, 1896-1976"@pt;
+  skos:altLabel "Luís Cristino da Silva"@en, "Luís Cristino da Silva"@pt, "Cristino da Silva, Luís"@pt;
+  skos:note "Arquiteto português, 1896-1976"@pt, "Portuguese architect, 1896-1976"@en;
+  skos:exactMatch <http://viaf.org/viaf/8443300>, <http://vocab.getty.edu/ulan/500080852>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1976";
+  schema:birthDate "1896" .
+
+<http://viaf.org/viaf/8443300> skos:exactMatch :c_14ea454b .
+
+<http://vocab.getty.edu/ulan/500080852> skos:exactMatch :c_14ea454b .
+
+:c_69bf622e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Santos, José Paulo dos, 1956-"@en, "Santos, José Paulo dos, 1956-"@pt;
+  skos:altLabel "José Paulo dos Santos"@en, "José Paulo dos Santos"@pt;
+  skos:note "Arquiteto e escritor português, nascido em 1956"@pt, "Portuguese architect and author, born 1956"@en;
+  skos:exactMatch <http://viaf.org/viaf/196149294304280521689>, <http://vocab.getty.edu/ulan/500081991>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1956" .
+
+<http://viaf.org/viaf/196149294304280521689> skos:exactMatch :c_69bf622e .
+
+<http://vocab.getty.edu/ulan/500081991> skos:exactMatch :c_69bf622e .
+
+:c_dd20cbce a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Castilho, João de, ca 1475-1552"@en, "Castilho, João de, ca 1475-1552"@pt;
+  skos:altLabel "Castillo, Juan de"@pt, "João de Castilho"@en, "João de Castilho"@pt,
+    "Juan de Castillo"@pt;
+  skos:note "Arquiteto português, ca 1475-1552"@pt, "Portuguese architect, ca 1475-1552"@en;
+  skos:exactMatch <http://viaf.org/viaf/107014115>, <http://vocab.getty.edu/ulan/500092106>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1552";
+  schema:birthDate "ca 1470" .
+
+<http://viaf.org/viaf/107014115> skos:exactMatch :c_dd20cbce .
+
+<http://vocab.getty.edu/ulan/500092106> skos:exactMatch :c_dd20cbce .
+
+:c_364c9004 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Ferreira, Raúl Hestnes, 1931-2018"@en, "Ferreira, Raúl Hestnes, 1931-2018"@pt;
+  skos:altLabel "Hestnes Ferreira, Raúl"@pt, "Raúl Hestnes Ferreira"@en, "Raúl Hestnes Ferreira"@pt;
+  skos:note "Arquiteto português, 1931-2018."@pt, "Portuguese architect, 1931-2018."@en;
+  skos:exactMatch <http://viaf.org/viaf/35608370>, <http://vocab.getty.edu/ulan/500093024>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2018";
+  schema:birthDate "1931" .
+
+<http://viaf.org/viaf/35608370> skos:exactMatch :c_364c9004 .
+
+<http://vocab.getty.edu/ulan/500093024> skos:exactMatch :c_364c9004 .
+
+:c_d5e5a387 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Herigoyen, José Manuel, 1746-1817"@en, "Herigoyen, José Manuel, 1746-1817"@pt;
+  skos:altLabel "Emanuel Joseph von Herigoyen"@pt, "Herigoyen, Emanuel Joseph von"@pt,
+    "José Manuel Herigoyen"@en, "José Manuel Herigoyen"@pt;
+  skos:note "Arquiteto português, 1746-1817, ativo na Alemanha"@pt, "Portuguese architect, 1746-1817, active in Germany"@en;
+  skos:exactMatch <http://viaf.org/viaf/57406565>, <http://vocab.getty.edu/ulan/500093848>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1817";
+  schema:birthDate "1746" .
+
+<http://viaf.org/viaf/57406565> skos:exactMatch :c_d5e5a387 .
+
+<http://vocab.getty.edu/ulan/500093848> skos:exactMatch :c_d5e5a387 .
+
+:c_ff7b4485 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Oliveira, Mateus Vicente de, 1706-1786"@en, "Oliveira, Mateus Vicente de, 1706-1786"@pt;
+  skos:altLabel "Mateus Vicente de Oliveira"@en, "Mateus Vicente de Oliveira"@pt;
+  skos:note "Arquiteto português, 1706-1786"@pt, "Portuguese architect, 1706-1786"@en;
+  skos:exactMatch <http://viaf.org/viaf/18448692>, <http://vocab.getty.edu/ulan/500094443>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1786";
+  schema:birthDate "1706" .
+
+<http://viaf.org/viaf/18448692> skos:exactMatch :c_ff7b4485 .
+
+<http://vocab.getty.edu/ulan/500094443> skos:exactMatch :c_ff7b4485 .
+
+:c_bc2bf0be a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Dias, Adalberto, 1953-"@en, "Dias, Adalberto, 1953-"@pt;
+  skos:altLabel "Adalberto Dias"@en, "Adalberto Dias"@pt, "Adalberto da Rocha Gonçalves Dias"@pt,
+    "Dias, Adalberto da Rocha Gonçalves"@pt;
+  skos:note "Arquiteto português, nascido em 1953"@pt, "Portuguese architect, born 1953"@en;
+  skos:exactMatch <http://viaf.org/viaf/47898089>, <http://vocab.getty.edu/ulan/500095651>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1953" .
+
+<http://viaf.org/viaf/47898089> skos:exactMatch :c_bc2bf0be .
+
+<http://vocab.getty.edu/ulan/500095651> skos:exactMatch :c_bc2bf0be .
+
+:c_94e22bb2 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Piolti, Manuel, ca 1770-1830"@en, "Piolti, Manuel, ca 1770-1830"@pt;
+  skos:altLabel "Manuel Piolti"@en, "Manuel Piolti"@pt;
+  skos:note "Arquiteto, cenógrafo e pintor português, por volta de 1770-depois de 1823"@pt,
+    "Portuguese architect, scenographer, and painter, ca1770-after 1823"@en;
+  skos:exactMatch <http://viaf.org/viaf/96400194>, <http://vocab.getty.edu/ulan/500097484>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "ca 1830";
+  schema:birthDate "ca 1770" .
+
+<http://viaf.org/viaf/96400194> skos:exactMatch :c_94e22bb2 .
+
+<http://vocab.getty.edu/ulan/500097484> skos:exactMatch :c_94e22bb2 .
+
+:c_9989527f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Segurado, Jorge, 1898-1990"@en, "Segurado, Jorge, 1898-1990"@pt;
+  skos:altLabel "Jorge Segurado"@en, "Jorge Segurado"@pt, "Jorge de Almeida Segurado"@pt,
+    "Segurado, Jorge de Almeida"@pt;
+  skos:note "Arquiteto português, nascido em 1898"@pt, "Portuguese architect, born 1898"@en;
+  skos:exactMatch <http://viaf.org/viaf/55508355>, <http://vocab.getty.edu/ulan/500101288>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1998";
+  schema:birthDate "1898" .
+
+<http://viaf.org/viaf/55508355> skos:exactMatch :c_9989527f .
+
+<http://vocab.getty.edu/ulan/500101288> skos:exactMatch :c_9989527f .
+
+:c_7abe34b3 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Torralva, Diogo de, ca 1500-1566"@en, "Torralva, Diogo de, ca 1500-1566"@pt;
+  skos:altLabel "Diogo de Torralva"@en, "Diogo de Torralva"@pt;
+  skos:note "Devido ao seu estilo ter sido influenciado pela arquitetura italiana, foi sugerido que Torralva era italiano. Hoje, acredita-se que era provavelmente descendente de espanhóis, talvez filho de Afonso Fernandes Torralva, um cortesão que veio a Portugal em 1501 com a infanta espanhola Maria, mãe de D. João III, rei de Portugal. Torralva casou-se com Catarina, filha do arquiteto Francisco de Arruda. Arquiteto espanhol, ativo em Portugal."@pt,
+    "Due to his style having been influenced by Italian architecture, it has been suggested that Torralva was Italian. Today it is generally held that he was probably of Spanish descent, perhaps the son of Afonso Fernandes Torralva, a courtier who came to Portugal in 1501 with the Spanish infanta Maria, mother of John III, King of Portugal. Torralva married Catarina, daughter of the architect Francisco de Arruda. Spanish architect, active in Portugal"@en;
+  skos:exactMatch <http://viaf.org/viaf/96523321>, <http://vocab.getty.edu/ulan/500112111>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1566";
+  schema:birthDate "ca 1500" .
+
+<http://viaf.org/viaf/96523321> skos:exactMatch :c_7abe34b3 .
+
+<http://vocab.getty.edu/ulan/500112111> skos:exactMatch :c_7abe34b3 .
+
+:c_7b2bd798 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Arruda, Francisco de, ca 1480-1547"@en, "Arruda, Francisco de, ca 1480-1547"@pt;
+  skos:altLabel "Francisco Arruda"@pt, "Francisco de Arruda"@en, "Francisco de Arruda"@pt;
+  skos:note "Arquiteto português, ca 1480-1547"@pt, "Portuguese architect, ca 1480-1547"@en;
+  skos:exactMatch <http://viaf.org/viaf/96544769>, <http://vocab.getty.edu/ulan/500116427>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1547";
+  schema:birthDate "ca 1480" .
+
+<http://viaf.org/viaf/96544769> skos:exactMatch :c_7b2bd798 .
+
+<http://vocab.getty.edu/ulan/500116427> skos:exactMatch :c_7b2bd798 .
+
+:c_e6597426 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Arruda, Diogo de, ca 1470-1531"@en, "Arruda, Diogo de, ca 1470-1531"@pt;
+  skos:altLabel "Diogo de Arruda"@en, "Diogo de Arruda"@pt;
+  skos:note "Arquiteto português, ca 1470-1531"@pt, "Portuguese architect, ca 1470-1531"@en;
+  skos:exactMatch <http://viaf.org/viaf/96544795>, <http://vocab.getty.edu/ulan/500116430>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1531";
+  schema:birthDate "ca 1470" .
+
+<http://viaf.org/viaf/96544795> skos:exactMatch :c_e6597426 .
+
+<http://vocab.getty.edu/ulan/500116430> skos:exactMatch :c_e6597426 .
+
+:c_449e164e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Arruda, Miguel de, ca 1500-1563"@en, "Arruda, Miguel de, ca 1500-1563"@pt;
+  skos:altLabel "Miguel de Arruda"@en, "Miguel de Arruda"@pt;
+  skos:note "Arquiteto português, ca 1500-1563"@pt, "Portuguese architect,  ca 1500-1563"@en;
+  skos:exactMatch <http://viaf.org/viaf/158182369>, <http://vocab.getty.edu/ulan/500116434>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1563";
+  schema:birthDate "ca 1500" .
+
+<http://viaf.org/viaf/158182369> skos:exactMatch :c_449e164e .
+
+<http://vocab.getty.edu/ulan/500116434> skos:exactMatch :c_449e164e .
+
+:c_72156f8b a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Vasconcelos, Constantino de, ?-1668"@en, "Vasconcelos, Constantino de, ?-1668"@pt;
+  skos:altLabel "Constantino de Vasconcelos"@en, "Constantino de Vasconcelos"@pt;
+  skos:note "Arquiteto e engenheiro português, falecido em 1668"@pt, "Portuguese architect and engineer, died 1668"@en;
+  skos:exactMatch <http://viaf.org/viaf/96550512>, <http://vocab.getty.edu/ulan/500117274>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1668" .
+
+<http://viaf.org/viaf/96550512> skos:exactMatch :c_72156f8b .
+
+<http://vocab.getty.edu/ulan/500117274> skos:exactMatch :c_72156f8b .
+
+:c_32c8d7bc a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Lisboa, Manuel Francisco, 1697-1767"@en, "Lisboa, Manuel Francisco, 1697-1767"@pt;
+  skos:altLabel "Lisboa, Manoel Francisco"@pt, "Manuel Francisco Lisboa"@en, "Manuel Francisco Lisboa"@pt;
+  skos:note "Arquiteto português, falecido antes de 1767, ativo no Brasil"@pt, "Portuguese architect, died before 1767, active in Brazil"@en;
+  skos:exactMatch <http://viaf.org/viaf/86342685>, <http://vocab.getty.edu/ulan/500118083>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1767";
+  schema:birthDate "1697" .
+
+<http://viaf.org/viaf/86342685> skos:exactMatch :c_32c8d7bc .
+
+<http://vocab.getty.edu/ulan/500118083> skos:exactMatch :c_32c8d7bc .
+
+:c_a7b8e96d a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Couto, António do, 1874-1946"@en, "Couto, António do, 1874-1946"@pt;
+  skos:altLabel "António do Couto"@en, "António do Couto"@pt;
+  skos:note "Arquiteto português, 1874-1946"@pt, "Portuguese architect, 1874-1946"@en;
+  skos:exactMatch <http://viaf.org/viaf/96600816>, <http://vocab.getty.edu/ulan/500124528>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1946";
+  schema:birthDate "1874" .
+
+<http://viaf.org/viaf/96600816> skos:exactMatch :c_a7b8e96d .
+
+<http://vocab.getty.edu/ulan/500124528> skos:exactMatch :c_a7b8e96d .
+
+:c_61e37124 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Ramos, Carlos, 1897-1969"@en, "Ramos, Carlos, 1897-1969"@pt;
+  skos:altLabel "Carlos João Chambers Ramos"@pt, "Carlos Ramos"@en, "Carlos Ramos"@pt,
+    "Ramos, Carlos João Chambers"@pt;
+  skos:note "Arquiteto e professor português, 1897-1969"@pt, "Portuguese architect and teacher, 1897-1969"@en;
+  skos:exactMatch <http://viaf.org/viaf/4303329>, <http://vocab.getty.edu/ulan/500124531>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1969";
+  schema:birthDate "1897" .
+
+<http://viaf.org/viaf/4303329> skos:exactMatch :c_61e37124 .
+
+<http://vocab.getty.edu/ulan/500124531> skos:exactMatch :c_61e37124 .
+
+:c_6d45a9b1 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Abreu, José Francisco de, 1753-?"@en, "Abreu, José Francisco de, 1753-?"@pt;
+  skos:altLabel "José Francisco de Abreu"@en, "José Francisco de Abreu"@pt;
+  skos:note "Arquiteto português, nascido em 1753"@pt, "Portuguese architect, born 1753"@en;
+  skos:exactMatch <http://viaf.org/viaf/96600859>, <http://vocab.getty.edu/ulan/500124533>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1753" .
+
+<http://viaf.org/viaf/96600859> skos:exactMatch :c_6d45a9b1 .
+
+<http://vocab.getty.edu/ulan/500124533> skos:exactMatch :c_6d45a9b1 .
+
+:c_c349dd05 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Amaral, Francisco Keil do, 1910-1975"@en, "Amaral, Francisco Keil do, 1910-1975"@pt;
+  skos:altLabel "Amaral, Keil do"@pt, "Keil do Amaral"@en, "Keil do Amaral"@pt;
+  skos:note "Arquiteto, teórico e escritor português, 1910-1975"@pt, "Portuguese architect, theorist, and writer, 1910-1975"@en;
+  skos:exactMatch <http://viaf.org/viaf/19686169>, <http://vocab.getty.edu/ulan/500124534>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1975";
+  schema:birthDate "1910" .
+
+<http://viaf.org/viaf/19686169> skos:exactMatch :c_c349dd05 .
+
+<http://vocab.getty.edu/ulan/500124534> skos:exactMatch :c_c349dd05 .
+
+:c_7636f77d a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Domingues, Domingos, fl. 1308-1321"@en, "Domingues, Domingos, fl. 1308-1321"@pt;
+  skos:altLabel "Domingos Domingues"@en, "Domingos Domingues"@pt;
+  skos:note "Arquiteto português, ativo ca 1308-1321"@pt, "Portuguese architect, active ca 1308-1321"@en;
+  skos:exactMatch <http://viaf.org/viaf/96600863>, <http://vocab.getty.edu/ulan/500124536>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  bf:date "fl. 1308-1321" .
+
+<http://viaf.org/viaf/96600863> skos:exactMatch :c_7636f77d .
+
+<http://vocab.getty.edu/ulan/500124536> skos:exactMatch :c_7636f77d .
+
+:c_2eb4d968 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Macomboa, Manuel Alves, ca 1740-1815"@en, "Macomboa, Manuel Alves, ca 1740-1815"@pt;
+  skos:altLabel "Manuel Alves Macomboa"@en, "Manuel Alves Macomboa"@pt;
+  skos:note "Arquiteto português, ca 1740-1815"@pt, "Portuguese architect, ca 1740-1815"@en;
+  skos:exactMatch <http://viaf.org/viaf/96600871>, <http://vocab.getty.edu/ulan/500124537>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1815";
+  schema:birthDate "ca 1740" .
+
+<http://viaf.org/viaf/96600871> skos:exactMatch :c_2eb4d968 .
+
+<http://vocab.getty.edu/ulan/500124537> skos:exactMatch :c_2eb4d968 .
+
+:c_d205f68e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Marques, Diogo, fl. 1594-1640"@en, "Marques, Diogo, fl. 1594-1640"@pt;
+  skos:altLabel "Diogo Marques"@en, "Diogo Marques"@pt;
+  skos:note "Arquiteto português, ativo 1594-1640"@pt, "Portuguese architect, active 1594-1640"@en;
+  skos:exactMatch <http://viaf.org/viaf/96600885>, <http://vocab.getty.edu/ulan/500124538>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1640";
+  bf:date "fl. 1594-1640" .
+
+<http://viaf.org/viaf/96600885> skos:exactMatch :c_d205f68e .
+
+<http://vocab.getty.edu/ulan/500124538> skos:exactMatch :c_d205f68e .
+
+:c_c854a806 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Bermudes, Adães, 1864-1948"@en, "Bermudes, Adães, 1864-1948"@pt;
+  skos:altLabel "Adães Bermudes"@en, "Adães Bermudes"@pt;
+  skos:note "Arquiteto português, 1864-1948"@pt, "Portuguese architect, 1864-1948"@en;
+  skos:exactMatch <http://viaf.org/viaf/98771203>, <http://vocab.getty.edu/ulan/500124544>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1948";
+  schema:birthDate "1864" .
+
+<http://viaf.org/viaf/98771203> skos:exactMatch :c_c854a806 .
+
+<http://vocab.getty.edu/ulan/500124544> skos:exactMatch :c_c854a806 .
+
+:c_0f9514e4 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Branco, Cassiano, 1897-1970"@en, "Branco, Cassiano, 1897-1970"@pt;
+  skos:altLabel "Cassiano Branco"@en, "Cassiano Branco"@pt;
+  skos:note "Arquiteto português, 1897-1970"@pt, "Portuguese architect, 1897-1970"@en;
+  skos:exactMatch <http://viaf.org/viaf/33674891>, <http://vocab.getty.edu/ulan/500124545>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1970";
+  schema:birthDate "1897" .
+
+<http://viaf.org/viaf/33674891> skos:exactMatch :c_0f9514e4 .
+
+<http://vocab.getty.edu/ulan/500124545> skos:exactMatch :c_0f9514e4 .
+
+:c_480f4fa5 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Carvalheira, Rosendo, 1863-1919"@en, "Carvalheira, Rosendo, 1863-1919"@pt;
+  skos:altLabel "Rosendo Carvalheira"@en, "Rosendo Carvalheira"@pt;
+  skos:note "Arquiteto português, 1863-1919"@pt, "Portuguese architect, 1863-1919"@en;
+  skos:exactMatch <http://viaf.org/viaf/96600941>, <http://vocab.getty.edu/ulan/500124546>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1919";
+  schema:birthDate "1863" .
+
+<http://viaf.org/viaf/96600941> skos:exactMatch :c_480f4fa5 .
+
+<http://vocab.getty.edu/ulan/500124546> skos:exactMatch :c_480f4fa5 .
+
+:c_feea28bf a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Leal, José do Couto dos Santos, ca 1750-1829"@en, "Leal, José do Couto dos Santos, ca 1750-1829"@pt;
+  skos:altLabel "Couto dos Santos Leal, José do"@pt, "José do Couto dos Santos Leal"@en,
+    "José do Couto dos Santos Leal"@pt;
+  skos:note "Arquiteto português, ca 1750-1829"@pt, "Portuguese architect, ca 1750-1829"@en;
+  skos:exactMatch <http://viaf.org/viaf/96600956>, <http://vocab.getty.edu/ulan/500124547>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1829";
+  schema:birthDate "ca 1750" .
+
+<http://viaf.org/viaf/96600956> skos:exactMatch :c_feea28bf .
+
+<http://vocab.getty.edu/ulan/500124547> skos:exactMatch :c_feea28bf .
+
+:c_be9c68c2 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Ferreira, Gaspar"@en, "Ferreira, Gaspar"@pt;
+  skos:altLabel "Gaspar Ferreira"@en, "Gaspar Ferreira"@pt;
+  skos:note "Arquiteto, construtor e designer português, ativo de 1718-1761"@pt, "Portuguese architect, builder, and designer, active 1718-1761"@en;
+  skos:exactMatch <http://viaf.org/viaf/96600960>, <http://vocab.getty.edu/ulan/500124548>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  bf:date "fl. 1718-1761" .
+
+<http://viaf.org/viaf/96600960> skos:exactMatch :c_be9c68c2 .
+
+<http://vocab.getty.edu/ulan/500124548> skos:exactMatch :c_be9c68c2 .
+
+:c_102455d8 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Machado, Álvaro Augusto, 1874-1944"@en, "Machado, Álvaro Augusto, 1874-1944"@pt;
+  skos:altLabel "Álvaro Augusto Machado"@en, "Álvaro Augusto Machado"@pt;
+  skos:note "Arquiteto português, 1874-1944"@pt, "Portuguese architect, 1874-1944"@en;
+  skos:exactMatch <http://viaf.org/viaf/313035386>, <http://vocab.getty.edu/ulan/500124553>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1944";
+  schema:birthDate "1874" .
+
+<http://viaf.org/viaf/313035386> skos:exactMatch :c_102455d8 .
+
+<http://vocab.getty.edu/ulan/500124553> skos:exactMatch :c_102455d8 .
+
+:c_0668603d a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Monteiro, Pardal, 1897-1957"@en, "Monteiro, Pardal, 1897-1957"@pt;
+  skos:altLabel "Pardal Monteiro"@en, "Pardal Monteiro"@pt;
+  skos:note "Arquiteto português, 1897-1957"@pt, "Portuguese architect, 1897-1957"@en;
+  skos:exactMatch <http://viaf.org/viaf/3307026>, <http://vocab.getty.edu/ulan/500124554>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1957";
+  schema:birthDate "1897" .
+
+<http://viaf.org/viaf/3307026> skos:exactMatch :c_0668603d .
+
+<http://vocab.getty.edu/ulan/500124554> skos:exactMatch :c_0668603d .
+
+:c_21e5800b a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Pires, Manuel, ?-1569"@en, "Pires, Manuel, ?-1569"@pt;
+  skos:altLabel "Manuel Pires"@en, "Manuel Pires"@pt;
+  skos:note "Arquiteto português, falecido em 1569"@pt, "Portuguese architect, died 1569"@en;
+  skos:exactMatch <http://viaf.org/viaf/96601033>, <http://vocab.getty.edu/ulan/500124559>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1569" .
+
+<http://viaf.org/viaf/96601033> skos:exactMatch :c_21e5800b .
+
+<http://vocab.getty.edu/ulan/500124559> skos:exactMatch :c_21e5800b .
+
+:c_967e4dfe a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Silva, Francisco da Conceição, 1922-1982"@en, "Silva, Francisco da Conceição, 1922-1982"@pt;
+  skos:altLabel "Conceição Silva"@pt, "Francisco da Conceição Silva"@en, "Francisco da Conceição Silva"@pt,
+    "Silva, Conceição"@pt;
+  skos:note "Arquiteto e designer português, 1922-1982"@pt, "Portuguese architect and designer, 1922-1982"@en;
+  skos:exactMatch <http://viaf.org/viaf/18844928>, <http://vocab.getty.edu/ulan/500124563>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1982";
+  schema:birthDate "1922" .
+
+<http://viaf.org/viaf/18844928> skos:exactMatch :c_967e4dfe .
+
+<http://vocab.getty.edu/ulan/500124563> skos:exactMatch :c_967e4dfe .
+
+:c_815a8ab7 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Silva, Domingos Parente da, 1836-1901"@en, "Silva, Domingos Parente da, 1836-1901"@pt;
+  skos:altLabel "Domingos Parente da Silva"@en, "Domingos Parente da Silva"@pt;
+  skos:note "Arquiteto português, 1836-1901"@pt, "Portuguese architect, 1836-1901"@en;
+  skos:exactMatch <http://viaf.org/viaf/96601080>, <http://vocab.getty.edu/ulan/500124564>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1901";
+  schema:birthDate "1836" .
+
+<http://viaf.org/viaf/96601080> skos:exactMatch :c_815a8ab7 .
+
+<http://vocab.getty.edu/ulan/500124564> skos:exactMatch :c_815a8ab7 .
+
+:c_d98c7370 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Silva, José Marques da, 1869-1947"@en, "Silva, José Marques da, 1869-1947"@pt;
+  skos:altLabel "José Marques da Silva"@en, "José Marques da Silva"@pt, "Silva, Marques da"@pt;
+  skos:note "Arquiteto e professor português, 1869-1947"@pt, "Portuguese architect and teacher, 1869-1947"@en;
+  skos:exactMatch <http://viaf.org/viaf/50453111>, <http://vocab.getty.edu/ulan/500124565>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1947";
+  schema:birthDate "1869" .
+
+<http://viaf.org/viaf/50453111> skos:exactMatch :c_d98c7370 .
+
+<http://vocab.getty.edu/ulan/500124565> skos:exactMatch :c_d98c7370 .
+
+:c_515714ba a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Amarante, Carlos Luís Ferreira da Cruz, 1748-1815"@en, "Amarante, Carlos Luís Ferreira da Cruz, 1748-1815"@pt;
+  skos:altLabel "Amarante, Carlos"@pt, "Carlos Luis Ferreira da Cruz Amarante"@en, "Carlos Luis Ferreira da Cruz Amarante"@pt;
+  skos:note "Arquiteto e engenheiro militar português, 1748-1815"@pt, "Portuguese architect and military engineer, 1748-1815"@en;
+  skos:exactMatch <http://viaf.org/viaf/55087272>, <http://vocab.getty.edu/ulan/500124569>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1815";
+  schema:birthDate "1748" .
+
+<http://viaf.org/viaf/55087272> skos:exactMatch :c_515714ba .
+
+<http://vocab.getty.edu/ulan/500124569> skos:exactMatch :c_515714ba .
+
+:c_dd1dd621 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Antunes, João, 1643-1712"@en, "Antunes, João, 1643-1712"@pt;
+  skos:altLabel "João Antunes"@en, "João Antunes"@pt;
+  skos:note "Arquiteto e pedreiro português, 1643-1712"@pt, "Portuguese architect and mason, 1643-1712"@en;
+  skos:exactMatch <http://viaf.org/viaf/96601120>, <http://vocab.getty.edu/ulan/500124570>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1712";
+  schema:birthDate "1643" .
+
+<http://viaf.org/viaf/96601120> skos:exactMatch :c_dd1dd621 .
+
+<http://vocab.getty.edu/ulan/500124570> skos:exactMatch :c_dd1dd621 .
+
+:c_376ccb35 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Santos, Reinaldo Manuel dos, 1731-1789"@en, "Santos, Reinaldo Manuel dos, 1731-1789"@pt;
+  skos:altLabel "Reinaldo Manuel dos Santos"@en, "Reinaldo Manuel dos Santos"@pt;
+  skos:note "Arquiteto e urbanista português, 1731-1789"@pt, "Portuguese architect and urban planner, 1731-1789"@en;
+  skos:exactMatch <http://viaf.org/viaf/294977121>, <http://vocab.getty.edu/ulan/500124576>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1789";
+  schema:birthDate "1731" .
+
+<http://viaf.org/viaf/294977121> skos:exactMatch :c_376ccb35 .
+
+<http://vocab.getty.edu/ulan/500124576> skos:exactMatch :c_376ccb35 .
+
+:c_c5a1ee2b a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Terra, Ventura, 1866-1919"@en, "Terra, Ventura, 1866-1919"@pt;
+  skos:altLabel "Ventura Terra"@en, "Ventura Terra"@pt, "Ventura Terra, Miguel"@pt;
+  skos:note "Arquiteto português, 1866-1919"@pt, "Portuguese architect, 1866-1919"@en;
+  skos:exactMatch <http://viaf.org/viaf/96601203>, <http://vocab.getty.edu/ulan/500124578>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1919";
+  schema:birthDate "1866" .
+
+<http://vocab.getty.edu/ulan/500124578> skos:exactMatch :c_c5a1ee2b .
+
+:c_72290750 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Vilalobos, Manuel Pinto de, ca 1665 -1734"@en, "Vilalobos, Manuel Pinto de, ca 1665 -1734"@pt;
+  skos:altLabel "Manuel Pinto de Vilalobos"@en, "Manuel Pinto de Vilalobos"@pt;
+  skos:note "Arquiteto, engenheiro militar e escritor português, ca 1665-1734"@pt, "Portuguese architect, military engineer, and writer, ca 1665-1734"@en;
+  skos:exactMatch <http://viaf.org/viaf/230381475>, <http://vocab.getty.edu/ulan/500124579>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1734";
+  schema:birthDate "ca 1665" .
+
+<http://viaf.org/viaf/230381475> skos:exactMatch :c_72290750 .
+
+<http://vocab.getty.edu/ulan/500124579> skos:exactMatch :c_72290750 .
+
+:c_42e0fc8f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Pereira, Nuno Teotónio, 1922-2016"@en, "Pereira, Nuno Teotónio, 1922-2016"@pt;
+  skos:altLabel "Nuno Teotónio Pereira"@en, "Nuno Teotónio Pereira"@pt;
+  skos:note "Formou-se na Escola Superior de Belas Artes de Lisboa em 1948. Trabalhou em projectos de habitação nas décadas de 1950 e 1960, interessando-se pelas funções sociais da arquitectura. Arquiteto português, 1922-2016"@pt,
+    "Graduated from the Escola Superior de Belas Artes, Lisbon in 1948. He worked on housing projects in the 1950s and 1960s, and was interested in the social functions of architecture. Portuguese architect, 1922-2016"@en;
+  skos:exactMatch <http://viaf.org/viaf/277130129>, <http://vocab.getty.edu/ulan/500124950>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2016";
+  schema:birthDate "1922" .
+
+<http://viaf.org/viaf/277130129> skos:exactMatch :c_42e0fc8f .
+
+<http://vocab.getty.edu/ulan/500124950> skos:exactMatch :c_42e0fc8f .
+
+:c_2cbb4d04 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Archer, João, 1928-"@en, "Archer, João, 1928-"@pt;
+  skos:altLabel "Archer de Carvalho, João"@pt, "João Archer de Carvalho"@en, "João Archer de Carvalho"@pt;
+  skos:note "Arquiteto português, nascido em 1928, arquiteto oficial da Hidroelétrica do Douro."@pt,
+    "Portuguese architect, born 1928, in-house architect for the Douro Hydroelectric Company."@en;
+  skos:exactMatch <http://viaf.org/viaf/124245567>, <http://vocab.getty.edu/ulan/500246031>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1928" .
+
+<http://viaf.org/viaf/124245567> skos:exactMatch :c_2cbb4d04 .
+
+<http://vocab.getty.edu/ulan/500246031> skos:exactMatch :c_2cbb4d04 .
+
+:c_141b4010 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Forjaz, José, 1936-"@en, "Forjaz, José, 1936-"@pt;
+  skos:altLabel "José Forjaz"@en, "José Forjaz"@pt;
+  skos:note "Arquiteto português, nascido em 1936, activo em Moçambique"@pt, "Portuguese architect, born 1936, active in Mozambique"@en;
+  skos:exactMatch <http://viaf.org/viaf/68579766>, <http://vocab.getty.edu/ulan/500247655>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1936" .
+
+<http://viaf.org/viaf/68579766> skos:exactMatch :c_141b4010 .
+
+<http://vocab.getty.edu/ulan/500247655> skos:exactMatch :c_141b4010 .
+
+:c_6de857f4 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Vieira, Álvaro Leite, 1962-"@en, "Vieira, Álvaro Leite, 1962-"@pt;
+  skos:altLabel "Siza Vieira, Álvaro Leite"@pt, "Álvaro Leite Siza Vieira"@en, "Álvaro Leite Siza Vieira"@pt;
+  skos:note "Arquiteto português contemporâneo"@pt, "Portuguese architect, contemporary"@en;
+  skos:exactMatch <http://viaf.org/viaf/30749805>, <http://vocab.getty.edu/ulan/500285755>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1962" .
+
+<http://viaf.org/viaf/30749805> skos:exactMatch :c_6de857f4 .
+
+<http://vocab.getty.edu/ulan/500285755> skos:exactMatch :c_6de857f4 .
+
+:c_b9aa4354 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Tinoco, João Nunes, ca 1610-1689"@en, "Tinoco, João Nunes, ca 1610-1689"@pt;
+  skos:altLabel "João Nunes Tinoco"@en, "João Nunes Tinoco"@pt;
+  skos:note "Arquiteto português, falecido em 1689"@pt, "Portuguese architect, died 1689"@en;
+  skos:exactMatch <http://viaf.org/viaf/98941240>, <http://vocab.getty.edu/ulan/500330008>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1689";
+  schema:birthDate "ca 1610" .
+
+<http://viaf.org/viaf/98941240> skos:exactMatch :c_b9aa4354 .
+
+<http://vocab.getty.edu/ulan/500330008> skos:exactMatch :c_b9aa4354 .
+
+:c_83d17d66 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Simão, Júlio, fl. 1596-1625"@en, "Simão, Júlio, fl. 1596-1625"@pt;
+  skos:altLabel "Júlio Simão"@en, "Júlio Simão"@pt;
+  skos:note "Arquiteto e engenheiro português, ativo 1596-1625."@pt, "Portuguese architect and engineer, active 1596-1625."@en;
+  skos:exactMatch <http://viaf.org/viaf/309814492>, <http://vocab.getty.edu/ulan/500332381>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1666";
+  schema:birthDate "1556";
+  bf:date "fl. 1596-1625" .
+
+<http://viaf.org/viaf/309814492> skos:exactMatch :c_83d17d66 .
+
+<http://vocab.getty.edu/ulan/500332381> skos:exactMatch :c_83d17d66 .
+
+:c_37c489cf a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Sequeira, José da Costa, 1800-1872"@en, "Sequeira, José da Costa, 1800-1872"@pt;
+  skos:altLabel "José da Costa Sequeira"@en, "José da Costa Sequeira"@pt;
+  skos:note "Arquiteto, urbanista e escritor português, 1800-1872"@pt, "Portuguese architect, urban planner, and writer, 1800-1872"@en;
+  skos:exactMatch <http://viaf.org/viaf/98658950>, <http://vocab.getty.edu/ulan/500333125>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1872";
+  schema:birthDate "1800" .
+
+<http://viaf.org/viaf/98658950> skos:exactMatch :c_37c489cf .
+
+<http://vocab.getty.edu/ulan/500333125> skos:exactMatch :c_37c489cf .
+
+:c_9d78d0d9 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Tinoco, Pedro Nunes, ?-1641"@en, "Tinoco, Pedro Nunes, ?-1641"@pt;
+  skos:altLabel "Pedro Nunes Tinoco"@en, "Pedro Nunes Tinoco"@pt;
+  skos:note "Arquiteto português, falecido em 1641"@pt, "Portuguese architect, died 1641"@en;
+  skos:exactMatch <http://viaf.org/viaf/72588639>, <http://vocab.getty.edu/ulan/500335912>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1641" .
+
+<http://viaf.org/viaf/72588639> skos:exactMatch :c_9d78d0d9 .
+
+<http://vocab.getty.edu/ulan/500335912> skos:exactMatch :c_9d78d0d9 .
+
+:c_4aa3f47e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Frias, Nicolau de, 1537-1610"@en, "Frias, Nicolau de, 1537-1610"@pt;
+  skos:altLabel "Nicolau de Frias"@en, "Nicolau de Frias"@pt;
+  skos:note "Arquiteto português, 1537-1610"@pt, "Portuguese architect, 1537-1610"@en;
+  skos:exactMatch <http://viaf.org/viaf/309816240>, <http://vocab.getty.edu/ulan/500336726>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1610";
+  schema:birthDate "1537" .
+
+<http://viaf.org/viaf/309816240> skos:exactMatch :c_4aa3f47e .
+
+<http://vocab.getty.edu/ulan/500336726> skos:exactMatch :c_4aa3f47e .
+
+:c_dcf6db45 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Álvares, Afonso, ?-ca 1580"@en, "Álvares, Afonso, ?-ca 1580"@pt;
+  skos:altLabel "Afonso Álvares"@en, "Afonso Álvares"@pt;
+  skos:note "Arquiteto português, ativo desde 1550, morreu ca 1580."@pt, "Portuguese architect, active from 1550, died ca 1580."@en;
+  skos:exactMatch <http://viaf.org/viaf/29887924>, <http://vocab.getty.edu/ulan/500337112>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "ca 1580" .
+
+<http://viaf.org/viaf/29887924> skos:exactMatch :c_dcf6db45 .
+
+<http://vocab.getty.edu/ulan/500337112> skos:exactMatch :c_dcf6db45 .
+
+:c_446b98ab a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Pessoa, Alberto, 1919-1985"@en, "Pessoa, Alberto, 1919-1985"@pt;
+  skos:altLabel "Alberto Pessoa"@en, "Alberto Pessoa"@pt;
+  skos:note "Arquiteto português, 1919-1985"@pt, "Portuguese architect, 1919-1985"@en;
+  skos:exactMatch <http://viaf.org/viaf/317283697>, <http://vocab.getty.edu/ulan/500356737>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1985";
+  schema:birthDate "1919" .
+
+<http://viaf.org/viaf/317283697> skos:exactMatch :c_446b98ab .
+
+<http://vocab.getty.edu/ulan/500356737> skos:exactMatch :c_446b98ab .
+
+:c_6b75e5c5 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Costa, Vasco Vieira da, 1911-1982"@en, "Costa, Vasco Vieira da, 1911-1982"@pt;
+  skos:altLabel "Vasco Vieira da Costa"@en, "Vasco Vieira da Costa"@pt, "Vieira da Costa, Vasco"@pt;
+  skos:note "Arquiteto português, 1911-1982, activo em Angola"@pt, "Portuguese architect, 1911-1982, active in Angola"@en;
+  skos:exactMatch <http://viaf.org/viaf/1515150325568210090003>, <http://vocab.getty.edu/ulan/500372911>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1982";
+  schema:birthDate "1911" .
+
+<http://viaf.org/viaf/1515150325568210090003> skos:exactMatch :c_6b75e5c5 .
+
+<http://vocab.getty.edu/ulan/500372911> skos:exactMatch :c_6b75e5c5 .
+
+:c_cd7e37d6 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Tinoco, João José, 1924-1983"@en, "Tinoco, João José, 1924-1983"@pt;
+  skos:altLabel "João José Tinoco"@en, "João José Tinoco"@pt;
+  skos:note "Arquiteto português, 1924-1983"@pt, "Portuguese architect, 1924-1983"@en;
+  skos:exactMatch <http://viaf.org/viaf/83465444>, <http://vocab.getty.edu/ulan/500372912>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1983";
+  schema:birthDate "1924" .
+
+<http://viaf.org/viaf/83465444> skos:exactMatch :c_cd7e37d6 .
+
+<http://vocab.getty.edu/ulan/500372912> skos:exactMatch :c_cd7e37d6 .
+
+:c_2e72f1a8 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Santos, Manuel Rodrigues dos, ca 1702-1762"@en, "Santos, Manuel Rodrigues dos, ca 1702-1762"@pt;
+  skos:altLabel "Rodrigues dos Santos, Manuel"@en, "Rodrigues dos Santos, Manuel"@pt;
+  skos:note "Arquiteto português, ativo século 18 na Itália"@pt, "Portuguese architect, active 18th century in Italy"@en;
+  skos:exactMatch <http://viaf.org/viaf/5160307225857740975>, <http://vocab.getty.edu/ulan/500452519>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1762";
+  schema:birthDate "ca 1602" .
+
+<http://viaf.org/viaf/5160307225857740975> skos:exactMatch :c_2e72f1a8 .
+
+<http://vocab.getty.edu/ulan/500452519> skos:exactMatch :c_2e72f1a8 .
+
+:c_4edadf5b a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Cordeiro, Arsénio"@en, "Cordeiro, Arsénio"@pt;
+  skos:altLabel "Arsénio Cordeiro"@en, "Arsénio Cordeiro"@pt;
+  skos:note "Arquiteto português, 1940-2013."@pt, "Portuguese architect, 1940-2013."@en;
+  skos:exactMatch <http://viaf.org/viaf/7872157643290238590005>, <http://vocab.getty.edu/ulan/500486528>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2013";
+  schema:birthDate "1940" .
+
+<http://viaf.org/viaf/7872157643290238590005> skos:exactMatch :c_4edadf5b .
+
+<http://vocab.getty.edu/ulan/500486528> skos:exactMatch :c_4edadf5b .
+
+:c_885c5e32 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Elsden, William, fl. 1760-1778"@en, "Elsden, William, fl. 1760-1778"@pt;
+  skos:altLabel "Elsden, Guilherme"@pt, "William Elsden"@en, "William Elsden"@pt;
+  skos:note "Arquiteto e engenheiro militar britânico, trabalhou em Portugal na década de 1770."@pt,
+    "British architect and military engineer, active in Portugal in 1770's."@en;
+  skos:exactMatch <http://viaf.org/viaf/96164555>, <http://vocab.getty.edu/ulan/500069487>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1778";
+  bf:date "fl. 1760-1778" .
+
+<http://viaf.org/viaf/96164555> skos:exactMatch :c_885c5e32 .
+
+<http://vocab.getty.edu/ulan/500069487> skos:exactMatch :c_885c5e32 .
+
+:c_59597dfd a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Manini, Luigi, 1848-1936"@en, "Manini, Luigi, 1848-1936"@pt;
+  skos:altLabel "Luigi Manini"@en, "Luigi Manini"@pt;
+  skos:note "Arquiteto e cenógrafo italiano, 1848-1936, activo em Portugal no início do séc. 20."@pt,
+    "Italian architect and scenographer, 1848-1936, active in Portugal in the early 1900's."@en;
+  skos:exactMatch <http://viaf.org/viaf/54470293>, <http://vocab.getty.edu/ulan/500075419>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1936";
+  schema:birthDate "1848" .
+
+<http://viaf.org/viaf/54470293> skos:exactMatch :c_59597dfd .
+
+<http://vocab.getty.edu/ulan/500075419> skos:exactMatch :c_59597dfd .
+
+:c_633fb6a7 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Boitac, Diogo, ca 1460-1528"@en, "Boitac, Diogo, ca 1460-1528"@pt;
+  skos:altLabel "Boitaca, Diogo de"@pt, "Diogo Boitac"@en, "Diogo Boitac"@pt, "Diogo de Boitaca"@pt;
+  skos:note "Arquiteto e engenheiro francês, documentado em 1498, morreu ca 1528, ativo em Portugal"@pt,
+    "French architect and engineer, documented 1498, died ca 1528, active in Portugal"@en;
+  skos:exactMatch <http://viaf.org/viaf/222796855>, <http://vocab.getty.edu/ulan/500079572>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1528";
+  schema:birthDate "ca 1460" .
+
+<http://viaf.org/viaf/222796855> skos:exactMatch :c_633fb6a7 .
+
+<http://vocab.getty.edu/ulan/500079572> skos:exactMatch :c_633fb6a7 .
+
+:c_44f9c4ae a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Cinatti, Giuseppe"@en, "Cinatti, Giuseppe"@pt;
+  skos:altLabel "Cinatti, José"@pt, "Giuseppe Cinatti"@en, "Giuseppe Cinatti"@pt, "José Cinatti"@pt;
+  skos:note "Arquiteto e cenógrafo italiano, 1808-1879"@pt, "Italian architect and scenographer, 1808-1879"@en;
+  skos:exactMatch <http://viaf.org/viaf/44191535>, <http://vocab.getty.edu/ulan/500090457>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_6295951e>;
+  schema:deathDate "1879";
+  schema:birthDate "1808" .
+
+<http://viaf.org/viaf/44191535> skos:exactMatch :c_44f9c4ae .
+
+<http://vocab.getty.edu/ulan/500090457> skos:exactMatch :c_44f9c4ae .
+
+:c_67928030 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Fabri, Francisco Xavier"@en, "Fabri, Francisco Xavier"@pt;
+  skos:altLabel "Francisco Xavier Fabri"@en, "Francisco Xavier Fabri"@pt;
+  skos:note "Arquiteto italiano, 1761-1807, ativo em Portugal"@pt, "Italian architect, 1761-1807, active in Portugal"@en;
+  skos:exactMatch <http://viaf.org/viaf/76175955>, <http://vocab.getty.edu/ulan/500112882>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1807";
+  schema:birthDate "1761" .
+
+<http://viaf.org/viaf/76175955> skos:exactMatch :c_67928030 .
+
+<http://vocab.getty.edu/ulan/500112882> skos:exactMatch :c_67928030 .
+
+:c_4fcbc7a4 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Huguet, David"@en, "Huguet, David"@pt;
+  skos:altLabel "David Huguet"@pt, "Ouguete"@en, "Ouguete"@pt;
+  skos:note "Architect of uncertain origin who succeeded Afonso Domingues in 1402 in the construction of the Batalha Monastery, which he oversaw until 1438."@en,
+    "Arquiteto de origem incerta que sucedeu a Afonso Domingues em 1402 na construção do Mosteiro da Batalha, dirigindo as obras até 1438."@pt;
+  skos:exactMatch <http://vocab.getty.edu/ulan/500319785>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1438";
+  schema:birthDate "ca 1350" .
+
+<http://vocab.getty.edu/ulan/500319785> skos:exactMatch :c_4fcbc7a4 .
+
+:c_7fcb4c56 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Chaves, Jorge Ferreira, 1920-1981"@en, "Chaves, Jorge Ferreira, 1920-1981"@pt;
+  skos:altLabel "Jorge Ferreira Chaves"@en, "Jorge Ferreira Chaves"@pt;
+  skos:note "Arquiteto português ativo entre 1941 e 1981. Foi um dos arquitetos responsáveis pelo estabelecimento do modernismo em Portugal."@pt,
+    "Portuguese architect active between 1941 and 1981. He was one of the architects responsible for establishing modernism in Portugal."@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1981";
+  schema:birthDate "1920" .
+
+:c_71280b1a a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Guedes, Pancho, pseud."@en, "Guedes, Pancho, pseud."@pt;
+  skos:altLabel "Amâncio Guedes"@pt, "Guedes, Amâncio de Alpoim Miranda, 1925-2015"@pt,
+    "Pancho Guedes"@en, "Pancho Guedes"@pt;
+  skos:note "Arquiteto, pintor e escultor português; exerceu a profissão e ensinou em Witwatersrand, África do Sul."@pt,
+    "Portuguese architect, painter and sculptor; practiced and teached in Witwatersrand, South Africa."@en;
+  skos:exactMatch <http://viaf.org/viaf/65347675>, <http://vocab.getty.edu/ulan/500027703>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2015";
+  schema:birthDate "1925" .
+
+<http://viaf.org/viaf/65347675> skos:exactMatch :c_71280b1a .
+
+<http://vocab.getty.edu/ulan/500027703> skos:exactMatch :c_71280b1a .
+
+:c_34846d97 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Lino, Raúl, 1879-1974"@en, "Lino, Raúl, 1879-1974"@pt;
+  skos:altLabel "Raúl Lino"@en, "Raúl Lino"@pt, "Silva, Raul Lino da"@pt;
+  skos:note "Arquiteto, designer, teórico da arquitetura e escritor português, 1879-1974."@pt,
+    "Portuguese architect, designer, architectural theorist, and writer, 1879-1974."@en;
+  skos:exactMatch <http://viaf.org/viaf/44424497>, <http://vocab.getty.edu/ulan/500086679>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1974";
+  schema:birthDate "1879" .
+
+<http://viaf.org/viaf/44424497> skos:exactMatch :c_34846d97 .
+
+<http://vocab.getty.edu/ulan/500086679> skos:exactMatch :c_34846d97 .
+
+:c_947846bc a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Teles, Gonçalo Ribeiro, 1922-2020"@en, "Teles, Gonçalo Ribeiro, 1922-2020"@pt;
+  skos:altLabel "Gonçalo Ribeiro Teles"@en, "Gonçalo Ribeiro Teles"@pt, "Gonçalo Ribeiro Telles"@pt,
+    "Telles, Gonçalo Ribeiro"@pt;
+  skos:note "Arquiteto paisagista português, 1922-2020."@pt, "Portuguese landscape architect, 1922-2020."@en;
+  skos:exactMatch <http://viaf.org/viaf/39399788>, <http://vocab.getty.edu/ulan/500227955>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_beac2fa6>;
+  schema:deathDate "2020";
+  schema:birthDate "1922" .
+
+<http://viaf.org/viaf/39399788> skos:exactMatch :c_947846bc .
+
+<http://vocab.getty.edu/ulan/500227955> skos:exactMatch :c_947846bc .
+
+:c_b2a6745f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Cabral, Francisco Caldeira, 1908-1992"@en, "Cabral, Francisco Caldeira, 1908-1992"@pt;
+  skos:altLabel "Francisco Caldeira Cabral"@en, "Francisco Caldeira Cabral"@pt;
+  skos:note "Arquiteto paisagista português, 1908-1992."@pt, "Portuguese landscape architect, 1908-1992."@en;
+  skos:exactMatch <http://viaf.org/viaf/294927255>, <http://vocab.getty.edu/ulan/500282305>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_beac2fa6>;
+  schema:deathDate "1992";
+  schema:birthDate "1908" .
+
+<http://viaf.org/viaf/294927255> skos:exactMatch :c_b2a6745f .
+
+<http://vocab.getty.edu/ulan/500282305> skos:exactMatch :c_b2a6745f .
+
+:c_0799fded a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Andresen, Teresa, 1957-"@en, "Andresen, Teresa, 1957-"@pt;
+  skos:altLabel "Andresen, Maria Teresa Lencastre de Melo Breiner‏"@pt, "Teresa Andresen"@en,
+    "Teresa Andresen"@pt;
+  skos:note "Arquiteta paisagista portuguesa, 1957-"@pt, "Portuguese landscape architect, 1957-"@en;
+  skos:exactMatch <http://viaf.org/viaf/99931638>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_beac2fa6>;
+  schema:birthDate "1957" .
+
+<http://viaf.org/viaf/99931638> skos:exactMatch :c_0799fded .
+
+:c_63204a41 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Silva, Maria José Marques da, 1914-1996"@en, "Silva, Maria José Marques da, 1914-1996"@pt;
+  skos:altLabel "Maria José Marques da Silva"@en, "Maria José Marques da Silva"@pt;
+  skos:note "Arquiteta portuguesa, 1914-1996."@pt, "Portuguese architect, 1914-1996."@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1996";
+  schema:birthDate "1914" .
+
+:c_5c5c0941 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Dias, Filipe Oliveira, 1963-2014"@en, "Dias, Filipe Oliveira, 1963-2014"@pt;
+  skos:altLabel "Filipe Oliveira Dias"@en, "Filipe Oliveira Dias"@pt;
+  skos:note "Arquiteto português, 1963-2014."@pt, "Portuguese architect, 1963-2014."@en;
+  skos:exactMatch <http://viaf.org/viaf/96627149>, <http://vocab.getty.edu/ulan/500127872>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2014";
+  schema:birthDate "1963" .
+
+<http://viaf.org/viaf/96627149> skos:exactMatch :c_5c5c0941 .
+
+<http://vocab.getty.edu/ulan/500127872> skos:exactMatch :c_5c5c0941 .
+
+:c_627892a0 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Rosa, Miguel Simões Jacobetty, 1901-1970"@en, "Rosa, Miguel Simões Jacobetty, 1901-1970"@pt;
+  skos:altLabel "Jacobetty Rosa"@en, "Jacobetty Rosa"@pt, "Miguel Simões Jacobetty Rosa"@pt;
+  skos:note "Arquiteto português, 1901-1970."@pt, "Portuguese architect, 1901-1970."@en;
+  skos:exactMatch <http://viaf.org/viaf/257145542624696640412>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1970";
+  schema:birthDate "1901" .
+
+<http://viaf.org/viaf/257145542624696640412> skos:exactMatch :c_627892a0 .
+
+:c_8f184dd5 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Santa Rita, João, 1960-"@en, "Santa Rita, João, 1960-"@pt;
+  skos:altLabel "João Santa Rita"@en, "João Santa Rita"@pt, "Santa-Rita, João"@pt;
+  skos:note "Arquiteto português nascido em 1960."@pt, "Portuguese architect born in 1960."@en;
+  skos:exactMatch <http://viaf.org/viaf/100091698>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1960" .
+
+<http://viaf.org/viaf/100091698> skos:exactMatch :c_8f184dd5 .
+
+:c_a986f14f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Moura, Eduardo Souto de, 1952-"@en, "Moura, Eduardo Souto de, 1952-"@pt;
+  skos:altLabel "Eduardo Souto de Moura"@en, "Eduardo Souto de Moura"@pt, "Souto de Moura, Eduardo"@pt;
+  skos:note "Arquiteto português nascido em 1952."@pt, "Portuguese architect, born 1952."@en;
+  skos:exactMatch <http://viaf.org/viaf/114351975>, <http://vocab.getty.edu/ulan/500090954>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1952" .
+
+<http://viaf.org/viaf/114351975> skos:exactMatch :c_a986f14f .
+
+<http://vocab.getty.edu/ulan/500090954> skos:exactMatch :c_a986f14f .
+
+:c_394ba21b a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Domingues, Afonso, ca 1330-1402"@en, "Domingues, Afonso, ca 1330-1402"@pt;
+  skos:altLabel "Afonso Domingues"@en, "Afonso Domingues"@pt;
+  skos:note "Arquiteto português do século 14. Foi o primeiro arquiteto do Mosteiro da Batalha."@pt,
+    "Portuguese architect from the 14th century. He was the first architect of the Batalha Monastery."@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1402";
+  schema:birthDate "ca 1330" .
+
+:c_267c0e3f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Costa, João Faria da, 1906-1971"@en, "Costa, João Faria da, 1906-1971"@pt;
+  skos:altLabel "João Faria da Costa"@en, "João Faria da Costa"@pt, "João Guilherme Faria da Costa"@pt,
+    "Costa, João Guilherme Faria da"@pt;
+  skos:note "Arquiteto e urbanista português, 1906-1971"@pt, "Portuguese architect and urbanist, 1906-1971"@en;
+  skos:exactMatch <http://viaf.org/viaf/1097159109720606900008>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_77bf1d9a>;
+  schema:deathDate "1971";
+  schema:birthDate "1906" .
+
+<http://viaf.org/viaf/1097159109720606900008> skos:exactMatch :c_267c0e3f .
+
+:c_9e94cace a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Simões, João, 1908-1995"@en, "Simões, João, 1908-1995"@pt;
+  skos:altLabel "João Simões"@en, "João Simões"@pt;
+  skos:note "Arquiteto português, 1908-1993."@pt, "Portuguese architect, 1908-1995."@en;
+  skos:exactMatch <http://viaf.org/viaf/5195152080600307230009>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1995";
+  schema:birthDate "1908" .
+
+<http://viaf.org/viaf/5195152080600307230009> skos:exactMatch :c_9e94cace .
+
+:c_06445b5e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Castro, Celestino de, 1920-2007"@en, "Castro, Celestino de, 1920-2007"@pt;
+  skos:altLabel "Celestino Joaquim de Abreu Castro"@pt, "Celestino de Castro"@en, "Celestino de Castro"@pt;
+  skos:note "Arquiteto português, 1920-2007."@pt, "Portuguese architect, 1920-2007."@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2007";
+  schema:birthDate "1920" .
+
+:c_e5e77c34 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Gandra, Hernâni, 1914-1988"@en, "Gandra, Hernâni, 1914-1988"@pt;
+  skos:altLabel "Hernâni Gandra"@en, "Hernâni Gandra"@pt;
+  skos:note "Arquiteto português, 1914-1988."@pt, "Portuguese architect, 1914-1988."@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1988";
+  schema:birthDate "1914" .
+
+:c_79ffb0b6 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Ramalho, Raúl Chorão, 1914-2002"@en, "Ramalho, Raúl Chorão, 1914-2002"@pt;
+  skos:altLabel "Chorão Ramalho"@pt, "Ramalho, Chorão"@pt, "Raúl Chorão Ramalho"@en,
+    "Raúl Chorão Ramalho"@pt;
+  skos:note "Arquiteto português, 1914-2002."@pt, "Portuguese architect, 1914-2002."@en;
+  skos:exactMatch <http://viaf.org/viaf/151690648>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2002";
+  schema:birthDate "1914" .
+
+<http://viaf.org/viaf/151690648> skos:exactMatch :c_79ffb0b6 .
+
+:c_f67681e1 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Nunes, Adelino, 1903-1948"@en, "Nunes, Adelino, 1903-1948"@pt;
+  skos:altLabel "Adelino Nunes"@en, "Adelino Nunes"@pt;
+  skos:note "Arquiteto português, 1903-1948."@pt, "Portuguese architect, 1903-1948."@en;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1948";
+  schema:birthDate "1903" .
+
+:c_b0472391 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Siza, Álvaro, 1933-"@en, "Siza, Álvaro, 1933-"@pt;
+  skos:altLabel "Siza Vieira, Álvaro"@pt, "Álvaro Joaquim de Melo Siza Vieira"@pt, "Álvaro Siza"@en,
+    "Álvaro Siza"@pt;
+  skos:note "Portuguese architect and teacher, born 1933."@en, "Arquiteto e professor português, nascido em 1933."@pt;
+  skos:exactMatch <http://viaf.org/viaf/5027394>, <http://vocab.getty.edu/ulan/500018255>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1933" .
+
+<http://viaf.org/viaf/5027394> skos:exactMatch :c_b0472391 .
+
+<http://vocab.getty.edu/ulan/500018255> skos:exactMatch :c_b0472391 .
+
+:c_63892d62 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Burmester, Alexandre, 1957-"@en, "Burmester, Alexandre, 1957-"@pt;
+  skos:altLabel "Alexandre Burmester"@en, "Alexandre Burmester"@pt;
+  skos:note "Arquiteto português nascido em 1957."@pt, "Portuguese architect born in 1957."@en;
+  skos:exactMatch <http://vocab.getty.edu/ulan/500513584>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1957" .
+
+<http://vocab.getty.edu/ulan/500513584> skos:exactMatch :c_63892d62 .
+
+:c_4d34ef32 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Ricca, Agostinho, 1915-2010"@en, "Ricca, Agostinho, 1915-2010"@pt;
+  skos:altLabel "Agostinho Ricca"@en, "Agostinho Ricca"@pt;
+  skos:note "Arquiteto português, 1915-2010."@pt, "Portuguese architect, 1915-2010."@en;
+  skos:exactMatch <http://viaf.org/viaf/4874774>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "2010";
+  schema:birthDate "1915" .
+
+<http://viaf.org/viaf/4874774> skos:exactMatch :c_4d34ef32 .
+
+:c_6328eea9 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Holanda, Francisco de, ca 1518-1584"@en, "Holanda, Francisco de, ca 1518-1584"@pt;
+  skos:altLabel "Francisco d'Olanda"@pt, "Francisco de Holanda"@en, "Francisco de Holanda"@pt,
+    "d'Olanda, Francisco de"@pt;
+  skos:note "Humanista, arquiteto, iluminador e pintor português, ca 1518-1584."@pt,
+    "Portuguese humanist, architect, illuminator and painter, ca 1518-1584."@en;
+  skos:exactMatch <http://viaf.org/viaf/68951231>, <http://vocab.getty.edu/ulan/500024107>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b5f720b6>;
+  schema:deathDate "ca 1584";
+  schema:birthDate "ca 1518" .
+
+<http://viaf.org/viaf/68951231> skos:exactMatch :c_6328eea9 .
+
+<http://vocab.getty.edu/ulan/500024107> skos:exactMatch :c_6328eea9 .
+
+:c_cbc2e63f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Ludovice, João Frederico, 1673-1752"@en, "Ludovice, João Frederico, 1673-1752"@pt;
+  skos:altLabel "Johann Friedrich Ludwig"@pt, "João Frederico Ludovice"@en, "João Frederico Ludovice"@pt,
+    "Ludwig, Johann Friedrich"@pt;
+  skos:note "German goldsmith and architect, 1670-1752, active in Portugal."@en, "Ourives e arquiteto alemão, 1670-1752, ativo em Portugal."@pt;
+  skos:exactMatch <http://viaf.org/viaf/28013376>, <http://vocab.getty.edu/ulan/500017006>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1752";
+  schema:birthDate "1673" .
+
+<http://viaf.org/viaf/28013376> skos:exactMatch :c_cbc2e63f .
+
+<http://vocab.getty.edu/ulan/500017006> skos:exactMatch :c_cbc2e63f .
+
+:c_04a6a35e a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Castello Lopes, Gérard, 1925-2011"@en, "Castello Lopes, Gérard, 1925-2011"@pt;
+  skos:altLabel "Gérard Castello Lopes"@en, "Gérard Castello Lopes"@pt;
+  skos:note "Fotógrafo português, 1925-2011"@pt, "Portuguese photographer, 1925-2011"@en;
+  skos:exactMatch <http://viaf.org/viaf/8449755>, <http://vocab.getty.edu/ulan/500086246>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "2011";
+  schema:birthDate "1925" .
+
+<http://viaf.org/viaf/8449755> skos:exactMatch :c_04a6a35e .
+
+<http://vocab.getty.edu/ulan/500086246> skos:exactMatch :c_04a6a35e .
+
+:c_869e59ed a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Alvão, Domingos Espírito Santo, 1872-1946"@en, "Alvão, Domingos Espírito Santo, 1872-1946"@pt;
+  skos:altLabel "Domingos Espírito Santo Alvão"@en, "Domingos Espírito Santo Alvão"@pt;
+  skos:note "Fotógrafo português, 1872-1946"@pt, "Portuguese photographer, 1872-1946"@en;
+  skos:exactMatch <http://viaf.org/viaf/56178873>, <http://vocab.getty.edu/ulan/500101257>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "1946";
+  schema:birthDate "1872" .
+
+<http://viaf.org/viaf/56178873> skos:exactMatch :c_869e59ed .
+
+<http://vocab.getty.edu/ulan/500101257> skos:exactMatch :c_869e59ed .
+
+<http://viaf.org/viaf/99211829> skos:exactMatch :c_84d3d52f .
+
+:c_ab2e6627 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Bobone, Augusto, 1852-1910"@en, "Bobone, Augusto, 1852-1910"@pt;
+  skos:altLabel "Augusto Bobone"@en, "Augusto Bobone"@pt;
+  skos:note "Fotógrafo português, 1852-1910"@pt, "Portuguese photographer, 1852-1910"@en;
+  skos:exactMatch <http://viaf.org/viaf/229381030>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "1910";
+  schema:birthDate "1852" .
+
+<http://viaf.org/viaf/229381030> skos:exactMatch :c_ab2e6627 .
+
+:c_910b7f0f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Novais, Horácio, 1910-1988"@en, "Novais, Horácio, 1910-1988"@pt;
+  skos:altLabel "Horácio Novais"@en, "Horácio Novais"@pt;
+  skos:note "Fotógrafo português, 1910-1988"@pt, "Portuguese photographer, 1910-1988"@en;
+  skos:exactMatch <http://viaf.org/viaf/8801363>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "1988";
+  schema:birthDate "1910" .
+
+<http://viaf.org/viaf/8801363> skos:exactMatch :c_910b7f0f .
+
+:c_7f4ba515 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Cunha, Alfredo, 1953-"@en, "Cunha, Alfredo, 1953-"@pt;
+  skos:altLabel "Alfredo Cunha"@en, "Alfredo Cunha"@pt;
+  skos:note "Fotojornalista português nascido em 1953"@pt, "Portuguese photojournalist born in 1953"@en;
+  skos:exactMatch <http://viaf.org/viaf/61648635>, <http://vocab.getty.edu/ulan/500348667>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c9deb016>;
+  schema:birthDate "1953" .
+
+<http://viaf.org/viaf/61648635> skos:exactMatch :c_7f4ba515 .
+
+<http://vocab.getty.edu/ulan/500348667> skos:exactMatch :c_7f4ba515 .
+
+:c_f75ed5ac a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Relvas, Carlos, 1838-1894"@en, "Relvas, Carlos, 1838-1894"@pt;
+  skos:altLabel "Campos, Carlos Augusto Mascarenhas Relvas de"@pt, "Carlos Relvas"@en,
+    "Carlos Relvas"@pt;
+  skos:note "Fotógrafo português, 1838-1894"@pt, "Portuguese photographer, 1838-1894"@en;
+  skos:exactMatch <http://viaf.org/viaf/13199895>, <http://vocab.getty.edu/ulan/500036931>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "1894";
+  schema:birthDate "1838" .
+
+<http://viaf.org/viaf/13199895> skos:exactMatch :c_f75ed5ac .
+
+<http://vocab.getty.edu/ulan/500036931> skos:exactMatch :c_f75ed5ac .
+
+:c_6579d576 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Sarmento, Julião, 1948-2021"@en, "Sarmento, Julião, 1948-2021"@pt;
+  skos:altLabel "Julião Sarmento"@en, "Julião Sarmento"@pt;
+  skos:note "Artista plástico português, 1948-2021"@pt, "Portuguese plastic artist, 1948-2021"@en;
+  skos:exactMatch <http://viaf.org/viaf/2618437>, <http://vocab.getty.edu/ulan/500071108>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_8d97e5d6>;
+  schema:deathDate "2021";
+  schema:birthDate "1948" .
+
+<http://viaf.org/viaf/2618437> skos:exactMatch :c_6579d576 .
+
+<http://vocab.getty.edu/ulan/500071108> skos:exactMatch :c_6579d576 .
+
+:c_2c9547a1 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Gageiro, Eduardo, 1935-"@en, "Gageiro, Eduardo, 1935-"@pt;
+  skos:altLabel "Eduardo Gageiro"@en, "Eduardo Gageiro"@pt;
+  skos:note "Fotógrafo português nascido em 1935"@pt, "Portuguese photographer, born 1935"@en;
+  skos:exactMatch <http://viaf.org/viaf/96192288>, <http://vocab.getty.edu/ulan/500072806>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c9deb016>;
+  schema:birthDate "1935" .
+
+<http://viaf.org/viaf/96192288> skos:exactMatch :c_2c9547a1 .
+
+<http://vocab.getty.edu/ulan/500072806> skos:exactMatch :c_2c9547a1 .
+
+:c_45c33e8b a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Almeida, Helena, 1934-2018"@en, "Almeida, Helena, 1934-2018"@pt;
+  skos:altLabel "Almeida, Maria Helena de Castro Neves de"@pt, "Helena Almeida"@en,
+    "Helena Almeida"@pt, "Maria Helena de Castro Neves de Almeida"@pt;
+  skos:note "Artista plástica português, 1934-2018"@pt, "Portuguese plastic artist, 1934-2018"@en;
+  skos:exactMatch <http://viaf.org/viaf/99313201>, <http://vocab.getty.edu/ulan/500082301>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_8d97e5d6>;
+  schema:deathDate "2018";
+  schema:birthDate "1934" .
+
+<http://viaf.org/viaf/99313201> skos:exactMatch :c_45c33e8b .
+
+<http://vocab.getty.edu/ulan/500082301> skos:exactMatch :c_45c33e8b .
+
+:c_cafb63ad a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Nozolino, Paulo, 1955-"@en, "Nozolino, Paulo, 1955-"@pt;
+  skos:altLabel "Paulo Nozolino"@en, "Paulo Nozolino"@pt;
+  skos:note "Fotógrafo português nascido em 1955"@pt, "Portuguese photographer, born 1955"@en;
+  skos:exactMatch <http://viaf.org/viaf/5739514>, <http://vocab.getty.edu/ulan/500124653>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1955" .
+
+<http://viaf.org/viaf/5739514> skos:exactMatch :c_cafb63ad .
+
+<http://vocab.getty.edu/ulan/500124653> skos:exactMatch :c_cafb63ad .
+
+:c_2ad35f2c a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Silva, Possidónio da, 1806-1896"@en, "Silva, Possidónio da, 1806-1896"@pt;
+  skos:altLabel "Possidónio da Silva"@en, "Possidónio da Silva"@pt, "Silva, Joaquim Possidónio Narciso da"@pt;
+  skos:note "Arquiteto e escritor português, 1806-1896"@pt, "Portuguese architect and writer, 1806-1896"@en;
+  skos:exactMatch <http://viaf.org/viaf/2177519>, <http://vocab.getty.edu/ulan/500124913>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:deathDate "1896";
+  schema:birthDate "1806" .
+
+<http://viaf.org/viaf/2177519> skos:exactMatch :c_2ad35f2c .
+
+<http://vocab.getty.edu/ulan/500124913> skos:exactMatch :c_2ad35f2c .
+
+:c_3a8d5923 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Albergaria, Gabriela, 1965-"@en, "Albergaria, Gabriela, 1965-"@pt;
+  skos:altLabel "Gabriela Albergaria"@en, "Gabriela Albergaria"@pt;
+  skos:note "Artista plástica portuguesa, nascido em 1965"@pt, "Portuguese plastic artist, born 1965"@en;
+  skos:exactMatch <http://viaf.org/viaf/99928320>, <http://vocab.getty.edu/ulan/500274317>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c3b76d63>;
+  schema:birthDate "1965" .
+
+<http://viaf.org/viaf/99928320> skos:exactMatch :c_3a8d5923 .
+
+<http://vocab.getty.edu/ulan/500274317> skos:exactMatch :c_3a8d5923 .
+
+:c_b02c0236 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "César, Filipa, 1975-"@en, "César, Filipa, 1975-"@pt;
+  skos:altLabel "Filipa César"@en, "Filipa César"@pt;
+  skos:note "Artista de instalações e vídeo portuguesa, nascida em 1975"@pt, "Portuguese installation and video artist, born 1975"@en;
+  skos:exactMatch <http://viaf.org/viaf/30477758>, <http://vocab.getty.edu/ulan/500277086>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b5f720b6>;
+  schema:birthDate "1975" .
+
+<http://viaf.org/viaf/30477758> skos:exactMatch :c_b02c0236 .
+
+<http://vocab.getty.edu/ulan/500277086> skos:exactMatch :c_b02c0236 .
+
+:c_77241c78 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Guerra, Fernando, 1970-"@en, "Guerra, Fernando, 1970-"@pt;
+  skos:altLabel "Fernando Guerra"@en, "Fernando Guerra"@pt, "Souza, Fernando Guerra de"@pt;
+  skos:note "Fotógrafo de arquitetura português nascido em 1970"@pt, "Portuguese architectural photographer, born 1970"@en;
+  skos:exactMatch <http://viaf.org/viaf/60247288>, <http://vocab.getty.edu/ulan/500290642>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1970" .
+
+<http://viaf.org/viaf/60247288> skos:exactMatch :c_77241c78 .
+
+<http://vocab.getty.edu/ulan/500290642> skos:exactMatch :c_77241c78 .
+
+:c_7e894cf1 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Pacheco, Joaquim Insley, 1830-1912"@en, "Pacheco, Joaquim Insley, 1830-1912"@pt;
+  skos:altLabel "Joaquim Insley Pacheco"@en, "Joaquim Insley Pacheco"@pt;
+  skos:note "Pintor e fotógrafo português, falecido em 1912"@pt, "Portuguese painter and photographer, died 1912"@en;
+  skos:exactMatch <http://viaf.org/viaf/309814388>, <http://vocab.getty.edu/ulan/500332104>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "1912";
+  schema:birthDate "1830" .
+
+<http://viaf.org/viaf/309814388> skos:exactMatch :c_7e894cf1 .
+
+<http://vocab.getty.edu/ulan/500332104> skos:exactMatch :c_7e894cf1 .
+
+:c_fdf2323a a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Palla, Vítor, 1922-2006"@en, "Palla, Vítor, 1922-2006"@pt;
+  skos:altLabel "Palla, Victor"@pt, "Victor Palla"@pt, "Vítor Palla"@en, "Vítor Palla"@pt;
+  skos:note "Artista gráfico e fotógrafo português, 1922-2006"@pt, "Portuguese graphic artist and photographer, 1922-2006"@en;
+  skos:exactMatch <http://viaf.org/viaf/99891368>, <http://vocab.getty.edu/ulan/500344124>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "2006";
+  schema:birthDate "1922" .
+
+<http://viaf.org/viaf/99891368> skos:exactMatch :c_fdf2323a .
+
+<http://vocab.getty.edu/ulan/500344124> skos:exactMatch :c_fdf2323a .
+
+:c_c7f13c1f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Belo, Duarte, 1968-"@en, "Belo, Duarte, 1968-"@pt;
+  skos:altLabel "Duarte Belo"@en, "Duarte Belo"@pt;
+  skos:note "Fotógrafo português nascido em 1968"@pt, "Portuguese photographer, born 1968"@en;
+  skos:exactMatch <http://viaf.org/viaf/7625766>, <http://vocab.getty.edu/ulan/500346517>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1968" .
+
+<http://viaf.org/viaf/7625766> skos:exactMatch :c_c7f13c1f .
+
+<http://vocab.getty.edu/ulan/500346517> skos:exactMatch :c_c7f13c1f .
+
+:c_facfcc35 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Carvalho, Luís, 1954-"@en, "Carvalho, Luís, 1954-"@pt;
+  skos:altLabel "Carvalho, Luiz"@pt, "Luiz Carvalho"@pt, "Luís Carvalho"@en, "Luís Carvalho"@pt;
+  skos:note "Fotógrafo português nascido em 1954"@pt, "Portuguese photographer, born 1954"@en;
+  skos:exactMatch <http://viaf.org/viaf/98573424>, <http://vocab.getty.edu/ulan/500347022>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1954" .
+
+<http://viaf.org/viaf/98573424> skos:exactMatch :c_facfcc35 .
+
+<http://vocab.getty.edu/ulan/500347022> skos:exactMatch :c_facfcc35 .
+
+:c_fc5a732f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Dias, Cristóvam, 1931-2014"@en, "Dias, Cristóvam, 1931-2014"@pt;
+  skos:altLabel "Cristóvam Dias"@en, "Cristóvam Dias"@pt, "Dias, José Cristóvam"@pt,
+    "José Cristóvam Dias"@pt;
+  skos:note "Portuguese photographer, contemporary"@en, "fotógrafo português, contemporâneo"@pt;
+  skos:exactMatch <http://viaf.org/viaf/48447438>, <http://vocab.getty.edu/ulan/500348944>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:deathDate "2014";
+  schema:birthDate "1931" .
+
+<http://viaf.org/viaf/48447438> skos:exactMatch :c_fc5a732f .
+
+<http://vocab.getty.edu/ulan/500348944> skos:exactMatch :c_fc5a732f .
+
+:c_e90d7bee a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Molder, Jorge, 1947-"@en, "Molder, Jorge, 1947-"@pt;
+  skos:altLabel "Jorge Molder"@en, "Jorge Molder"@pt;
+  skos:note "Fotógrafo português nascido em 1947"@pt, "Portuguese photographer, born 1947"@en;
+  skos:exactMatch <http://viaf.org/viaf/61610614>, <http://vocab.getty.edu/ulan/500349659>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1947" .
+
+<http://viaf.org/viaf/61610614> skos:exactMatch :c_e90d7bee .
+
+<http://vocab.getty.edu/ulan/500349659> skos:exactMatch :c_e90d7bee .
+
+:c_a6b7adea a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Cardoso, António Homem, 1945-"@en, "Cardoso, António Homem, 1945-"@pt;
+  skos:altLabel "António Homem Cardoso"@en, "António Homem Cardoso"@pt, "Homem Cardoso, António"@pt,
+    "Homem, António"@pt;
+  skos:note "Fotógrafo português nascido em 1945"@pt, "Portuguese photographer, born 1945"@en;
+  skos:exactMatch <http://viaf.org/viaf/15915654>, <http://vocab.getty.edu/ulan/500355496>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1945" .
+
+<http://viaf.org/viaf/15915654> skos:exactMatch :c_a6b7adea .
+
+<http://vocab.getty.edu/ulan/500355496> skos:exactMatch :c_a6b7adea .
+
+:c_c0588427 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Garrido, Patrícia, 1963-"@en, "Garrido, Patrícia, 1963-"@pt;
+  skos:altLabel "Patrícia Garrido"@en, "Patrícia Garrido"@pt;
+  skos:note "Pintora, escultora e artista de instalação portuguesa, nascida em 1963"@pt,
+    "Portuguese painter, sculptor, and installation artist, born 1963"@en;
+  skos:exactMatch <http://viaf.org/viaf/293870752>, <http://vocab.getty.edu/ulan/500374572>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_e8062afb>;
+  schema:birthDate "1963" .
+
+<http://viaf.org/viaf/293870752> skos:exactMatch :c_c0588427 .
+
+<http://vocab.getty.edu/ulan/500374572> skos:exactMatch :c_c0588427 .
+
+:c_58dc8e9d a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Feliciano, João Paulo, 1963-"@en, "Feliciano, João Paulo, 1963-"@pt;
+  skos:altLabel "Feliciano, João Paulo"@pt, "Feliciano, Paulo"@pt, "João Paulo Feliciano"@en,
+    "João Paulo Feliciano"@pt;
+  skos:note "Pintor, designer e fotógrafo português, nascido em 1963"@pt, "Portuguese painter, designer, and photographer, born 1963"@en;
+  skos:exactMatch <http://viaf.org/viaf/88202601>, <http://vocab.getty.edu/ulan/500375505>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_b5f720b6>;
+  schema:birthDate "1963" .
+
+<http://viaf.org/viaf/88202601> skos:exactMatch :c_58dc8e9d .
+
+<http://vocab.getty.edu/ulan/500375505> skos:exactMatch :c_58dc8e9d .
+
+:c_c56fb495 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Ferreira, José Miguel, 1972-"@en, "Ferreira, José Miguel, 1972-"@pt;
+  skos:altLabel "José Miguel Ferreira"@en, "José Miguel Ferreira"@pt;
+  skos:note "Fotógrafo português nascido em 1972"@pt, "Portuguese photographer, born 1972"@en;
+  skos:exactMatch <http://viaf.org/viaf/172839970>, <http://vocab.getty.edu/ulan/500375756>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1972" .
+
+<http://viaf.org/viaf/172839970> skos:exactMatch :c_c56fb495 .
+
+<http://vocab.getty.edu/ulan/500375756> skos:exactMatch :c_c56fb495 .
+
+:c_889438c1 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Cera, Nuno, 1972-"@en, "Cera, Nuno, 1972-"@pt;
+  skos:altLabel "Nuno Cera"@en, "Nuno Cera"@pt;
+  skos:note "Fotógrafo português nascido em 1972"@pt, "Portuguese photographer, born 1972"@en;
+  skos:exactMatch <http://viaf.org/viaf/100015275>, <http://vocab.getty.edu/ulan/500383644>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1972" .
+
+<http://viaf.org/viaf/100015275> skos:exactMatch :c_889438c1 .
+
+<http://vocab.getty.edu/ulan/500383644> skos:exactMatch :c_889438c1 .
+
+:c_9b378f81 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Blaufuks, Daniel, 1963-"@en, "Blaufuks, Daniel, 1963-"@pt;
+  skos:altLabel "Daniel Blaufuks"@en, "Daniel Blaufuks"@pt;
+  skos:note "Fotógrafo português nascido em 1963"@pt, "Portuguese photographer, born 1963"@en;
+  skos:exactMatch <http://viaf.org/viaf/19816055>, <http://vocab.getty.edu/ulan/500383827>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1963" .
+
+<http://viaf.org/viaf/19816055> skos:exactMatch :c_9b378f81 .
+
+<http://vocab.getty.edu/ulan/500383827> skos:exactMatch :c_9b378f81 .
+
+:c_7d364340 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Barrias, José, 1944-"@en, "Barrias, José, 1944-"@pt;
+  skos:altLabel "Barrias, José Silva"@pt, "José Barrias"@en, "José Barrias"@pt;
+  skos:note "Artista plástico português, nascido em 1944"@pt, "Portuguese plastic artist, born 1944"@en;
+  skos:exactMatch <http://viaf.org/viaf/46033415>, <http://vocab.getty.edu/ulan/500385467>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_8d97e5d6>;
+  schema:birthDate "1944" .
+
+<http://viaf.org/viaf/46033415> skos:exactMatch :c_7d364340 .
+
+<http://vocab.getty.edu/ulan/500385467> skos:exactMatch :c_7d364340 .
+
+:c_6c6f4155 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Bastos, Rui Calçada, 1971-"@en, "Bastos, Rui Calçada, 1971-"@pt;
+  skos:altLabel "Calçada Bastos, Rui"@pt, "Rui Calçada Bastos"@en, "Rui Calçada Bastos"@pt;
+  skos:note "Fotógrafo e artista de instalações português nascido em 1971"@pt, "Portuguese photographer and installation artist, born 1971"@en;
+  skos:exactMatch <http://viaf.org/viaf/25662089>, <http://vocab.getty.edu/ulan/500387400>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_8d97e5d6>;
+  schema:birthDate "1971" .
+
+<http://viaf.org/viaf/25662089> skos:exactMatch :c_6c6f4155 .
+
+<http://vocab.getty.edu/ulan/500387400> skos:exactMatch :c_6c6f4155 .
+
+:c_90507cea a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Araújo, Vasco, 1975-"@en, "Araújo, Vasco, 1975-"@pt;
+  skos:altLabel "Vasco Araújo"@en, "Vasco Araújo"@pt;
+  skos:note "Portuguese video artist and photographer, born 1975"@en, "Videoartista e fotógrafo português, nascido em 1975"@pt;
+  skos:exactMatch <http://viaf.org/viaf/87943669>, <http://vocab.getty.edu/ulan/500387623>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_8d97e5d6>;
+  schema:birthDate "1975" .
+
+<http://viaf.org/viaf/87943669> skos:exactMatch :c_90507cea .
+
+<http://vocab.getty.edu/ulan/500387623> skos:exactMatch :c_90507cea .
+
+:c_5c3f256b a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Janeiro, Ana, 1978-"@en, "Janeiro, Ana, 1978-"@pt;
+  skos:altLabel "Ana Janeiro"@en, "Ana Janeiro"@pt;
+  skos:note "Pintora e fotógrafa portuguesa, nascida em 1978"@pt, "Portuguese painter and photographer, born 1978"@en;
+  skos:exactMatch <http://viaf.org/viaf/33167129>, <http://vocab.getty.edu/ulan/500453784>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_f4745adb>;
+  schema:birthDate "1978" .
+
+<http://viaf.org/viaf/33167129> skos:exactMatch :c_5c3f256b .
+
+<http://vocab.getty.edu/ulan/500453784> skos:exactMatch :c_5c3f256b .
+
+:c_8aabc374 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Forrester, Joseph James, 1809-1861"@en, "Forrester, Joseph James, 1809-1861"@pt;
+  skos:altLabel "Barão de Forrester"@pt, "Forrester, Barão de, 1809-1861"@pt, "Joseph James Forrester"@en,
+    "Joseph James Forrester"@pt;
+  skos:note "British photographer, merchant, and author, 1809-1861 "@en, "Fotógrafo, comerciante e autor britânico, 1809-1861"@pt;
+  skos:exactMatch <http://viaf.org/viaf/77883941>, <http://vocab.getty.edu/ulan/500022070>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_ba87b857>;
+  schema:deathDate "1861";
+  schema:birthDate "1809" .
+
+<http://viaf.org/viaf/77883941> skos:exactMatch :c_8aabc374 .
+
+<http://vocab.getty.edu/ulan/500022070> skos:exactMatch :c_8aabc374 .
+
+:c_22b4048d a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Fontes, Edgar Sampaio, 1922-2000"@pt, "Fontes, Edgar Sampaio, 1922-2000"@en;
+  skos:altLabel "Edgar Sampaio Fontes"@en, "Edgar Sampaio Fontes"@pt, "Fontes, Edgar Sampaio Ferreira"@pt;
+  skos:note "Portuguese landscape architect, contemporary"@en, "Arquiteto paisagista português, contemporâneo"@pt;
+  skos:exactMatch <http://vocab.getty.edu/ulan/500227956>, <http://viaf.org/viaf/99727404>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_beac2fa6>;
+  schema:deathDate "2000";
+  schema:birthDate "1922" .
+
+<http://vocab.getty.edu/ulan/500227956> skos:exactMatch :c_22b4048d .
+
+<http://viaf.org/viaf/99727404> skos:exactMatch :c_22b4048d .
+
+:c_faf6c9ec a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Pardal, Sidónio Costa, 1947-"@en, "Pardal, Sidónio Costa, 1947-"@pt;
+  skos:altLabel "Sidónio Costa Pardal"@en, "Sidónio Costa Pardal"@pt;
+  skos:note "Portuguese landscape architect, born 1947"@en, "Arquiteto paisagista português, nascido em 1947"@pt;
+  skos:exactMatch <http://vocab.getty.edu/ulan/500268097>, <http://viaf.org/viaf/53420163>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_beac2fa6>;
+  schema:birthDate "1947" .
+
+<http://vocab.getty.edu/ulan/500268097> skos:exactMatch :c_faf6c9ec .
+
+<http://viaf.org/viaf/53420163> skos:exactMatch :c_faf6c9ec .
+
+:c_0c8b0598 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Garcia, Frederico Ressano, 1847-1911"@pt, "Garcia, Frederico Ressano, 1847-1911"@en;
+  skos:altLabel "Frederico Ressano Garcia"@en, "Frederico Ressano Garcia"@pt;
+  skos:note "Portuguese planner, 19th century"@en, "Urbanista português, século 19"@pt;
+  skos:exactMatch <http://vocab.getty.edu/ulan/500245081>, <http://viaf.org/viaf/14658460>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_77bf1d9a>;
+  schema:deathDate "1911";
+  schema:birthDate "1847" .
+
+<http://vocab.getty.edu/ulan/500245081> skos:exactMatch :c_0c8b0598 .
+
+<http://viaf.org/viaf/14658460> skos:exactMatch :c_0c8b0598 .
+
+:c_80976b73 a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Pacheco, Duarte, 1900-1943"@pt, "Pacheco, Duarte, 1900-1943"@en;
+  skos:altLabel "Duarte Pacheco"@en, "Duarte Pacheco"@pt;
+  skos:note "Portuguese city planner, 1900-1943"@en, "Urbanista português, 1900-1943"@pt;
+  skos:exactMatch <http://vocab.getty.edu/ulan/500245023>, <http://viaf.org/viaf/99597184>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_77bf1d9a> .
+
+<http://vocab.getty.edu/ulan/500245023> skos:exactMatch :c_80976b73 .
+
+<http://viaf.org/viaf/99597184> skos:exactMatch :c_80976b73 .
+
+:c_c097928f a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Marques, José, 1924-2012"@en, "Marques, José, 1924-2012"@pt;
+  skos:altLabel "José Marques"@en, "José Marques"@pt;
+  skos:note "Portuguese still photographer, 1924-2012"@en, "Fotógrafo de cena português, 1924-2012"@pt;
+  skos:exactMatch <http://viaf.org/viaf/57156809446945120283>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_55086866>;
+  schema:deathDate "2012";
+  schema:birthDate "1924" .
+
+<http://viaf.org/viaf/57156809446945120283> skos:exactMatch :c_c097928f .
+
+:c_078fec6c a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Companhia Rey Colaço-Robles Monteiro"@pt, "Rey Colaço-Robles Monteiro Company"@en;
+  skos:altLabel "Rey Colaço-Robles Monteiro"@pt, "Companhia Rey Colaço Robles Monteiro--1921-1974"@pt,
+    "Empresa Rei Colaço-Robles Monteiro"@pt;
+  skos:related :c_3cde0aab, :c_121107de;
+  skos:exactMatch <http://viaf.org/viaf/137345826>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_cbd60f90>;
+  bf:date "1921-1974" .
+
+:c_3cde0aab a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Colaço, Amélia Rey, 1898-1990"@pt, "Colaço, Amélia Rey, 1898-1990"@en;
+  skos:altLabel "Amélia Rey Colaço"@en, "Amélia Rey Colaço"@pt;
+  skos:note "Encenadora e atriz portuguesa, 1898-1990"@pt, "Portuguese stage director and actress, 1898-1990"@en;
+  skos:related :c_078fec6c;
+  skos:exactMatch <http://viaf.org/viaf/262046811>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_a3e731a1>;
+  schema:deathDate "1990";
+  schema:birthDate "1898" .
+
+:c_121107de a skos:Concept, bf:Person;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Monteiro, Robles, 1890-1958"@pt, "Monteiro, Robles, 1890-1958"@en;
+  skos:altLabel "Robles Monteiro"@en, "Robles Monteiro"@pt, "Felisberto Manuel Teles Jordão Robles Monteiro"@pt;
+  skos:note "Encenador e ator português, 1890-1958"@pt, "Portuguese stage director and actor, 1890-1958"@en;
+  skos:related :c_078fec6c;
+  skos:exactMatch <http://viaf.org/viaf/45952574>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_a3e731a1>;
+  schema:deathDate "1958";
+  schema:birthDate "1890" .
+
+<http://viaf.org/viaf/137345826> skos:exactMatch :c_078fec6c .
+
+<http://viaf.org/viaf/262046811> skos:exactMatch :c_3cde0aab .
+
+<http://viaf.org/viaf/45952574> skos:exactMatch :c_121107de .
+
+:c_458dcda8 a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Ádóque - Cooperativa de Trabalhadores de Teatro"@pt, "Ádóque - Cooperativa de Trabalhadores de Teatro"@en;
+  skos:altLabel "Companhia Teatral Ádóque"@pt;
+  skos:exactMatch <http://viaf.org/viaf/134261519>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_cbd60f90> .
+
+<http://viaf.org/viaf/134261519> skos:exactMatch :c_458dcda8 .
+
+:c_cf7ed0ab a skos:Concept, bf:Organization;
+  rdfs:label "Biblioteca Nacional de Portugal (BNP)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Biblioteca Nacional"@en, "Portugal. Biblioteca Nacional"@pt;
+  skos:altLabel "National Library of Portugal"@en, "Biblioteca Nacional (Portugal)"@en,
+    "Biblioteca Nacional de Portugal"@pt, "BNP"@en, "BNP"@pt;
+  skos:exactMatch <http://viaf.org/viaf/137421918>, <http://vocab.getty.edu/ulan/500301522>,
+    <http://www.wikidata.org/entity/Q245966>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_1cb83f14>;
+  frad:P4027 "BNP" .
+
+<http://viaf.org/viaf/137421918> skos:exactMatch :c_cf7ed0ab .
+
+<http://vocab.getty.edu/ulan/500301522> skos:exactMatch :c_cf7ed0ab .
+
+<http://www.wikidata.org/entity/Q245966> skos:exactMatch :c_cf7ed0ab .
+
+:c_5b438c25 a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Empresa Teatral José Miguel, Lda"@pt, "Empresa Teatral José Miguel, Lda"@en;
+  skos:altLabel "Empresa Teatral José Miguel"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_cbd60f90> .
+
+:c_33b721f0 a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Companhia de Teatro Popular de Lisboa"@pt, "Companhia de Teatro Popular de Lisboa"@en;
+  skos:altLabel "CTP - Companhia de Teatro Popular de Lisboa"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_cbd60f90> .
+
+:c_472617c1 a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Lisboa. Teatro Municipal São Luís"@pt, "Lisboa. Teatro Municipal São Luís"@en;
+  skos:altLabel "Teatro Municipal São Luís"@pt, "Teatro São Luís"@pt, "Teatro São Luiz"@pt,
+    "Teatro Municipal São Luiz"@pt, "Teatro Municipal São Luiz"@en, "Teatro Municipal São Luís"@en,
+    "Teatro São Luiz"@en;
+  skos:exactMatch <http://viaf.org/viaf/148321274>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_625766eb> .
+
+<http://viaf.org/viaf/148321274> skos:exactMatch :c_472617c1 .
+
+:c_818ae564 a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Lisboa. Teatro Maria Matos"@pt, "Lisboa. Teatro Maria Matos"@en;
+  skos:altLabel "Teatro Maria Matos"@en, "Teatro Maria Matos"@pt, "Maria Matos Teatro Municipal"@en,
+    "Maria Matos Teatro Municipal"@pt, "Teatro Municipal Maria Matos"@pt, "Teatro Municipal Maria Matos"@en;
+  skos:exactMatch <http://viaf.org/viaf/151820561>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_625766eb> .
+
+<http://viaf.org/viaf/151820561> skos:exactMatch :c_818ae564 .
+
+:c_9413bfe2 a skos:Concept, bf:Organization;
+  rdfs:label "Direção Regional da Cultura dos Açores (DRCA)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Açores. Direção Regional da Cultura"@pt, "Açores. Direção Regional da Cultura"@en;
+  skos:altLabel "Direção Regional da Cultura dos Açores"@pt, "Direção Regional da Cultura dos Açores"@en,
+    "Azores Regional Directorate for Culture"@en, "DRCA"@en, "DRCA"@pt;
+  skos:hiddenLabel "Direcção Regional da Cultura dos Açores"@pt;
+  skos:exactMatch <http://viaf.org/viaf/154315240>, <http://www.wikidata.org/entity/Q95921283>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c4fc960f>;
+  frad:P4027 "DRCA" .
+
+<http://viaf.org/viaf/154315240> skos:exactMatch :c_9413bfe2 .
+
+<http://www.wikidata.org/entity/Q95921283> skos:exactMatch :c_9413bfe2 .
+
+:c_3ec0a0d4 a skos:Concept, bf:Organization;
+  rdfs:label "Direção Regional do Arquivo e Biblioteca da Madeira (DRABM)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Madeira. Direção Regional do Arquivo e Biblioteca"@en, "Madeira. Direção Regional do Arquivo e Biblioteca"@pt;
+  skos:altLabel "Direção Regional do Arquivo e Biblioteca da Madeira"@en, "Direção Regional do Arquivo e Biblioteca da Madeira"@pt,
+    "DRABM"@en, "DRABM"@pt;
+  skos:hiddenLabel "Direcção Regional do Arquivo e Biblioteca da Madeira"@pt;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_c4fc960f>;
+  frad:P4027 "DRABM" .
+
+:c_f158f0df a skos:Concept, bf:Organization;
+  rdfs:label "Universidade de Coimbra (UC)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Universidade de Coimbra"@pt, "Coimbra University"@en;
+  skos:altLabel "Universidade de Coimbra"@en;
+  skos:exactMatch <http://viaf.org/viaf/138334548>, <http://www.wikidata.org/entity/Q368643>;
+  dct:created "2021-01-14T10:00:00"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_80ec19d0>;
+  frad:P4027 "UC" .
+
+<http://viaf.org/viaf/138334548> skos:exactMatch :c_f158f0df .
+
+<http://www.wikidata.org/entity/Q368643> skos:exactMatch :c_f158f0df .
+
+:c_747a04f4 a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Histórico Militar (AHM)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Arquivo Histórico Militar"@pt, "Portugal. Arquivo Histórico Militar"@en;
+  skos:altLabel "Arquivo Histórico Militar (Portugal)"@en, "Arquivo Histórico Militar (Portugal)"@pt;
+  skos:exactMatch <http://viaf.org/viaf/137831622>;
+  dct:created "2022-10-13T09:56:50"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "AHM";
+  dct:modified "2022-10-13T10:16:24"^^xsd:dateTime .
+
+<http://viaf.org/viaf/137831622> skos:exactMatch :c_747a04f4 .
+
+:c_daf4cf67 a skos:Concept, bf:Organization;
+  rdfs:label "Biblioteca do Exército (BIBLEX)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Portugal. Biblioteca do Exército"@pt;
+  skos:altLabel "Biblioteca do Exército (Portugal)"@pt, "Biblioteca do Exército (Portugal)"@en,
+    "BIBLEX"@pt, "BIBLEX"@en;
+  skos:exactMatch <http://viaf.org/viaf/155147619>;
+  dct:created "2022-10-13T10:12:58"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_92537446>;
+  frad:P4027 "BIBLEX";
+  dct:modified "2022-10-19T09:25:12"^^xsd:dateTime .
+
+<http://viaf.org/viaf/155147619> skos:exactMatch :c_daf4cf67 .
+
+:c_f0c799fc a skos:Concept, bf:Organization;
+  rdfs:label "Arquivo Municipal de Sintra (AMSNT)";
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Sintra. Arquivo Municipal"@en, "Sintra. Arquivo Municipal"@pt;
+  skos:altLabel "Arquivo Municipal de Sintra"@pt, "Arquivo Municipal de Sintra"@en,
+    "Sintra Municipal Archive"@en, "AMSNT"@pt, "AMSNT"@en;
+  skos:exactMatch <http://viaf.org/viaf/306450127>;
+  dct:created "2022-10-13T10:19:20"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_95b9947f>;
+  frad:P4027 "AMSNT";
+  dct:modified "2022-10-19T13:11:37"^^xsd:dateTime .
+
+<http://viaf.org/viaf/306450127> skos:exactMatch :c_f0c799fc .
+
+:c_1bfd860b a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Timor-Leste. Forças Armadas de Libertação Nacional"@en, "Timor-Leste. Forças Armadas de Libertação Nacional"@pt;
+  skos:altLabel "FALINTIL"@pt, "Forças Armadas de Libertação Nacional de Timor-Leste"@pt,
+    "Forças Armadas de Libertação Nacional de Timor-Leste"@en, "FALINTIL"@en;
+  skos:exactMatch <http://www.wikidata.org/entity/Q1439335>;
+  skos:closeMatch <http://viaf.org/viaf/20145003657461340546>;
+  dct:created "2022-10-19T14:51:21"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_a4ed0607>;
+  dct:modified "2022-10-19T15:03:28"^^xsd:dateTime .
+
+<http://viaf.org/viaf/20145003657461340546> skos:closeMatch :c_1bfd860b .
+
+<http://www.wikidata.org/entity/Q1439335> skos:exactMatch :c_1bfd860b .
+
+:c_8af74220 a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "Indonésia. Forças Armadas"@pt, "Indonesia. Armed Forces"@en;
+  skos:altLabel "Forças Armadas da Indonésia"@pt, "Tentara Nasional Indonesia"@pt, "TNI"@pt,
+    "Tentara Nasional Indonesia"@en, "TNI"@en, "Indonesian National Armed Forces"@en;
+  skos:exactMatch <http://viaf.org/viaf/257635084>, <http://www.wikidata.org/entity/Q855515>;
+  dct:created "2022-10-19T15:19:39"^^xsd:dateTime;
+  gvp:agentType <http://vocabs.rossio.fcsh.unl.pt/tesauro/c_a4ed0607>;
+  dct:modified "2022-10-19T15:26:01"^^xsd:dateTime .
+
+<http://viaf.org/viaf/257635084> skos:exactMatch :c_8af74220 .
+
+<http://www.wikidata.org/entity/Q855515> skos:exactMatch :c_8af74220 .
+
+:c_51ed54eb a skos:Concept, bf:Organization;
+  skos:inScheme <http://vocabs.rossio.fcsh.unl.pt/agentes/>;
+  skos:prefLabel "UNESCO"@en, "UNESCO"@pt;
+  skos:altLabel "Organização das Nações Unidas para a Educação, Ciência e Cultura"@pt,
+    "United Nations Educational, Scientific and Cultural Organization"@en;
+  skos:exactMatch <http://www.wikidata.org/entity/Q7809>, <http://viaf.org/viaf/139500314>;
+  dct:created "2022-11-02T15:20:56"^^xsd:dateTime;
+  dct:modified "2022-11-02T15:28:10"^^xsd:dateTime .
+
+<http://www.wikidata.org/entity/Q7809> skos:exactMatch :c_51ed54eb .
+
+<http://viaf.org/viaf/139500314> skos:exactMatch :c_51ed54eb .

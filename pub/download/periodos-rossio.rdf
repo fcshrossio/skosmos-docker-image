@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://vocabs.rossio.fcsh.unl.pt/periodos/"
+	xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:isothes="http://purl.org/iso25964/skos-thes#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#">
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="pt">Períodos ROSSIO</rdfs:label>
+	<rdfs:label xml:lang="en">ROSSIO Periods</rdfs:label>
+	<dct:description xml:lang="pt">O vocabulário de Períodos ROSSIO reúne nomes de períodos temporais, incluindo eras geológicas e períodos históricos, culturais e artísticos, para organização do conhecimento e recuperação de informação na plataforma ROSSIO.
+
+ A construção do vocabulário de Períodos baseia-se noutros tesauros e obras de referência tais como o PeriodO e o “Art and Architecture Thesaurus” do Getty Institute.
+
+ O vocabulário de Períodos faz parte dos vocabulários ROSSIO, onde se integram vocabulários para tópicos nas ciências sociais, artes e humanidades (Tesauro ROSSIO), para nomes de pessoas e organizações (Agentes ROSSIO) e para topónimos (Lugares ROSSIO).</dct:description>
+	<dct:description xml:lang="en">The ROSSIO Periods vocabulary comprises names of temporal periods, including geological eras and historical, cultural and art periods, for knowledge organisation and information retrieval in the ROSSIO platform.
+
+ The construction of the Periods vocabulary is based on other thesauri and reference works such as PeriodO and the Getty Institute's “Art and Architecture Thesaurus”.
+
+ ROSSIO Periods is part of the ROSSIO vocabularies, which includes vocabularies of topics in social sciences, arts and humanities (ROSSIO Thesaurus), people and organisations (ROSSIO Agents) and toponyms (ROSSIO Places).</dct:description>
+	<dct:creator rdf:resource="http://vocabs.rossio.fcsh.unl.pt/agentes/c_3d0f0c8c"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1142061b"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e4000d52"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_179702a4"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_83250b6e"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b7504f62"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e780fa26"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_056bb689"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1ac5f75f"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e9b1d00c"/>
+	<skos:hasTopConcept rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_508c5ec0"/>
+	<skos:prefLabel xml:lang="pt">Períodos ROSSIO</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">ROSSIO Periods</skos:prefLabel>
+	<dct:publisher rdf:resource="http://vocabs.rossio.fcsh.unl.pt/agentes/c_3d0f0c8c"/>
+	<dct:language rdf:resource="http://lexvo.org/id/iso639-3/eng"/>
+	<dct:language rdf:resource="http://lexvo.org/id/iso639-3/por"/>
+	<dct:relation rdf:resource="http://vocabs.rossio.fcsh.unl.pt/agentes/"/>
+	<dct:relation rdf:resource="http://vocabs.rossio.fcsh.unl.pt/lugares/"/>
+	<dct:relation rdf:resource="http://vocabs.rossio.fcsh.unl.pt/tesauro/"/>
+	<dct:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+	<dct:subject rdf:resource="http://vocabs.rossio.fcsh.unl.pt/tesauro/c_cd7f229d"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://id.loc.gov/ontologies/bibframe/Temporal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	<rdfs:label xml:lang="en">Period</rdfs:label>
+	<rdfs:label xml:lang="pt">Período</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_7378b82b">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Holocene</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Holoceno</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_9cb9665b"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300391280"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_54ccc7e5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Pleistoceno</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Pleistocene</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_9cb9665b"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300391279"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/iso25964/skos-thes#ThesaurusArray">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="pt">Conjunto de conceitos coordenados</rdfs:label>
+	<rdfs:label xml:lang="en">Array of sibling concepts</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1142061b">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Proto-história</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Protohistory</skos:prefLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_08de459a"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b24238e5"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_ea7c1dd5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_08de459a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Calcolítico</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Chalcolithic</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Idade do Cobre</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1142061b"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscs4mwd"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019273"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b24238e5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Bronze Age</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Idade do Bronze</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1142061b"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019275"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscs3csg"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_ea7c1dd5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Idade do Ferro</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Iron Age</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1142061b"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019279"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscswhdc"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e4000d52">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Antiguidade</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Antiquity</skos:prefLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_04630d45"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0de0f270"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0e0db269"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_af194cbd"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_04630d45">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Antiguidade Oriental</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Oriental Antiquity</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e4000d52"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0de0f270">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Antiguidade Clássica</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Classic Antiquity</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e4000d52"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_01c8c7eb"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_093cef1b"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_4170c9d2"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_87e84f9f"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0e0db269">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Antiguidade Tardia</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Late Antiquity</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Early Middle Ages</skos:altLabel>
+	<skos:hiddenLabel xml:lang="pt">AntiguidadeTardia</skos:hiddenLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e4000d52"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300020666"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscsm3wm"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_af194cbd">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Antiguidade Pré-clássica</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Pre-Classical Antiquity</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e4000d52"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_179702a4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Era pré-colombiana</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Pre-Columbian era</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Época pré-colombiana</skos:altLabel>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300016619"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_83250b6e">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Idade Média</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Middle Ages</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Época medieval</skos:altLabel>
+	<skos:hiddenLabel xml:lang="pt">Idade Medieval</skos:hiddenLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_2c796bb6"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8a06ef6f"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0d7ff0f7"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_78ac6c44"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300020756"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscsx567"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_2c796bb6">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Alta Idade Média</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">High Middle Ages</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_83250b6e"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_fbece00f"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_f134d99c"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscs5fzw"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8a06ef6f">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Baixa Idade Média</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Late Middle Ages</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_83250b6e"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_7f5dd650"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscs3p46"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_4e1d30be">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Fontism</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Fontismo</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b7504f62"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b7504f62">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Contemporary Age</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Idade Contemporânea</skos:prefLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_4e1d30be"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_60e94027"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_d964d72f"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e31fc104"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c1b75791"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_f03f626f"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscsfs6r"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_60e94027">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Era vitoriana</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Victorian era</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Época vitoriana</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b7504f62"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_d964d72f">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Digital age</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Era digital</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Era da informação</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b7504f62"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e780fa26">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Idade Moderna</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Modern Age</skos:prefLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_ce1528e1"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_d1383e43"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b2e0fd47"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_428f88db"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_436485ef"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c2e7f5cb"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscsdtt5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_ce1528e1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Elizabethan era</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Período isabelino</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e780fa26"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_d1383e43">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Pombalism</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Pombalismo</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e780fa26"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_fbece00f">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Carolingian renaissance</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Renascimento carolíngio</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_2c796bb6"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300020764"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e31fc104">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Sidonism</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Sidonismo</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b7504f62"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_056bb689">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Prehistory</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Pré-história</skos:prefLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c352034d"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019257"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c352034d">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Idade da Pedra</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Stone Age</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_056bb689"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0c7f9151"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_3467d08d"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_91ed485a"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b20b92df"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300106724"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b2e0fd47">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Renaissance</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Renascimento</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e780fa26"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300021140"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_9cb9665b">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Quaternary</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Quaternário</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1ac5f75f"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_7378b82b"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_54ccc7e5"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300391278"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c1b75791">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Salazarism</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Salazarismo</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b7504f62"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_f03f626f">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Marcelism</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Marcelismo</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b7504f62"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_428f88db">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Neoclassicism</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Neoclassicismo</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e780fa26"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300021477"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_436485ef">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Baroque</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Barroco</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e780fa26"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300021147"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_7f5dd650">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Gothic</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Gótico</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8a06ef6f"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300020775"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c2e7f5cb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Maneirismo</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Mannerism</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e780fa26"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300021144"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_f134d99c">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Romanesque</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Românico</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_2c796bb6"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300020768"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1ac5f75f">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Cenozoic</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Cenozoico</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Era Cenozoica</skos:altLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_9cb9665b"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0127f274"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_3a018908"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300391256"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_01c8c7eb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Classical period</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Período clássico</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0de0f270"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_093cef1b">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Archaic period</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Período arcaico</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0de0f270"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_4170c9d2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Helenismo</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Hellenistic period</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Período helenístico</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0de0f270"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_87e84f9f">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Roman period</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Época romana</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Período romano</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0de0f270"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_4f0c35c7"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300020533"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscswt6w"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0c7f9151">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Neolithic</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Neolítico</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c352034d"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019267"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscsjj9h"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_3467d08d">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Paleolithic</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Paleolítico</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Palaeolithic</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c352034d"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_5aed938e"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_ab12cfb6"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c235e868"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019258"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscscdv4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_91ed485a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Epipaleolithic</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Epipaleolítico</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c352034d"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300106730"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b20b92df">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Mesolithic</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Mesolítico</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c352034d"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019264"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscssxhp"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_5aed938e">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Paleolítico Superior</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Upper Paleolithic</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Upper Palaeolithic</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_3467d08d"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019262"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscs4r2b"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_ab12cfb6">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Paleolítico Médio</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Middle Paleolithic</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Middle Palaeolithic</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_3467d08d"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019261"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscs92bm"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c235e868">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Paleolítico Inferior</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Lower Paleolithic</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Lower Palaeolithic</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_3467d08d"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300019260"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscskmff"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0127f274">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Neogene</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Neogénico</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Neogéneo</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1ac5f75f"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300391471"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_3a018908">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Paleogene</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Paleogénico</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Paleogéneo</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_1ac5f75f"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300391472"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">1st millenium</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">1º milénio</skos:prefLabel>
+	<skos:altLabel xml:lang="en">First millenium AD</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Primeiro milénio d.C.</skos:altLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e11d9fa5"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_edf9ee0c"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_bb4686eb"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_2395f163"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_cb6293b3"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_bb6466bd"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_71e02136"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_ebcaf4f5"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_439b0a63"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_f0cb2425"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404550"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">2nd millenium</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">2º milénio</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Second millenium</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Segundo milénio</skos:altLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b414168a"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_a2f1593e"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_f486e75a"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_a393cac1"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_abab01dd"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_9351bcc7"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c0ec623f"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b69282cc"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_6f4faaa6"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_2a515ef8"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404551"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e9b1d00c">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">1st millenium BC</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">1º milénio a.C.</skos:prefLabel>
+	<skos:altLabel xml:lang="en">First millenium BC</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Primeiro milénio a.C.</skos:altLabel>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404554"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b414168a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">11th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 11</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Eleventh century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século 11</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XI</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século onze</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XI</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404503"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_a2f1593e">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">12th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 12</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Século 12</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XII</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século doze</skos:altLabel>
+	<skos:altLabel xml:lang="en">Twelfth century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XII</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404504"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_f486e75a">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">13th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 13</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Século 13</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XIII</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século treze</skos:altLabel>
+	<skos:altLabel xml:lang="en">Thirteenth century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XIII</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404505"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_a393cac1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">14th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 14</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Fourteenth century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século 14</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XIV</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século catorze</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XIV</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404506"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_abab01dd">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">15th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 15</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Fifteenth century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século 15</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XV</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século quinze</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XV</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404465"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_9351bcc7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">16th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 16</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Sixteenth century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século 16</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XVI</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século dezasseis</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XVI</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404510"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c0ec623f">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">17th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 17</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Seventeenth century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século 17</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XVII</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século dezassete</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XVII</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404511"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_b69282cc">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">18th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 18</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Eighteenth century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século 18</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XVIII</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século dezoito</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XVIII</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404512"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_6f4faaa6">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">19th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 19</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Nineteenth century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século 19</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XIX</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século dezanove</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XIX</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404513"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_2a515ef8">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">20th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 20</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Século 20</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século XX</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século vinte</skos:altLabel>
+	<skos:altLabel xml:lang="en">Twentieth century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XX</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_97bb5362"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404514"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_4f0c35c7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Roman imperial period</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Período imperial romano</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_87e84f9f"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_40d578d6"/>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c18c016f"/>
+	<skos:closeMatch rdf:resource="http://vocab.getty.edu/aat/300020541"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_40d578d6">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Alto Império Romano</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Early Roman Empire</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_4f0c35c7"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscszv3q"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_c18c016f">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Baixo Império Romano</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Late Roman Empire</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_4f0c35c7"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscs6tqw"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_0d7ff0f7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">Medieval Christian Period</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Período Medieval Cristão</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_83250b6e"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscs4hm8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_78ac6c44">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Período Medieval Islâmico</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Medieval Islamic Period</skos:prefLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_83250b6e"/>
+	<skos:closeMatch rdf:resource="http://n2t.net/ark:/99152/p0cwscspg8k"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_e11d9fa5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">1st century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 1</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Séc. I</skos:altLabel>
+	<skos:altLabel xml:lang="en">First century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século I</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404493"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_edf9ee0c">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">2nd century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 2</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Second century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. II</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século II</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404494"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_bb4686eb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">3rd century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 3</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Third century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. III</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século III</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404493"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_2395f163">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">4th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 4</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Séc. IV</skos:altLabel>
+	<skos:altLabel xml:lang="en">Fourth century</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404496"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_cb6293b3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">5th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 5</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Séc. V</skos:altLabel>
+	<skos:altLabel xml:lang="en">Fifth century</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404497"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_bb6466bd">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">6th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 6</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Séc. VI</skos:altLabel>
+	<skos:altLabel xml:lang="en">Sixth century</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404498"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_71e02136">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">7th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 7</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Séc. VII</skos:altLabel>
+	<skos:altLabel xml:lang="en">Seventh century</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404499"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_ebcaf4f5">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">8th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 8</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Séc. VIII</skos:altLabel>
+	<skos:altLabel xml:lang="en">Eight century</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404500"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_439b0a63">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">9th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 9</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Séc. IX</skos:altLabel>
+	<skos:altLabel xml:lang="en">Ninth century</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404501"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_f0cb2425">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">10th century</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Séc. 10</skos:prefLabel>
+	<skos:altLabel xml:lang="pt">Séc. X</skos:altLabel>
+	<skos:altLabel xml:lang="en">Tenth century</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_8c07fb70"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404502"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_508c5ec0">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:topConceptOf rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="en">3rd millennium</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">3º milénio</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Third millennium</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Terceiro milénio</skos:altLabel>
+	<skos:narrower rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_895cb366"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404552"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabs.rossio.fcsh.unl.pt/periodos/c_895cb366">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Temporal"/>
+	<skos:inScheme rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/"/>
+	<skos:prefLabel xml:lang="pt">Séc. 21</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">21st century</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Twenty-first century</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Séc. XXI</skos:altLabel>
+	<skos:altLabel xml:lang="pt">Século 21</skos:altLabel>
+	<skos:broader rdf:resource="http://vocabs.rossio.fcsh.unl.pt/periodos/c_508c5ec0"/>
+	<skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300404515"/>
+</rdf:Description>
+
+</rdf:RDF>
