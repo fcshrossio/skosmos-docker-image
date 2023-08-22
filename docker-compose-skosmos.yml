@@ -15,5 +15,6 @@ services:
     tty: true
     volumes:
     - ./pub:/var/www/html/pub
+    - ./apache:/etc/apache2/sites-enabled
 #    - /root/docker/fuseki/mounts/tdb:/fuseki
     entrypoint: /entrypoint.sh
