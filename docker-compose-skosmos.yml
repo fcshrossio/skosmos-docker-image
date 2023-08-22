@@ -14,7 +14,7 @@ services:
     stdin_open: true
     tty: true
     volumes:
-    - ./pub:/var/www/html/pub
+    - ./files:/opt/skosmos-files
     - ./apache:/etc/apache2/sites-enabled
 #    - /root/docker/fuseki/mounts/tdb:/fuseki
     entrypoint: /entrypoint.sh
