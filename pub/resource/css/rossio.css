@@ -1,0 +1,196 @@
+#service-logo {
+  background-image: url('../VOCABS-ROSSIO_LOGO_LIGHT.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  width: 300px;
+  height: 50px;
+  display: inline-block;
+}
+
+.copyright {
+  position: table-cell;
+  vertical-align: middle;
+}
+
+.service-pt h1, .service-en h1, #service-name {
+  text-indent: -100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.service-pt, .service-en {
+  display: inline-block;
+  background-image: url('../VOCABS-ROSSIO_LOGO_LIGHT.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  width: 300px;
+  height: 50px;
+}
+
+.search-vocab-text {
+  background-color: #1681A8;
+}
+
+#search-all-button {
+  background-color: #1681A8;
+}
+
+html,body {
+  background-color: #D3E3E7;
+}
+
+#lang-dropdown-toggle, .multiselect {
+  background-color: #1681A8;
+}
+
+.headerbar-coloured {
+  background-color: #1681A8;
+}
+
+.header-left h1{
+  background-color: #1681A8;
+}
+
+.navigation-font{
+  color: #1681A8;
+}
+
+a, a.versal, .jstree-node > .jstree-anchor {
+  color: #1681A8;
+  display: inline-block;
+}
+
+#navi3 {
+  display:none;
+}
+
+#service-name {
+  text-indent: -100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#search-all-button {
+  background-color: #1681A8;
+  padding-left: 10px;
+  width: 80px; 
+}
+
+.multiselect .dropdown-toggle, .dropdown-toggle:hover, .btn.dropdown-toggle:focus, .open > .dropdown-toggle.btn-default {
+  color: #fff;
+  background-color: #1681A8;
+  box-shadow: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #1681A8 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #1681A8 !important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #1681A8 !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #1681A8 !important;
+}
+
+tr.replaced-by > td > ul > li > a {
+  color: #1681A8;
+  font-weight: bold;
+}
+
+.pagination > li > a, .pagination > li > a:hover, #sidebar > .pagination > .active > a, .pagination > li > span {
+  background-color: transparent;
+  color: #1681A8;
+  border: 0;
+  padding: 4px 8px;
+}
+
+.copy-clipboard {
+  color: #1681A8;
+  border-radius: 0;
+  vertical-align: unset;
+  font-size: 14px;
+  border: 0;
+}
+
+.copy-clipboard:active, .copy-clipboard:focus, .copy-clipboard:active:focus {
+  background-color: #fff;
+  color: #1681A8;
+}
+
+.copy-clipboard:hover {
+  background-color: #fff;
+  color: #23527c;
+}
+
+p.autocomplete-label {
+  color: #1681A8;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+  margin-right: 200px;
+}
+
+footer ul li a, footer ul li {
+  text-decoration: none;
+  line-height: 50px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #1681A8; !important;
+  color: #ffffff;
+}
+
+footer ul li a:hover {
+  color: white;
+}
+
+@media (min-width: 1260px) {
+
+  #vocabulary-list {
+    width: 580px !important;
+    float: right;
+  }
+
+  .nav-tabs > li > a.active {
+    height: 43px;
+  }
+
+  .nav-tabs > li > a  {
+    height: 43px;
+  }
+
+  .alphabetical-search-results li, li, .versal, .versal-bold, p, .search-result > .prefLabel, .search-result > .notation, .property-values > .prefLabel, td > a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .frontpage-logo .main-container.frontpage::before {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  #vocabulary-list {
+    margin-left: 16px !important;
+  }
+}
+
+.propertyvalue {
+  font-size: 14px;
+}
+
+#statistics,#counts {
+  max-width: fit-content;
+}
+
+th.versal,td.versal {
+  padding-right: 10px !important;
+}
